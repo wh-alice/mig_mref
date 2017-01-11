@@ -1,0 +1,27 @@
+---
+title: "StringToolTip Property"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.IReportViewerMessages2.StringToolTip"
+  - "Microsoft.Reporting.WinForms.IReportViewerMessages2.get_StringToolTip"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: d498b8b5-ca86-42c6-bed9-ec5e45594bee
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# StringToolTip Property
+# testing content

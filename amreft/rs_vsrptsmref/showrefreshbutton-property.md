@@ -1,0 +1,28 @@
+---
+title: "ShowRefreshButton Property"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WebForms.ReportViewer.ShowRefreshButton"
+  - "Microsoft.Reporting.WebForms.ReportViewer.get_ShowRefreshButton"
+  - "Microsoft.Reporting.WebForms.ReportViewer.set_ShowRefreshButton"
+apilocation: 
+  - "Microsoft.ReportViewer.WebForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 081d942e-a769-4707-857f-15c2d9133726
+caps.latest.revision: 3
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# ShowRefreshButton Property
+# testing content

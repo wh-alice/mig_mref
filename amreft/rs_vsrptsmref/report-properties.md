@@ -1,0 +1,34 @@
+---
+title: "Report Properties"
+ms.custom: ""
+ms.date: "08/02/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apitype: "Empty"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 77cdd94e-0fae-4858-8f5c-2c06c39fcc36
+caps.latest.revision: 1
+translation.priority.mt: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# Report Properties
+# testing content

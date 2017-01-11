@@ -1,0 +1,34 @@
+---
+title: "DataSourceCredentials Properties"
+ms.custom: ""
+ms.date: "08/02/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apitype: "Empty"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 6d0462ac-fe54-41a1-9933-d1ce9815e214
+caps.latest.revision: 1
+translation.priority.mt: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+# DataSourceCredentials Properties
+# testing content

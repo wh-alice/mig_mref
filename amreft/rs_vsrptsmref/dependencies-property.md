@@ -1,0 +1,27 @@
+---
+title: "Dependencies Property"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.ReportParameterInfo.Dependencies"
+  - "Microsoft.Reporting.WinForms.ReportParameterInfo.get_Dependencies"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 713acd6f-61e2-4604-9d58-af46c80a8d52
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# Dependencies Property
+# testing content

@@ -1,0 +1,28 @@
+---
+title: "ShowProgress Property"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.ReportViewer.ShowProgress"
+  - "Microsoft.Reporting.WinForms.ReportViewer.get_ShowProgress"
+  - "Microsoft.Reporting.WinForms.ReportViewer.set_ShowProgress"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: decae9d0-21e4-4a25-b1f4-a1cc387f0301
+caps.latest.revision: 3
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# ShowProgress Property
+# testing content

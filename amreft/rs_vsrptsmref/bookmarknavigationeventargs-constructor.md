@@ -1,0 +1,26 @@
+---
+title: "BookmarkNavigationEventArgs Constructor"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WebForms.BookmarkNavigationEventArgs..ctor"
+apilocation: 
+  - "Microsoft.ReportViewer.WebForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 9f431ada-c5a3-47c0-85d8-108b8b4b51ba
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# BookmarkNavigationEventArgs Constructor
+# testing content

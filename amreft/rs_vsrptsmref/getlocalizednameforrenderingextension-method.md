@@ -1,0 +1,26 @@
+---
+title: "GetLocalizedNameForRenderingExtension Method"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.IReportViewerMessages2.GetLocalizedNameForRenderingExtension"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 13d877e8-8f23-4c24-bf5e-aa35e0170435
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# GetLocalizedNameForRenderingExtension Method
+# testing content

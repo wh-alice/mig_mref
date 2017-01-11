@@ -1,0 +1,28 @@
+---
+title: "CurrentPage Property"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.ReportViewer.CurrentPage"
+  - "Microsoft.Reporting.WinForms.ReportViewer.get_CurrentPage"
+  - "Microsoft.Reporting.WinForms.ReportViewer.set_CurrentPage"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 0a61b88b-2b5b-410d-84e5-fd60a0308fd1
+caps.latest.revision: 3
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# CurrentPage Property
+# testing content

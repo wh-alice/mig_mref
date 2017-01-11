@@ -1,0 +1,26 @@
+---
+title: "SetParameters Method (IEnumerable(ReportParameter))"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.ServerReport.SetParameters"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 00c57baf-50c1-4a6a-a324-34f5ba2d1905
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# SetParameters Method (IEnumerable(ReportParameter))
+# testing content

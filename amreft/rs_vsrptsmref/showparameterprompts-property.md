@@ -1,0 +1,28 @@
+---
+title: "ShowParameterPrompts Property"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.ReportViewer.ShowParameterPrompts"
+  - "Microsoft.Reporting.WinForms.ReportViewer.get_ShowParameterPrompts"
+  - "Microsoft.Reporting.WinForms.ReportViewer.set_ShowParameterPrompts"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 46b7144e-dd2b-4377-907a-c93bec0e96f2
+caps.latest.revision: 3
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# ShowParameterPrompts Property
+# testing content

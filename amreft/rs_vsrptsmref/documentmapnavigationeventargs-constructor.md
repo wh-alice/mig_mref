@@ -1,0 +1,26 @@
+---
+title: "DocumentMapNavigationEventArgs Constructor"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WinForms.DocumentMapNavigationEventArgs..ctor"
+apilocation: 
+  - "Microsoft.ReportViewer.WinForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: 1eed07ac-3f7f-4c17-ba16-1c7483939873
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# DocumentMapNavigationEventArgs Constructor
+# testing content

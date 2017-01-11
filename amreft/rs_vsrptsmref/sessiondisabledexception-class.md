@@ -1,0 +1,26 @@
+---
+title: "SessionDisabledException Class"
+ms.custom: ""
+ms.date: "10/19/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "managed-reference"
+apiname: 
+  - "Microsoft.Reporting.WebForms.SessionDisabledException"
+apilocation: 
+  - "Microsoft.ReportViewer.WebForms.dll"
+apitype: "Assembly"
+dev_langs: 
+  - "CSharp"
+  - "FSharp"
+  - "VB"
+  - "C++"
+ms.assetid: fcd9fed2-1f37-402a-b31c-023d45fc5f5b
+caps.latest.revision: 2
+ms.author: "mblythe"
+manager: "mblythe"
+---
+# SessionDisabledException Class
+# testing content
