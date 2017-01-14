@@ -1,0 +1,17 @@
+<Type Name="MissingReportServerConnectionInformationException" FullName="Microsoft.Reporting.WebForms.MissingReportServerConnectionInformationException">
+  <TypeSignature Language="C#" Value="public sealed class MissingReportServerConnectionInformationException : System.Configuration.ConfigurationErrorsException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MissingReportServerConnectionInformationException extends System.Configuration.ConfigurationErrorsException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationErrorsException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

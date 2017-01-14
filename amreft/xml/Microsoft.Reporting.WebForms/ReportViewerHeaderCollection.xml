@@ -1,0 +1,20 @@
+<Type Name="ReportViewerHeaderCollection" FullName="Microsoft.Reporting.WebForms.ReportViewerHeaderCollection">
+  <TypeSignature Language="C#" Value="public sealed class ReportViewerHeaderCollection : Microsoft.Reporting.WebForms.SyncList&lt;string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ReportViewerHeaderCollection extends Microsoft.Reporting.WebForms.SyncList`1&lt;string&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Reporting.WebForms.SyncList&lt;System.String&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TListType">System.String</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

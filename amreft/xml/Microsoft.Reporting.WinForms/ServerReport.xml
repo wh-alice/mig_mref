@@ -1,0 +1,602 @@
+<Type Name="ServerReport" FullName="Microsoft.Reporting.WinForms.ServerReport">
+  <TypeSignature Language="C#" Value="public sealed class ServerReport : Microsoft.Reporting.WinForms.Report, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ServerReport extends Microsoft.Reporting.WinForms.Report implements class System.Runtime.Serialization.ISerializable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Reporting.WinForms.Report</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServerReport ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cookies">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WinForms.ReportViewerCookieCollection Cookies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WinForms.ReportViewerCookieCollection Cookies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportViewerCookieCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataSources">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection GetDataSources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection GetDataSources() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataSources">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection GetDataSources (out bool allCredentialsSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection GetDataSources(bool allCredentialsSet) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportDataSourceInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allCredentialsSet" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="allCredentialsSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultPageSettings">
+      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WinForms.ReportPageSettings GetDefaultPageSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WinForms.ReportPageSettings GetDefaultPageSettings() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportPageSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExecutionId">
+      <MemberSignature Language="C#" Value="public string GetExecutionId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetExecutionId() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameters">
+      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WinForms.ReportParameterInfoCollection GetParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WinForms.ReportParameterInfoCollection GetParameters() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportParameterInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerVersion">
+      <MemberSignature Language="C#" Value="public string GetServerVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetServerVersion() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalPages">
+      <MemberSignature Language="C#" Value="public override int GetTotalPages (out Microsoft.Reporting.WinForms.PageCountMode pageCountMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetTotalPages(valuetype Microsoft.Reporting.WinForms.PageCountMode pageCountMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WinForms.PageCountMode&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pageCountMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WinForms.ReportViewerHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WinForms.ReportViewerHeaderCollection Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportViewerHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HistoryId">
+      <MemberSignature Language="C#" Value="public string HistoryId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HistoryId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsQueryExecutionAllowed">
+      <MemberSignature Language="C#" Value="public bool IsQueryExecutionAllowed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsQueryExecutionAllowed() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListRenderingExtensions">
+      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WinForms.RenderingExtension[] ListRenderingExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WinForms.RenderingExtension[] ListRenderingExtensions() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.RenderingExtension[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadReportDefinition">
+      <MemberSignature Language="C#" Value="public override void LoadReportDefinition (System.IO.TextReader report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadReportDefinition(class System.IO.TextReader report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="report" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public System.IO.Stream Render (string format, string deviceInfo, System.Collections.Specialized.NameValueCollection urlAccessParameters, out string mimeType, out string fileNameExtension);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream Render(string format, string deviceInfo, class System.Collections.Specialized.NameValueCollection urlAccessParameters, string mimeType, string fileNameExtension) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="urlAccessParameters" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="urlAccessParameters">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="fileNameExtension">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public void Render (string format, string deviceInfo, System.Collections.Specialized.NameValueCollection urlAccessParameters, System.IO.Stream reportStream, out string mimeType, out string fileNameExtension);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(string format, string deviceInfo, class System.Collections.Specialized.NameValueCollection urlAccessParameters, class System.IO.Stream reportStream, string mimeType, string fileNameExtension) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="urlAccessParameters" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="reportStream" Type="System.IO.Stream" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="urlAccessParameters">To be added.</param>
+        <param name="reportStream">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="fileNameExtension">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public override byte[] Render (string format, string deviceInfo, Microsoft.Reporting.WinForms.PageCountMode pageCountMode, out string mimeType, out string encoding, out string fileNameExtension, out string[] streams, out Microsoft.Reporting.WinForms.Warning[] warnings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Render(string format, string deviceInfo, valuetype Microsoft.Reporting.WinForms.PageCountMode pageCountMode, string mimeType, string encoding, string fileNameExtension, string[] streams, class Microsoft.Reporting.WinForms.Warning[] warnings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WinForms.PageCountMode" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="encoding" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="streams" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="warnings" Type="Microsoft.Reporting.WinForms.Warning[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="pageCountMode">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="fileNameExtension">To be added.</param>
+        <param name="streams">To be added.</param>
+        <param name="warnings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderStream">
+      <MemberSignature Language="C#" Value="public byte[] RenderStream (string format, string streamId, string deviceInfo, out string mimeType, out string encoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] RenderStream(string format, string streamId, string deviceInfo, string mimeType, string encoding) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="streamId" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="encoding" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="streamId">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportPath">
+      <MemberSignature Language="C#" Value="public string ReportPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReportPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportServerCredentials">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WinForms.ReportServerCredentials ReportServerCredentials { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WinForms.ReportServerCredentials ReportServerCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportServerCredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportServerUrl">
+      <MemberSignature Language="C#" Value="public Uri ReportServerUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ReportServerUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Uri), "http://localhost/reportserver")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataSourceCredentials">
+      <MemberSignature Language="C#" Value="public void SetDataSourceCredentials (System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WinForms.DataSourceCredentials&gt; credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDataSourceCredentials(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Reporting.WinForms.DataSourceCredentials&gt; credentials) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="credentials" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WinForms.DataSourceCredentials&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="credentials">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExecutionId">
+      <MemberSignature Language="C#" Value="public void SetExecutionId (string executionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExecutionId(string executionId) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="executionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="executionId">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParameters">
+      <MemberSignature Language="C#" Value="public override void SetParameters (System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WinForms.ReportParameter&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetParameters(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Reporting.WinForms.ReportParameter&gt; parameters) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WinForms.ReportParameter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(600000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

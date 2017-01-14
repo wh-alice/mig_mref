@@ -1,0 +1,403 @@
+<Type Name="Report" FullName="Microsoft.Reporting.WebForms.Report">
+  <TypeSignature Language="C#" Value="public abstract class Report" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Report extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.Reporting.WebForms.TypeNameHidingExpandableObjectConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.WebBrowsable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultPageSettings">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Reporting.WebForms.ReportPageSettings GetDefaultPageSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Reporting.WebForms.ReportPageSettings GetDefaultPageSettings() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.ReportPageSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDocumentMap">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WebForms.DocumentMapNode GetDocumentMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Reporting.WebForms.DocumentMapNode GetDocumentMap() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.DocumentMapNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameters">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Reporting.WebForms.ReportParameterInfoCollection GetParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Reporting.WebForms.ReportParameterInfoCollection GetParameters() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.ReportParameterInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalPages">
+      <MemberSignature Language="C#" Value="public int GetTotalPages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTotalPages() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalPages">
+      <MemberSignature Language="C#" Value="public abstract int GetTotalPages (out Microsoft.Reporting.WebForms.PageCountMode pageCountMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTotalPages(valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pageCountMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDrillthroughReport">
+      <MemberSignature Language="C#" Value="public bool IsDrillthroughReport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDrillthroughReport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadyForRendering">
+      <MemberSignature Language="C#" Value="public bool IsReadyForRendering { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadyForRendering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListRenderingExtensions">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Reporting.WebForms.RenderingExtension[] ListRenderingExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Reporting.WebForms.RenderingExtension[] ListRenderingExtensions() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.RenderingExtension[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadReportDefinition">
+      <MemberSignature Language="C#" Value="public void LoadReportDefinition (System.IO.Stream report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadReportDefinition(class System.IO.Stream report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="report" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadReportDefinition">
+      <MemberSignature Language="C#" Value="public abstract void LoadReportDefinition (System.IO.TextReader report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadReportDefinition(class System.IO.TextReader report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="report" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public abstract void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public byte[] Render (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Render(string format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public byte[] Render (string format, string deviceInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Render(string format, string deviceInfo) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public byte[] Render (string format, string deviceInfo, out string mimeType, out string encoding, out string fileNameExtension, out string[] streams, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Render(string format, string deviceInfo, string mimeType, string encoding, string fileNameExtension, string[] streams, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="encoding" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="streams" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="fileNameExtension">To be added.</param>
+        <param name="streams">To be added.</param>
+        <param name="warnings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public abstract byte[] Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.PageCountMode pageCountMode, out string mimeType, out string encoding, out string fileNameExtension, out string[] streams, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] Render(string format, string deviceInfo, valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode, string mimeType, string encoding, string fileNameExtension, string[] streams, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="encoding" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="streams" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="pageCountMode">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="fileNameExtension">To be added.</param>
+        <param name="streams">To be added.</param>
+        <param name="warnings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParameters">
+      <MemberSignature Language="C#" Value="public void SetParameters (Microsoft.Reporting.WebForms.ReportParameter parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParameters(class Microsoft.Reporting.WebForms.ReportParameter parameter) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="Microsoft.Reporting.WebForms.ReportParameter" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParameters">
+      <MemberSignature Language="C#" Value="public abstract void SetParameters (System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WebForms.ReportParameter&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetParameters(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Reporting.WebForms.ReportParameter&gt; parameters) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WebForms.ReportParameter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

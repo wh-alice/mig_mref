@@ -1,0 +1,45 @@
+<Type Name="PageCountMode" FullName="Microsoft.Reporting.WebForms.PageCountMode">
+  <TypeSignature Language="C#" Value="public enum PageCountMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageCountMode extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Actual">
+      <MemberSignature Language="C#" Value="Actual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Reporting.WebForms.PageCountMode Actual = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.PageCountMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Estimate">
+      <MemberSignature Language="C#" Value="Estimate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Reporting.WebForms.PageCountMode Estimate = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.PageCountMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

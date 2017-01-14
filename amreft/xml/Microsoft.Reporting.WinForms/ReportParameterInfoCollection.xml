@@ -1,0 +1,46 @@
+<Type Name="ReportParameterInfoCollection" FullName="Microsoft.Reporting.WinForms.ReportParameterInfoCollection">
+  <TypeSignature Language="C#" Value="public sealed class ReportParameterInfoCollection : System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Reporting.WinForms.ReportParameterInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReportParameterInfoCollection extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class Microsoft.Reporting.WinForms.ReportParameterInfo&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;Microsoft.Reporting.WinForms.ReportParameterInfo&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">Microsoft.Reporting.WinForms.ReportParameterInfo</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WinForms.ReportParameterInfo this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WinForms.ReportParameterInfo Item(string)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.ReportParameterInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

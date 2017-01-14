@@ -1,0 +1,17 @@
+<Type Name="SoapVersionMismatchException" FullName="Microsoft.Reporting.WinForms.SoapVersionMismatchException">
+  <TypeSignature Language="C#" Value="public sealed class SoapVersionMismatchException : Microsoft.Reporting.WinForms.ReportServerException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SoapVersionMismatchException extends Microsoft.Reporting.WinForms.ReportServerException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Reporting.WinForms.ReportServerException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,147 @@
+<Type Name="IReportViewerMessages2" FullName="Microsoft.Reporting.WebForms.IReportViewerMessages2">
+  <TypeSignature Language="C#" Value="public interface IReportViewerMessages2 : Microsoft.Reporting.WebForms.IReportViewerMessages" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReportViewerMessages2 implements class Microsoft.Reporting.WebForms.IReportViewerMessages" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Reporting.WebForms.IReportViewerMessages</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientNoScript">
+      <MemberSignature Language="C#" Value="public string ClientNoScript { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientNoScript" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientPrintControlLoadFailed">
+      <MemberSignature Language="C#" Value="public string ClientPrintControlLoadFailed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientPrintControlLoadFailed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CredentialMissingUserNameError">
+      <MemberSignature Language="C#" Value="public string CredentialMissingUserNameError (string dataSourcePrompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CredentialMissingUserNameError(string dataSourcePrompt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataSourcePrompt" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dataSourcePrompt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalizedNameForRenderingExtension">
+      <MemberSignature Language="C#" Value="public string GetLocalizedNameForRenderingExtension (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLocalizedNameForRenderingExtension(string format) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterDropDownToolTip">
+      <MemberSignature Language="C#" Value="public string ParameterDropDownToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterDropDownToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterMissingSelectionError">
+      <MemberSignature Language="C#" Value="public string ParameterMissingSelectionError (string parameterPrompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ParameterMissingSelectionError(string parameterPrompt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterPrompt" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameterPrompt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterMissingValueError">
+      <MemberSignature Language="C#" Value="public string ParameterMissingValueError (string parameterPrompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ParameterMissingValueError(string parameterPrompt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameterPrompt" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameterPrompt">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

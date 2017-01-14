@@ -1,0 +1,17 @@
+<Type Name="ClientRenderingException" FullName="Microsoft.Reporting.WinForms.ClientRenderingException">
+  <TypeSignature Language="C#" Value="public sealed class ClientRenderingException : Microsoft.Reporting.WinForms.ReportViewerException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ClientRenderingException extends Microsoft.Reporting.WinForms.ReportViewerException" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Reporting.WinForms.ReportViewerException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

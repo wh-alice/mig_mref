@@ -1,0 +1,20 @@
+<Type Name="ReportViewerCookieCollection" FullName="Microsoft.Reporting.WebForms.ReportViewerCookieCollection">
+  <TypeSignature Language="C#" Value="public sealed class ReportViewerCookieCollection : Microsoft.Reporting.WebForms.SyncList&lt;System.Net.Cookie&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ReportViewerCookieCollection extends Microsoft.Reporting.WebForms.SyncList`1&lt;class System.Net.Cookie&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Reporting.WebForms.SyncList&lt;System.Net.Cookie&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TListType">System.Net.Cookie</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,31 @@
+<Type Name="CreateStreamCallback" FullName="Microsoft.Reporting.WebForms.CreateStreamCallback">
+  <TypeSignature Language="C#" Value="public delegate System.IO.Stream CreateStreamCallback(string name, string extension, Encoding encoding, string mimeType, bool willSeek);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreateStreamCallback extends System.MulticastDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WebForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="name" Type="System.String" />
+    <Parameter Name="extension" Type="System.String" />
+    <Parameter Name="encoding" Type="System.Text.Encoding" />
+    <Parameter Name="mimeType" Type="System.String" />
+    <Parameter Name="willSeek" Type="System.Boolean" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IO.Stream</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="name">To be added.</param>
+    <param name="extension">To be added.</param>
+    <param name="encoding">To be added.</param>
+    <param name="mimeType">To be added.</param>
+    <param name="willSeek">To be added.</param>
+    <summary>To be added.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

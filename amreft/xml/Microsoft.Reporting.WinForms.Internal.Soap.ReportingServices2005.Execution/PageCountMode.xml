@@ -1,0 +1,56 @@
+<Type Name="PageCountMode" FullName="Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode">
+  <TypeSignature Language="C#" Value="public enum PageCountMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PageCountMode extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CodeDom.Compiler.GeneratedCode("wsdl", "2.0.50727.42")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/sqlserver/2005/06/30/reporting/reportingservices")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Actual">
+      <MemberSignature Language="C#" Value="Actual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode Actual = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Estimate">
+      <MemberSignature Language="C#" Value="Estimate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode Estimate = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution.PageCountMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

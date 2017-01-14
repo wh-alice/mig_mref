@@ -1,0 +1,137 @@
+<Type Name="IReportViewerMessages3" FullName="Microsoft.Reporting.WinForms.IReportViewerMessages3">
+  <TypeSignature Language="C#" Value="public interface IReportViewerMessages3 : Microsoft.Reporting.WinForms.IReportViewerMessages2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReportViewerMessages3 implements class Microsoft.Reporting.WinForms.IReportViewerMessages, class Microsoft.Reporting.WinForms.IReportViewerMessages2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.ReportViewer.WinForms</AssemblyName>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Reporting.WinForms.IReportViewerMessages2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CancelLinkText">
+      <MemberSignature Language="C#" Value="public string CancelLinkText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CancelLinkText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportDialogCancelButton">
+      <MemberSignature Language="C#" Value="public string ExportDialogCancelButton { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExportDialogCancelButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportDialogStatusText">
+      <MemberSignature Language="C#" Value="public string ExportDialogStatusText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExportDialogStatusText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportDialogTitle">
+      <MemberSignature Language="C#" Value="public string ExportDialogTitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExportDialogTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FalseBooleanToolTip">
+      <MemberSignature Language="C#" Value="public string FalseBooleanToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FalseBooleanToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalPages">
+      <MemberSignature Language="C#" Value="public string TotalPages (int pageCount, Microsoft.Reporting.WinForms.PageCountMode pageCountMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string TotalPages(int32 pageCount, valuetype Microsoft.Reporting.WinForms.PageCountMode pageCountMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageCount" Type="System.Int32" />
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WinForms.PageCountMode" />
+      </Parameters>
+      <Docs>
+        <param name="pageCount">To be added.</param>
+        <param name="pageCountMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueBooleanToolTip">
+      <MemberSignature Language="C#" Value="public string TrueBooleanToolTip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrueBooleanToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
