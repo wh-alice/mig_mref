@@ -9,7 +9,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The severity level of the warning is `Warning`.</summary>
+    <summary>Specifies the severity of a warning.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -29,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.Severity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The severity level of the warning is `Error`.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.Severity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The severity level of the warning is `Warning`.</summary>
       </Docs>
     </Member>
   </Members>

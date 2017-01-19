@@ -9,7 +9,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates a descending sort.</summary>
+    <summary>Indicates the direction of a sort operation.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -29,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates an ascending sort.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates a descending sort.</summary>
       </Docs>
     </Member>
   </Members>

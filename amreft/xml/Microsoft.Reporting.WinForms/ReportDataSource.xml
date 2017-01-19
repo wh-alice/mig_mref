@@ -10,17 +10,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Gets or sets the instance of the report data source.</summary>
+    <summary>Represents a data source for a report.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
- Value may be an instance of &lt;xref:System.Data.DataTable&gt;, a &lt;xref:System.Collections.IEnumerable&gt; value (for example, &lt;xref:System.Data.DataView&gt; or &lt;xref:System.Array&gt;), or a &lt;xref:System.Windows.Forms.BindingSource&gt;.  
+ The ReportDataSource class is used with the &lt;xref:Microsoft.Reporting.WinForms.LocalReport.DataSources%2A&gt; collection of a &lt;xref:Microsoft.Reporting.WinForms.LocalReport&gt; object to add one or more required data sources to a local report. This is necessary when adding a report to the ReportViewer control.  
   
- If this value is an instance of &lt;xref:System.Collections.IEnumerable&gt;, all elements in the collection must be of the same type, and names of the public properties of the element (as retrieved by the &lt;xref:System.ComponentModel.TypeDescriptor.GetProperties%2A&gt; method) must match the field names of the corresponding report data source.  
+   
   
- Value may also be an instance of &lt;xref:System.Type&gt;. In this case, an instance of the supplied type is automatically created and added to an automatically created collection.  
-  
- If the type of Value is not any of the aforementioned types, this property throws an exception.  
+## Examples  
+ For code examples, see &lt;xref:Microsoft.Reporting.WinForms.LocalReport&gt;.  
   
  ]&gt;</remarks>
   </Docs>
@@ -34,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructs an empty data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -50,7 +49,7 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +67,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with an &lt;xref:System.Collections.IEnumerable&gt; object in the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +85,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with a &lt;xref:System.Data.DataTable&gt; object in the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,8 +103,24 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Constructs a named data source with a value.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; may be an instance of &lt;xref:System.Data.DataTable&gt;, a &lt;xref:System.Collections.IEnumerable&gt; value (for example, &lt;xref:System.Data.DataView&gt; or &lt;xref:System.Array&gt;), or a &lt;xref:System.Windows.Forms.BindingSource&gt;.  
+  
+ If this value is an instance of &lt;xref:System.Collections.IEnumerable&gt;, all elements in the collection must be of the same type, and names of the public properties of the element (as retrieved by the &lt;xref:System.ComponentModel.TypeDescriptor.GetProperties%2A&gt; method) must match the field names of the corresponding report data source.  
+  
+ &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; may also be an instance of &lt;xref:System.Type&gt;. In this case, an instance of the supplied type is automatically created and added to an automatically created collection.  
+  
+ If the type of &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; is not any of the aforementioned types, it is added to an automatically created collection.  
+  
+   
+  
+## Examples  
+ For code examples, see &lt;xref:Microsoft.Reporting.WinForms.LocalReport&gt;.  
+  
+ ]&gt;</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,7 +137,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property initialized as a particular type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +155,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with a &lt;xref:System.Windows.Forms.BindingSource&gt; object in the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +178,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the name of the report data source.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,9 +194,20 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the instance of the report data source.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Value may be an instance of &lt;xref:System.Data.DataTable&gt;, a &lt;xref:System.Collections.IEnumerable&gt; value (for example, &lt;xref:System.Data.DataView&gt; or &lt;xref:System.Array&gt;), or a &lt;xref:System.Windows.Forms.BindingSource&gt;.  
+  
+ If this value is an instance of &lt;xref:System.Collections.IEnumerable&gt;, all elements in the collection must be of the same type, and names of the public properties of the element (as retrieved by the &lt;xref:System.ComponentModel.TypeDescriptor.GetProperties%2A&gt; method) must match the field names of the corresponding report data source.  
+  
+ Value may also be an instance of &lt;xref:System.Type&gt;. In this case, an instance of the supplied type is automatically created and added to an automatically created collection.  
+  
+ If the type of Value is not any of the aforementioned types, this property throws an exception.  
+  
+ ]&gt;</remarks>
       </Docs>
     </Member>
   </Members>

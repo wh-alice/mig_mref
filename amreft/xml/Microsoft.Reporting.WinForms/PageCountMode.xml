@@ -9,7 +9,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Provide an estimate of the page count for the report instead of calculating the actual page count.</summary>
+    <summary>Represents values that control whether to calculate the actual page count or use an estimate.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -34,7 +34,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.PageCountMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Calculate the actual page count for the report.</summary>
       </Docs>
     </Member>
     <Member MemberName="Estimate">
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.PageCountMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provide an estimate of the page count for the report instead of calculating the actual page count.</summary>
       </Docs>
     </Member>
   </Members>

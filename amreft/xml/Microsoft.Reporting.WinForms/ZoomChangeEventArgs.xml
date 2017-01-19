@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Gets the zoom percentage value specified for the &lt;see cref="T:Microsoft.Reporting.WinForms.ZoomChangeEventArgs"&gt; event.</summary>
+    <summary>Provides data for a &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.ZoomChange"&gt; event.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -38,7 +38,7 @@
       <Docs>
         <param name="zoomMode">To be added.</param>
         <param name="zoomPercent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a new `ZoomChangeEventArgs` object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ZoomMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the zoom mode select for the &lt;see cref="T:Microsoft.Reporting.WinForms.ZoomChangeEventArgs"&gt; event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,7 +69,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the zoom percentage value specified for the &lt;see cref="T:Microsoft.Reporting.WinForms.ZoomChangeEventArgs"&gt; event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

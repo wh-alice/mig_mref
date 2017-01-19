@@ -9,7 +9,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>A valid value for the parameter does not exist.</summary>
+    <summary>Specifies the state of a parameter.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -29,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter values are unavailable. This state indicates that no valid, query-based values were returned as a result of the query.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasOutstandingDependencies">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The parameter has outstanding dependencies. This generally occurs when the valid values or the default value of a parameter is query-based and dependencies exist that have not been submitted to the M:Microsoft.Reporting.WinForms.Report.GetParameters?qualifyHint=False&amp;autoUpgrade=True method.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasValidValue">
@@ -57,7 +57,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A valid value for the parameter exists.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingValidValue">
@@ -71,7 +71,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A valid value for the parameter does not exist.</summary>
       </Docs>
     </Member>
   </Members>

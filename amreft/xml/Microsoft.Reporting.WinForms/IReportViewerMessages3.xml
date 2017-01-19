@@ -11,11 +11,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Gets the tooltip text for the radio button that indicates `true` for a `Boolean` parameter.</summary>
+    <summary>Allows applications to provide customized user interface messages.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
- When the total number of pages is an estimated total, the returned string replaces both the page count and the default `?` symbol in the toolbar.  
+ You can implement the IReportViewerMessages3 interface to provide custom localization of the **ReportViewer** control user interface. This implementation can be passed to the **ReportViewer** control by setting the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Messages%2A&gt; property of the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt; control. The IReportViewerMessages3 interface does not allow customization of local or server report processing error messages.  
+  
+ Returning a `null` string value for a property will cause the **ReportViewer** control to display the original user interface string for that item.  
   
  ]&gt;</remarks>
   </Docs>
@@ -31,7 +33,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text of the **Cancel** link in the wait control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -47,7 +49,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text displayed on the **Cancel** button in the **Exporting** dialog box after the user selects an export format.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,7 +65,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text displayed in the **Exporting** dialog box after the user selects an export format and that indicates that the export is in progress and the user must wait for it to complete.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the title of the **Exporting** dialog box that opens after the user selects an export format.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +97,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the tooltip text for the radio button that indicates `false` for a `Boolean` parameter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,9 +119,14 @@
       <Docs>
         <param name="pageCount">To be added.</param>
         <param name="pageCountMode">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the string in the default toolbar that represents the total number of pages in the current report and the &lt;see cref="T:Microsoft.Reporting.WinForms.PageCountMode"&gt; that was used to determine it.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ When the total number of pages is an estimated total, the returned string replaces both the page count and the default `?` symbol in the toolbar.  
+  
+ ]&gt;</remarks>
       </Docs>
     </Member>
     <Member MemberName="TrueBooleanToolTip">
@@ -133,7 +140,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the tooltip text for the radio button that indicates `true` for a `Boolean` parameter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -9,7 +9,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies that the control is in print layout mode. In this mode, the control displays physical pages.</summary>
+    <summary>Represents a possible display mode for the ReportViewer control.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -29,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.DisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control is in normal mode. This mode causes the control to display logical pages.</summary>
       </Docs>
     </Member>
     <Member MemberName="PrintLayout">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.DisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the control is in print layout mode. In this mode, the control displays physical pages.</summary>
       </Docs>
     </Member>
   </Members>

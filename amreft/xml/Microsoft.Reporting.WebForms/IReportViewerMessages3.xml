@@ -11,7 +11,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Returns the string in the default toolbar that represents the total number of pages in the current report and the page count mode that is used.</summary>
+    <summary>Allows applications to provide customized user interface messages.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -44,7 +44,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text displayed in the date and time picker when the control waits for the Web server to generate a calendar for a given month.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,7 +60,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text of the **Cancel** link in the wait control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +82,7 @@
       <Docs>
         <param name="pageCount">To be added.</param>
         <param name="pageCountMode">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the string in the default toolbar that represents the total number of pages in the current report and the page count mode that is used.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

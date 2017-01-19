@@ -9,7 +9,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>The current content type displayed in the report area is unknown. For more information, see P:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType?qualifyHint=False&amp;autoUpgrade=True.</summary>
+    <summary>Specifies the type of content displayed in the report area.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -29,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The report area displays an error message.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The report area displays nothing.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReportPage">
@@ -57,7 +57,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The report area displays a report page.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -71,7 +71,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current content type displayed in the report area is unknown. For more information, see P:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType?qualifyHint=False&amp;autoUpgrade=True.</summary>
       </Docs>
     </Member>
   </Members>

@@ -9,13 +9,11 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies remote processing mode against a Reporting Services report server.</summary>
+    <summary>Used to specify the processing mode of the ReportViewer control.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
-  
-&gt; [!NOTE]
-&gt;  The ReportViewer control will work in `Remote` mode only with a Microsoft SQL Server 2005 report server.  
+ This enumerator is used to set the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode%2A&gt; property of the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt; control.  
   
  ]&gt;</remarks>
   </Docs>
@@ -31,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ProcessingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that the report will be processed and rendered using the reporting engine provided by the ReportViewer control.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remote">
@@ -45,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ProcessingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies remote processing mode against a Reporting Services report server.</summary>
       </Docs>
     </Member>
   </Members>

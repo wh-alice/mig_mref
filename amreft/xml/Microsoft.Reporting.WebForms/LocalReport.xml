@@ -17,8 +17,1013 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Occurs when a subreport is processed.</summary>
+    <summary>Represents a report that is processed and rendered locally without connecting to a report server.</summary>
     <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The LocalReport class represents reports that are processed and rendered locally without connecting to a report server. This class is the same object that is used by the **ReportViewer** control, but it also can be used independently as a non-visual object that encapsulates the core functionality of the **ReportViewer** control.  
+  
+ The LocalReport object can open client report definition (RDLC) files from the file system or from embedded resources, or the RDLC file can be supplied to it as a &lt;xref:System.IO.Stream&gt; or a &lt;xref:System.IO.TextReader&gt;.  
+  
+ The LocalReport object does not have the ability to execute queries or fetch data; instead data sources must be added to the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.DataSources%2A&gt; collection property.  
+  
+ The LocalReport object supports report parameters, but does not support parameter prompts  
+  
+   
+  
+## Examples  
+ In the following code example, a LocalReport object is used to load and export a report.  
+  
+```c#  
+protected void Button1_Click(object sender, EventArgs e)  
+{  
+  
+   Microsoft.Reporting.WebForms.LocalReport lr =   
+     new Microsoft.Reporting.WebForms.LocalReport();  
+  
+   string deviceInfo =  
+     "&lt;DeviceInfo&gt;" +  
+     "&lt;SimplePageHeaders&gt;True&lt;/SimplePageHeaders&gt;" +   
+     "&lt;/DeviceInfo&gt;";  
+  
+   lr.ReportPath = @"C:\My Reports\Monthly Sales.rdlc";  
+  
+   lr.DataSources.Add(new ReportDataSource("Sales", GetSalesData()));  
+  
+   byte[] bytes = lr.Render("Excel", deviceInfo, out mimeType,   
+     out encoding, out streamids, out warnings);  
+  
+      using (FileStream fs = new FileStream(@"c:\My Reports\Monthly Sales.xls", FileMode.Create))  
+      {  
+        fs.Write(bytes, 0, bytes.Length);  
+      }  
+}  
+```  
+  
+```vb#  
+Protected Sub Button1_Click(ByVal sender As Object, _  
+   ByVal e As System.EventArgs) Handles Button1.Click  
+   Dim warnings As Warning() = Nothing  
+   Dim streamids As String() = Nothing  
+   Dim mimeType As String = Nothing  
+   Dim encoding As String = Nothing  
+   Dim extension As String = Nothing  
+   Dim deviceInfo as string  
+   Dim bytes As Byte()  
+  
+   Dim lr As New Microsoft.Reporting.WebForms.LocalReport  
+  
+   lr.ReportPath = "C:\My Reports\Monthly Sales.rdlc"  
+  
+   lr.DataSources.Add(New ReportDataSource("Sales", GetSalesData()))  
+  
+   deviceInfo = _  
+"&lt;DeviceInfo&gt;&lt;SimplePageHeaders&gt;True&lt;/SimplePageHeaders&gt;&lt;/DeviceInfo&gt;"  
+  
+   bytes = ReportViewer1.LocalReport.Render("Excel", deviceInfo,_  
+      mimeType, encoding, extension, streamids, warnings)  
+  
+   Dim fs As New FileStream("c:\output.xls", FileMode.Create)  
+   fs.Write(bytes, 0, bytes.Length)  
+  
+End Sub  
+  
+```  
+  
+ ]&gt;</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalReport ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the &lt;see cref="T:Microsoft.Reporting.WebForms.LocalReport"&gt; class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFullTrustModuleInSandboxAppDomain">
+      <MemberSignature Language="C#" Value="public void AddFullTrustModuleInSandboxAppDomain (System.Security.Policy.StrongName assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFullTrustModuleInSandboxAppDomain(class System.Security.Policy.StrongName assemblyName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.Security.Policy.StrongName" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">To be added.</param>
+        <summary>Adds the supplied assembly to the list of assemblies that run in full trust mode in the sandboxed application domain.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This method allows the specified assembly to be referenced by the report. The specified assembly will be granted `FullTrust` permissions in the sandboxed application domain. You should use this method instead of &lt;xref:Microsoft.Reporting.WebForms.LocalReport.AddTrustedCodeModuleInCurrentAppDomain%2A&gt;. In [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ExecuteReportInSandboxAppDomain%2A&gt; method to switch to the sandboxed application domain mode.  
+  
+ By default, only the assemblies in [!INCLUDE[ssRSnoversion](../Token/ssRSnoversion_md.md)] are given full trust.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTrustedCodeModuleInCurrentAppDomain">
+      <MemberSignature Language="C#" Value="public void AddTrustedCodeModuleInCurrentAppDomain (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTrustedCodeModuleInCurrentAppDomain(string assemblyName) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method requires Code Access Security policy, which is deprecated.  For more information please go to http://go.microsoft.com/fwlink/?LinkId=160787.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">To be added.</param>
+        <summary>Adds the supplied assembly to the list of assemblies that are trusted to execute in the current &lt;xref:System.AppDomain&gt;.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+  
+&gt; [!IMPORTANT]
+&gt;  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. You should use &lt;xref:Microsoft.Reporting.WebForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A&gt; and &lt;xref:Microsoft.Reporting.WebForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A&gt;. If you want to continue to use this method with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4, you must use the  in the Web.config file of your ASP.NET application. Otherwise, this method will throw an &lt;xref:System.InvalidOperationException&gt;.  
+&gt;   
+&gt;  This method will continue to work with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5.  
+&gt;   
+&gt;  For more information, see [Code Access Security Policy Compatibility and Migration](../Topic/Code%20Access%20Security%20Policy%20Compatibility%20and%20Migration.md).  
+  
+ Expressions in the report will be executed in the current &lt;xref:System.AppDomain&gt; with only the **Execution** security permission flag. By default, custom assemblies are not allowed in this mode. The AddTrustedCodeModuleInCurrentAppDomain method can be used to allow the use of custom assemblies in the current &lt;xref:System.AppDomain&gt;.  
+  
+ The name of the assembly passed in the `assemblyName` parameter should match that specified in the `CodeModule` element of the report definition file.  
+  
+   
+  
+## Examples  
+ In this example, a custom assembly containing a simple utility function that calculates factorials is used as an expression in a report.  
+  
+```c#  
+public class Util  
+{  
+    public static int Factorial(int n)  
+    {  
+        return ((n &lt;= 1) ? 1 : (n * Factorial(n - 1)));   
+    }  
+}  
+```  
+  
+ The following code is used to add the custom assembly to the current &lt;xref:System.AppDomain&gt;.  
+  
+```c#  
+reportViewer.LocalReport.ReportPath = "Report1.rdlc";  
+  
+reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(  
+   "Contoso.Utilities,   
+   Version=1.0.271.0, Culture=neutral,  
+   PublicKeyToken=89012dab8080cc90");  
+```  
+  
+ For more information on custom assemblies, see "Using Custom Assemblies with Reports" in the SQL Server Books Online.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSources">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WebForms.ReportDataSourceCollection DataSources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WebForms.ReportDataSourceCollection DataSources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.WebControls.WebParts.WebBrowsable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.ReportDataSourceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of data sources used by the report.</summary>
+        <value>To be added.</value>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Although the collection property is ready only, you can add or remove data sources in the returned &lt;xref:Microsoft.Reporting.WebForms.ReportDataSourceCollection&gt; object.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources that are used by the &lt;see cref="T:Microsoft.Reporting.WebForms.LocalReport"&gt; object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableExternalImages">
+      <MemberSignature Language="C#" Value="public bool EnableExternalImages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableExternalImages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Security")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the report can be rendered if it has external images.</summary>
+        <value>To be added.</value>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ If this property is set to `false`, then attempting to render a report that has external images will result in a &lt;xref:Microsoft.Reporting.WebForms.ReportSecurityException&gt;.  
+  
+&gt; [!IMPORTANT]
+&gt;  Local reports that contain external images are not allowed to execute by default. Setting this property to true will enable local reports with external images to execute. This can be a security risk.  You should not enable this property on non-trusted reports.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableHyperlinks">
+      <MemberSignature Language="C#" Value="public bool EnableHyperlinks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableHyperlinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Security")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the report can be rendered if it contains hyperlink actions.</summary>
+        <value>To be added.</value>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ If this property is set to `false`, then attempting to render a report that has external images will result in a &lt;xref:Microsoft.Reporting.WebForms.ReportSecurityException&gt;.  
+  
+&gt; [!IMPORTANT]
+&gt;  Local reports that contain hyperlinks are not allowed to execute by default. Setting this property to true will enable local reports with hyperlinks to execute. This can be a security risk.  You should not enable this property on non-trusted reports.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteReportInCurrentAppDomain">
+      <MemberSignature Language="C#" Value="public void ExecuteReportInCurrentAppDomain (System.Security.Policy.Evidence reportEvidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteReportInCurrentAppDomain(class System.Security.Policy.Evidence reportEvidence) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method requires Code Access Security policy, which is deprecated.  For more information please go to http://go.microsoft.com/fwlink/?LinkId=160787.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportEvidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="reportEvidence">To be added.</param>
+        <summary>Causes processing extensions and expressions in the report to be executed in the current &lt;xref:System.AppDomain&gt;.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+  
+&gt; [!IMPORTANT]
+&gt;  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. You should use &lt;xref:Microsoft.Reporting.WebForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A&gt; and &lt;xref:Microsoft.Reporting.WebForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A&gt;. If you want to continue to use this method with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4, you must use the  in the Web.config file of your ASP.NET application. Otherwise, this method will throw an &lt;xref:System.InvalidOperationException&gt;.  
+&gt;   
+&gt;  For more information, see [Code Access Security Policy Compatibility and Migration](../Topic/Code%20Access%20Security%20Policy%20Compatibility%20and%20Migration.md).  
+  
+ Expressions in the report will be run in the current &lt;xref:System.AppDomain&gt; with only the **Execution** security permission flag. By default, custom assemblies are not allowed in this mode. In [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5, this is the default mode and is the mode to use for trusted reports. See the table below for the default application domain modes in different [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] versions.  
+  
+|||||  
+|-|-|-|-|  
+|[!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] Version|LegacySecurityPolicy Enabled?|Default Application Domain|Useable Application Domain Modes|  
+|4|No (Default)|Sandboxed|Sandboxed|  
+|4|Yes|Current|Sandboxed and current|  
+|3.5|N/A|Current|Sandboxed and current|  
+  
+ This mode may also be used to run untrusted reports that do use trusted processing extensions.  
+  
+ To allow trusted processing extensions, the application must call &lt;xref:Microsoft.Reporting.WebForms.LocalReport.AddTrustedCodeModuleInCurrentAppDomain%2A&gt;.  
+  
+   
+  
+## Examples  
+ In this example, a custom assembly containing a simple utility function that reads some data from a text file is used as an expression in a report.  
+  
+```c#  
+using System.IO;  
+using System.Reflection;  
+  
+public class Util  
+{  
+    public static string GetData()  
+    {  
+        StreamReader sr = new StreamReader("data.txt");  
+        string data = sr.ReadToEnd();  
+        sr.Close();  
+        return data;  
+    }  
+}  
+```  
+  
+ The following code is used to allow the report with the custom assembly to execute in the current &lt;xref:System.AppDomain&gt;.  
+  
+```c#  
+reportViewer.LocalReport.ReportPath = "Report1.rdlc";  
+reportViewer.LocalReport.ExecuteReportInCurrentAppDomain(  
+      Assembly.GetExecutingAssembly().Evidence);  
+reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utilities,   
+      Version=1.0.271.0, Culture=neutral, PublicKeyToken=89012dab8080cc90");  
+```  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteReportInSandboxAppDomain">
+      <MemberSignature Language="C#" Value="public void ExecuteReportInSandboxAppDomain ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteReportInSandboxAppDomain() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method requires Code Access Security policy, which is deprecated.  For more information please go to http://go.microsoft.com/fwlink/?LinkId=160787.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes processing extensions and expressions to be run with limited permissions in an application domain.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+  
+&gt; [!IMPORTANT]
+&gt;  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. To set the base permissions for the sandboxed application domain, use &lt;xref:Microsoft.Reporting.WebForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A&gt;. To allow full-trust processing extensions, use &lt;xref:Microsoft.Reporting.WebForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A&gt;.  
+&gt;   
+&gt;  When used with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4, this method has no effect unless you use the  in the Web.config file of your ASP.NET application. This scenario is only applicable if you want to switch between the sandboxed application domain and current application domain modes.  
+&gt;   
+&gt;  For more information, see [Code Access Security Policy Compatibility and Migration](../Topic/Code%20Access%20Security%20Policy%20Compatibility%20and%20Migration.md).  
+  
+ See the table below for the default application domain modes in different [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] versions.  
+  
+|||||  
+|-|-|-|-|  
+|[!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] Version|LegacySecurityPolicy Enabled?|Default Application Domain|Useable Application Domain Modes|  
+|4|No (Default)|Sandboxed|Sandboxed|  
+|4|Yes|Current|Sandboxed and current|  
+|3.5|N/A|Current|Sandboxed and current|  
+  
+ This mode is designed to enable untrusted reports that use untrusted processing extensions to run securely.  
+  
+ This mode negatively impacts performance.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataSourceNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; GetDataSourceNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;string&gt; GetDataSourceNames() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the names of all datasets used within the local report.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultPageSettings">
+      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WebForms.ReportPageSettings GetDefaultPageSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WebForms.ReportPageSettings GetDefaultPageSettings() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.ReportPageSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the default page settings specified in the local report.</summary>
+        <returns>To be added.</returns>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The returned &lt;xref:Microsoft.Reporting.WebForms.ReportPageSettings&gt; object can be used to pass page margin and page size information through a `deviceInfo` argument that is passed to the [M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String\[\]@,Microsoft.Reporting.WebForms.Warning\[\]@)](assetId:///M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)?qualifyHint=False&amp;autoUpgrade=True) method.  
+  
+   
+  
+## Examples  
+  
+```vb#  
+Private Sub Button2_Click(ByVal sender As System.Object, _  
+   ByVal e As System.EventArgs) Handles Button2.Click  
+   Dim pageSettings As ReportPageSettings  
+  
+   pageSettings = ReportViewer1.LocalReport.GetDefaultPageSettings  
+  
+   Debug.WriteLine(pageSettings.Margins.Top)  
+   Debug.WriteLine(pageSettings.Margins.Bottom)  
+   Debug.WriteLine(pageSettings.Margins.Left)  
+   Debug.WriteLine(pageSettings.Margins.Right)  
+   Debug.WriteLine(pageSettings.PaperSize.Kind)  
+   Debug.WriteLine(pageSettings.PaperSize.RawKind)  
+   Debug.WriteLine(pageSettings.PaperSize.PaperName)  
+   Debug.WriteLine(pageSettings.PaperSize.Height)  
+   Debug.WriteLine(pageSettings.PaperSize.Width)  
+  
+End Sub  
+```  
+  
+```  
+   Debug.WriteLine(pageSettings.Margins.Top)  
+   Debug.WriteLine(pageSettings.Margins.Bottom)  
+   Debug.WriteLine(pageSettings.Margins.Left)  
+   Debug.WriteLine(pageSettings.Margins.Right)  
+   Debug.WriteLine(pageSettings.PaperSize.Kind)  
+   Debug.WriteLine(pageSettings.PaperSize.RawKind)  
+   Debug.WriteLine(pageSettings.PaperSize.PaperName)  
+   Debug.WriteLine(pageSettings.PaperSize.Height)  
+   Debug.WriteLine(pageSettings.PaperSize.Width)  
+  
+End Sub  
+```  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameters">
+      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WebForms.ReportParameterInfoCollection GetParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WebForms.ReportParameterInfoCollection GetParameters() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.ReportParameterInfoCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns report parameter properties for the report.</summary>
+        <returns>To be added.</returns>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The GetParameters method can also be used to validate parameter values against parameters for a local report if valid values have been supplied.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalPages">
+      <MemberSignature Language="C#" Value="public override int GetTotalPages (out Microsoft.Reporting.WebForms.PageCountMode pageCountMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetTotalPages(valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pageCountMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListRenderingExtensions">
+      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WebForms.RenderingExtension[] ListRenderingExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WebForms.RenderingExtension[] ListRenderingExtensions() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.RenderingExtension[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns all available rendering extensions for the local report.</summary>
+        <returns>To be added.</returns>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This method can be used to populate drop-down lists to allow users to select a rendering extension for export.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadReportDefinition">
+      <MemberSignature Language="C#" Value="public override void LoadReportDefinition (System.IO.TextReader report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadReportDefinition(class System.IO.TextReader report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="report" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="report">To be added.</param>
+        <summary>Loads a report definition from the local file system using a &lt;xref:System.IO.TextReader&gt;.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The LoadReportDefinition method can be used in cases where the report definition is dynamically generated.  
+  
+ If the loaded report definition contains any subreports, you must call &lt;xref:Microsoft.Reporting.WebForms.LocalReport.LoadSubreportDefinition%2A&gt; and provide data for any subreports.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSubreportDefinition">
+      <MemberSignature Language="C#" Value="public void LoadSubreportDefinition (string reportName, System.IO.Stream report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadSubreportDefinition(string reportName, class System.IO.Stream report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportName" Type="System.String" />
+        <Parameter Name="report" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="reportName">To be added.</param>
+        <param name="report">To be added.</param>
+        <summary>Loads a subreport definition using a &lt;xref:System.IO.Stream&gt;.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The **ReportViewer** control requires the definitions for all subreports before it can process a report. If the local report was loaded from the file system by specifying the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ReportPath%2A&gt; property or loaded from an embedded resource by specifying the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource%2A&gt; property, the **ReportViewer** control automatically loads the subreports from the file system or embedded resource, respectively. In cases where the local report was loaded from a stream, these methods may be used to load subreport definitions.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSubreportDefinition">
+      <MemberSignature Language="C#" Value="public void LoadSubreportDefinition (string reportName, System.IO.TextReader report);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadSubreportDefinition(string reportName, class System.IO.TextReader report) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reportName" Type="System.String" />
+        <Parameter Name="report" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="reportName">To be added.</param>
+        <param name="report">To be added.</param>
+        <summary>Loads a subreport definition using a &lt;xref:System.IO.TextReader&gt;.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The **ReportViewer** control requires the report definitions for all subreports be available before it can process a report. If the local report was loaded from the file system by specifying the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ReportPath%2A&gt; property or loaded from an embedded resource by specifying the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource%2A&gt; property, the **ReportViewer** control automatically loads the subreports from the file system or embedded resource, respectively. In cases where the local report was loaded from a stream, these methods can be used to load report definitions for subreports.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapTileServerConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WebForms.MapTileServerConfiguration MapTileServerConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WebForms.MapTileServerConfiguration MapTileServerConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.MapTileServerConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines configuration settings for Microsoft Bing Maps SOAP Services that provides a tile background for map report items in the report.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalParametersToDrillthrough">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Reporting.WebForms.ReportParameter&gt; OriginalParametersToDrillthrough { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Reporting.WebForms.ReportParameter&gt; OriginalParametersToDrillthrough" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WebForms.ReportParameter&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the parameters passed from a parent report to this report, if it is a drillthrough report.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the local report to be rendered with new data.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The Refresh method reprocesses the report and reloads the data from the report data sources.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseSandboxAppDomain">
+      <MemberSignature Language="C#" Value="public void ReleaseSandboxAppDomain ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseSandboxAppDomain() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the &lt;see cref="T:Microsoft.Reporting.WebForms.LocalReport"&gt; object to release its reference to the sandboxed application domain immediately.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ In local processing mode, the report viewer loads the expression host assembly into either the current application domain or a sandboxed application domain based on the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] version (see &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ExecuteReportInSandboxAppDomain%2A&gt;). The sandboxed application domain is shared by multiple instances of the &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; class. By default, &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; causes the application domain to expire after a set time to reclaim memory.  
+  
+ Use this method to force the &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; object to release its reference to the sandboxed application domain immediately and help reduce the time it takes for memory to be reclaimed.  
+  
+ If the &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; object requires the sandboxed application domain after the sandboxed application domain has already expired, the &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; object will create a new one.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public void Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.CreateStreamCallback createStream, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(string format, string deviceInfo, class Microsoft.Reporting.WebForms.CreateStreamCallback createStream, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="createStream" Type="Microsoft.Reporting.WebForms.CreateStreamCallback" />
+        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="createStream">To be added.</param>
+        <param name="warnings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public void Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.PageCountMode pageCountMode, Microsoft.Reporting.WebForms.CreateStreamCallback createStream, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(string format, string deviceInfo, valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode, class Microsoft.Reporting.WebForms.CreateStreamCallback createStream, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode" />
+        <Parameter Name="createStream" Type="Microsoft.Reporting.WebForms.CreateStreamCallback" />
+        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="pageCountMode">To be added.</param>
+        <param name="createStream">To be added.</param>
+        <param name="warnings">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public override byte[] Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.PageCountMode pageCountMode, out string mimeType, out string encoding, out string fileNameExtension, out string[] streams, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Render(string format, string deviceInfo, valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode, string mimeType, string encoding, string fileNameExtension, string[] streams, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="deviceInfo" Type="System.String" />
+        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode" />
+        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="encoding" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="streams" Type="System.String[]&amp;" RefType="out" />
+        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="deviceInfo">To be added.</param>
+        <param name="pageCountMode">To be added.</param>
+        <param name="mimeType">To be added.</param>
+        <param name="encoding">To be added.</param>
+        <param name="fileNameExtension">To be added.</param>
+        <param name="streams">To be added.</param>
+        <param name="warnings">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportEmbeddedResource">
+      <MemberSignature Language="C#" Value="public string ReportEmbeddedResource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReportEmbeddedResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("Microsoft.ReportingServices.ReportSelectionConverter, Microsoft.Reporting.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the report embedded resource.</summary>
+        <value>To be added.</value>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Setting the ReportEmbeddedResource property will cause the **ReportViewer** control to automatically load any required subreports from an embedded resource.  
+  
+ An embedded report resource is a report definition that has been stored as a resource in the calling assembly.  
+  
+ If the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ReportPath%2A&gt; property has been set, the ReportEmbeddedResource property is ignored. It also causes the report loaded with &lt;xref:Microsoft.Reporting.WebForms.Report.LoadReportDefinition%2A&gt; to be ignored.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportPath">
+      <MemberSignature Language="C#" Value="public string ReportPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReportPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the local file system path of the local report.</summary>
+        <value>To be added.</value>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Setting the ReportPath property will cause the **ReportViewer** control to automatically load any required subreports from the file system.  
+  
+ Setting this property will cause the value of the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource%2A&gt; property to be ignored. It also causes the report loaded with &lt;xref:Microsoft.Reporting.WebForms.Report.LoadReportDefinition%2A&gt; to be ignored.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBasePermissionsForSandboxAppDomain">
+      <MemberSignature Language="C#" Value="public void SetBasePermissionsForSandboxAppDomain (System.Security.PermissionSet permissions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBasePermissionsForSandboxAppDomain(class System.Security.PermissionSet permissions) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="permissions" Type="System.Security.PermissionSet" />
+      </Parameters>
+      <Docs>
+        <param name="permissions">To be added.</param>
+        <summary>Sets the base permissions for the sandboxed application domain with the supplied permission set.</summary>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The base permissions in the sandboxed application domain apply to custom code assemblies and the evaluation of report expressions. Note that this method replaces any existing base permission set with the supplied permission set. You should make sure that the supplied permission set includes the **Execution** permission. Otherwise, no custom code assemblies can be executed and no expressions can be evaluated.  
+  
+ If you change the permissions, make sure that the &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; object cannot be used to access any untrusted report definitions. In [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the &lt;xref:Microsoft.Reporting.WebForms.LocalReport.ExecuteReportInSandboxAppDomain%2A&gt; method to switch to the sandboxed application domain mode.  
+  
+   
+  
+## Examples  
+ The following code adds file input and output permissions to the default base permission set.  
+  
+```c#  
+PermissionSet permissions = new PermissionSet(PermissionState.None);  
+permissions.AddPermission(new FileIOPermission(PermissionState.Unrestricted));  
+permissions.AddPermission(new SecurityPermission(SecurityPermissionFlag.Execution));  
+  
+ReportViewer1.LocalReport.SetBasePermissionForSandboxAppDomain(permissions);  
+```  
+  
+```vb  
+Dim permissions As New PermissionSet(PermissionState.None)  
+permissions.AddPermission(New FileIOPermission(PermissionState.Unrestricted))  
+permissions.AddPermission(New SecurityPermission(SecurityPermissionFlag.Execution))  
+  
+ReportViewer1.LocalReport.SetBasePermissionForSandboxAppDomain(permissions)  
+```  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParameters">
+      <MemberSignature Language="C#" Value="public override void SetParameters (System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WebForms.ReportParameter&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetParameters(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Reporting.WebForms.ReportParameter&gt; parameters) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WebForms.ReportParameter&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDetailedSubreportMessages">
+      <MemberSignature Language="C#" Value="public bool ShowDetailedSubreportMessages { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowDetailedSubreportMessages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a `Boolean` value that indicates whether detailed messages should be displayed when an error occurs in a subreport.</summary>
+        <value>To be added.</value>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This property is useful for debugging subreport errors. If it is set to `false`, the generic message "An error occurred during subreport processing" is displayed.  
+  
+&gt; [!NOTE]
+&gt;  Errors in subreport processing do not affect whether the main report is processed successfully. You can still view and interact with the main report, such as exporting and printing it.  
+  
+ Changing this property causes the report definition to be updated and the report to be reprocessed.  
+  
+ ]&gt;</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubreportProcessing">
+      <MemberSignature Language="C#" Value="public event Microsoft.Reporting.WebForms.SubreportProcessingEventHandler SubreportProcessing;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Reporting.WebForms.SubreportProcessingEventHandler SubreportProcessing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Reporting.WebForms.SubreportProcessingEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a subreport is processed.</summary>
+        <remarks>&lt;!CDATA[  
   
 ## Remarks  
  The SubreportProcessing event is triggered for every instance of the subreport in the main report, and not just for each subreport definition. If a report contains multiple subreports instances from the same report definition, this event is triggered for each instance.  
@@ -147,653 +1152,6 @@ End Class
 ```  
   
  ]&gt;</remarks>
-  </Docs>
-  <Members>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LocalReport ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddFullTrustModuleInSandboxAppDomain">
-      <MemberSignature Language="C#" Value="public void AddFullTrustModuleInSandboxAppDomain (System.Security.Policy.StrongName assemblyName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFullTrustModuleInSandboxAppDomain(class System.Security.Policy.StrongName assemblyName) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="assemblyName" Type="System.Security.Policy.StrongName" />
-      </Parameters>
-      <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddTrustedCodeModuleInCurrentAppDomain">
-      <MemberSignature Language="C#" Value="public void AddTrustedCodeModuleInCurrentAppDomain (string assemblyName);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTrustedCodeModuleInCurrentAppDomain(string assemblyName) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("This method requires Code Access Security policy, which is deprecated.  For more information please go to http://go.microsoft.com/fwlink/?LinkId=160787.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="assemblyName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="assemblyName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DataSources">
-      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WebForms.ReportDataSourceCollection DataSources { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WebForms.ReportDataSourceCollection DataSources" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.UI.WebControls.WebParts.WebBrowsable(true)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Microsoft.Reporting.WebForms.ReportDataSourceCollection</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Dispose">
-      <MemberSignature Language="C#" Value="public void Dispose ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnableExternalImages">
-      <MemberSignature Language="C#" Value="public bool EnableExternalImages { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool EnableExternalImages" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.Category("Security")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EnableHyperlinks">
-      <MemberSignature Language="C#" Value="public bool EnableHyperlinks { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool EnableHyperlinks" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.Category("Security")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExecuteReportInCurrentAppDomain">
-      <MemberSignature Language="C#" Value="public void ExecuteReportInCurrentAppDomain (System.Security.Policy.Evidence reportEvidence);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteReportInCurrentAppDomain(class System.Security.Policy.Evidence reportEvidence) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("This method requires Code Access Security policy, which is deprecated.  For more information please go to http://go.microsoft.com/fwlink/?LinkId=160787.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reportEvidence" Type="System.Security.Policy.Evidence" />
-      </Parameters>
-      <Docs>
-        <param name="reportEvidence">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExecuteReportInSandboxAppDomain">
-      <MemberSignature Language="C#" Value="public void ExecuteReportInSandboxAppDomain ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteReportInSandboxAppDomain() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("This method requires Code Access Security policy, which is deprecated.  For more information please go to http://go.microsoft.com/fwlink/?LinkId=160787.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDataSourceNames">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; GetDataSourceNames ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;string&gt; GetDataSourceNames() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetDefaultPageSettings">
-      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WebForms.ReportPageSettings GetDefaultPageSettings ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WebForms.ReportPageSettings GetDefaultPageSettings() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Reporting.WebForms.ReportPageSettings</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetParameters">
-      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WebForms.ReportParameterInfoCollection GetParameters ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WebForms.ReportParameterInfoCollection GetParameters() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Reporting.WebForms.ReportParameterInfoCollection</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetTotalPages">
-      <MemberSignature Language="C#" Value="public override int GetTotalPages (out Microsoft.Reporting.WebForms.PageCountMode pageCountMode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetTotalPages(valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="pageCountMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ListRenderingExtensions">
-      <MemberSignature Language="C#" Value="public override Microsoft.Reporting.WebForms.RenderingExtension[] ListRenderingExtensions ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Reporting.WebForms.RenderingExtension[] ListRenderingExtensions() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Reporting.WebForms.RenderingExtension[]</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LoadReportDefinition">
-      <MemberSignature Language="C#" Value="public override void LoadReportDefinition (System.IO.TextReader report);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadReportDefinition(class System.IO.TextReader report) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="report" Type="System.IO.TextReader" />
-      </Parameters>
-      <Docs>
-        <param name="report">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LoadSubreportDefinition">
-      <MemberSignature Language="C#" Value="public void LoadSubreportDefinition (string reportName, System.IO.Stream report);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadSubreportDefinition(string reportName, class System.IO.Stream report) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reportName" Type="System.String" />
-        <Parameter Name="report" Type="System.IO.Stream" />
-      </Parameters>
-      <Docs>
-        <param name="reportName">To be added.</param>
-        <param name="report">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LoadSubreportDefinition">
-      <MemberSignature Language="C#" Value="public void LoadSubreportDefinition (string reportName, System.IO.TextReader report);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadSubreportDefinition(string reportName, class System.IO.TextReader report) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="reportName" Type="System.String" />
-        <Parameter Name="report" Type="System.IO.TextReader" />
-      </Parameters>
-      <Docs>
-        <param name="reportName">To be added.</param>
-        <param name="report">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MapTileServerConfiguration">
-      <MemberSignature Language="C#" Value="public Microsoft.Reporting.WebForms.MapTileServerConfiguration MapTileServerConfiguration { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Reporting.WebForms.MapTileServerConfiguration MapTileServerConfiguration" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>Microsoft.Reporting.WebForms.MapTileServerConfiguration</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OriginalParametersToDrillthrough">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Reporting.WebForms.ReportParameter&gt; OriginalParametersToDrillthrough { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Reporting.WebForms.ReportParameter&gt; OriginalParametersToDrillthrough" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WebForms.ReportParameter&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Refresh">
-      <MemberSignature Language="C#" Value="public override void Refresh ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ReleaseSandboxAppDomain">
-      <MemberSignature Language="C#" Value="public void ReleaseSandboxAppDomain ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseSandboxAppDomain() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="public void Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.CreateStreamCallback createStream, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(string format, string deviceInfo, class Microsoft.Reporting.WebForms.CreateStreamCallback createStream, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="format" Type="System.String" />
-        <Parameter Name="deviceInfo" Type="System.String" />
-        <Parameter Name="createStream" Type="Microsoft.Reporting.WebForms.CreateStreamCallback" />
-        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="format">To be added.</param>
-        <param name="deviceInfo">To be added.</param>
-        <param name="createStream">To be added.</param>
-        <param name="warnings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="public void Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.PageCountMode pageCountMode, Microsoft.Reporting.WebForms.CreateStreamCallback createStream, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(string format, string deviceInfo, valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode, class Microsoft.Reporting.WebForms.CreateStreamCallback createStream, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="format" Type="System.String" />
-        <Parameter Name="deviceInfo" Type="System.String" />
-        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode" />
-        <Parameter Name="createStream" Type="Microsoft.Reporting.WebForms.CreateStreamCallback" />
-        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="format">To be added.</param>
-        <param name="deviceInfo">To be added.</param>
-        <param name="pageCountMode">To be added.</param>
-        <param name="createStream">To be added.</param>
-        <param name="warnings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="public override byte[] Render (string format, string deviceInfo, Microsoft.Reporting.WebForms.PageCountMode pageCountMode, out string mimeType, out string encoding, out string fileNameExtension, out string[] streams, out Microsoft.Reporting.WebForms.Warning[] warnings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Render(string format, string deviceInfo, valuetype Microsoft.Reporting.WebForms.PageCountMode pageCountMode, string mimeType, string encoding, string fileNameExtension, string[] streams, class Microsoft.Reporting.WebForms.Warning[] warnings) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="format" Type="System.String" />
-        <Parameter Name="deviceInfo" Type="System.String" />
-        <Parameter Name="pageCountMode" Type="Microsoft.Reporting.WebForms.PageCountMode" />
-        <Parameter Name="mimeType" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="encoding" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="fileNameExtension" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="streams" Type="System.String[]&amp;" RefType="out" />
-        <Parameter Name="warnings" Type="Microsoft.Reporting.WebForms.Warning[]&amp;" RefType="out" />
-      </Parameters>
-      <Docs>
-        <param name="format">To be added.</param>
-        <param name="deviceInfo">To be added.</param>
-        <param name="pageCountMode">To be added.</param>
-        <param name="mimeType">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <param name="fileNameExtension">To be added.</param>
-        <param name="streams">To be added.</param>
-        <param name="warnings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ReportEmbeddedResource">
-      <MemberSignature Language="C#" Value="public string ReportEmbeddedResource { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ReportEmbeddedResource" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.TypeConverter("Microsoft.ReportingServices.ReportSelectionConverter, Microsoft.Reporting.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ReportPath">
-      <MemberSignature Language="C#" Value="public string ReportPath { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ReportPath" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetBasePermissionsForSandboxAppDomain">
-      <MemberSignature Language="C#" Value="public void SetBasePermissionsForSandboxAppDomain (System.Security.PermissionSet permissions);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBasePermissionsForSandboxAppDomain(class System.Security.PermissionSet permissions) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="permissions" Type="System.Security.PermissionSet" />
-      </Parameters>
-      <Docs>
-        <param name="permissions">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetParameters">
-      <MemberSignature Language="C#" Value="public override void SetParameters (System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WebForms.ReportParameter&gt; parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetParameters(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Reporting.WebForms.ReportParameter&gt; parameters) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Reporting.WebForms.ReportParameter&gt;" />
-      </Parameters>
-      <Docs>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShowDetailedSubreportMessages">
-      <MemberSignature Language="C#" Value="public bool ShowDetailedSubreportMessages { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool ShowDetailedSubreportMessages" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SubreportProcessing">
-      <MemberSignature Language="C#" Value="public event Microsoft.Reporting.WebForms.SubreportProcessingEventHandler SubreportProcessing;" />
-      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Reporting.WebForms.SubreportProcessingEventHandler SubreportProcessing" />
-      <MemberType>Event</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>11.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Reporting.WebForms.SubreportProcessingEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">

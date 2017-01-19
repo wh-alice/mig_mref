@@ -10,11 +10,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Indicates whether the host application has handled the error.</summary>
+    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.ReportError"&gt; event.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
- Set this property to `true` to cause the ReportViewer control to ignore the error.  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.ReportErrorEventHandler&gt; when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.ReportError&gt; occurs.  
   
  ]&gt;</remarks>
   </Docs>
@@ -30,7 +30,7 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns an **Exception** object containing information about the report error.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -46,9 +46,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the host application has handled the error.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Set this property to `true` to cause the ReportViewer control to ignore the error.  
+  
+ ]&gt;</remarks>
       </Docs>
     </Member>
   </Members>

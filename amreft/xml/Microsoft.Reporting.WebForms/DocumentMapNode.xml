@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Gets the label associated with the document map node.</summary>
+    <summary>Represents a single node in the document map.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
@@ -30,7 +30,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WebForms.DocumentMapNode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a collection of child document map nodes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -46,7 +46,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the unique identifier of the document map node.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the label associated with the document map node.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

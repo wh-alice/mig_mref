@@ -15,11 +15,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Gets the unique identifier of the sort action.</summary>
+    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.Sort"&gt; event.</summary>
     <remarks>&lt;!CDATA[  
   
 ## Remarks  
- The default value is `None`.  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.SortEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Sort&gt; event occurs.  
   
  ]&gt;</remarks>
   </Docs>
@@ -40,7 +40,7 @@
         <param name="sortId">To be added.</param>
         <param name="sortDirection">To be added.</param>
         <param name="clearSort">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a `SortEventArgs` object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +55,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether all other existing sorts should be cleared.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,9 +71,14 @@
         <ReturnType>Microsoft.Reporting.WinForms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an enumeration value that indicates the direction of the sort.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The default value is `None`.  
+  
+ ]&gt;</remarks>
       </Docs>
     </Member>
     <Member MemberName="SortId">
@@ -87,7 +92,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the unique identifier of the sort action.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
