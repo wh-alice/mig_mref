@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether the rendering extension is visible in the user interface.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This class is returned by the **ListRenderingExtensions** methods of the &lt;xref:Microsoft.Reporting.WebForms.ServerReport&gt; and &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; classes.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="LocalizedName">

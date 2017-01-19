@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Returns a specific &lt;see cref="T:Microsoft.Reporting.WinForms.ReportDataSourceInfo"&gt; object from the collection.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

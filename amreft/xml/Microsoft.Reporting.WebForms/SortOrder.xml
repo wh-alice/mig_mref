@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates a descending sort.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Used by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.Sort&gt; event.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">

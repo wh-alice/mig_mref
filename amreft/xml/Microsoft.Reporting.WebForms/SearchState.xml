@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the search text.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This class is referenced by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.SearchState%2A&gt; property in &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="StartPage">

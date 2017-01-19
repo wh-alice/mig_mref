@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the path of the drillthrough report.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Examples  
+ For an example, please see &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough&gt;.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

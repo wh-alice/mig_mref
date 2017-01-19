@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the number of the page resulting from the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.PageNavigation"&gt; event.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.PageNavigationEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.PageNavigation&gt; event occurs.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

@@ -10,8 +10,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets a valid value.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ ValidValue is used by the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo&gt; and &lt;xref:Microsoft.Reporting.WinForms.ParameterState&gt; classes.  
+  
+ You can use the ValidValue class to display the possible valid values of a parameter in a user interface.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Label">

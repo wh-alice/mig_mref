@@ -9,8 +9,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies remote processing mode against a Reporting Services report server.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+  
+&gt; [!NOTE]
+&gt;  The ReportViewer control will work in `Remote` mode only with a Microsoft SQL Server 2005 report server.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Local">

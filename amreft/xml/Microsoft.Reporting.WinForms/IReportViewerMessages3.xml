@@ -11,8 +11,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the tooltip text for the radio button that indicates `true` for a `Boolean` parameter.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ When the total number of pages is an estimated total, the returned string replaces both the page count and the default `?` symbol in the toolbar.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="CancelLinkText">

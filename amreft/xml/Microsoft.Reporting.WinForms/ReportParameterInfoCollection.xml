@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Returns a named item from the **ReportParameterInfoCollection**.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

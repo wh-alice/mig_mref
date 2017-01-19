@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Occurs when session state is not enabled, and an object implementing &lt;see cref="T:Microsoft.Reporting.WebForms.IReportServerConnection"&gt; interface is not supplied through the Web.config file.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Please see [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for more information.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members />
 </Type>

@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The current content type displayed in the report area is unknown. For more information, see P:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType?qualifyHint=False&amp;autoUpgrade=True.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This class is referenced by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType%2A&gt; property of &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">

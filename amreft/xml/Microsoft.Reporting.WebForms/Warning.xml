@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the severity type of the error or warning. Read-only.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The possible values of the Severity property are `Error` and `Warning`.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Code">

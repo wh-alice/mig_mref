@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A valid value for the parameter does not exist.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Use the ParameterState enumeration with the &lt;xref:Microsoft.Reporting.WinForms.ReportParameter.State&gt; property of the &lt;xref:Microsoft.Reporting.WinForms.ReportParameter&gt; class.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="DynamicValuesUnavailable">

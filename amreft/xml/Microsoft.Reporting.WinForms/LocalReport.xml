@@ -17,8 +17,157 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Occurs when a subreport is processed.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The SubreportProcessing event is triggered for every instance of the subreport in the main report, and not just for each subreport definition. If a report contains multiple subreports instances from the same report definition, this event is triggered for each instance.  
+  
+ You must supply data for any data sources used in subreports. To do this, you must supply an event handler for the SubreportProcessing event.  
+  
+ You can examine values of parameters passed to the subreport by examining the &lt;xref:Microsoft.Reporting.WinForms.SubreportProcessingEventArgs.Parameters%2A&gt; property and supplying data corresponding to those parameter values.  
+  
+ If the main report has several subreports, you can examine the &lt;xref:Microsoft.Reporting.WinForms.LocalReport.ReportPath%2A&gt; property of the &lt;xref:Microsoft.Reporting.WinForms.SubreportProcessingEventArgs&gt; class to determine which subreport is being processed and supply data for that subreport.  
+  
+ For more information about the arguments passed to this event handler, see &lt;xref:Microsoft.Reporting.WinForms.SubreportProcessingEventArgs&gt;.  
+  
+   
+  
+## Examples  
+ The following code example implements a master/detail report using subreports. The code loads a sample report that contains a subreport and sets up an event handler to handle the SubreportProcessing event. The arguments passed to the SubreportProcessing event handler include an object encapsulating the subreport. The event handler adds a data source instance to this subreport before it is rendered in the **ReportViewer** control.  
+  
+```c#  
+using System;  
+using System.Data;  
+using System.Windows.Forms;  
+using Microsoft.Reporting.WinForms;  
+  
+public class Demo : Form  
+{  
+    private DataTable orderDetailsData = null;  
+  
+    private DataTable LoadOrdersData()  
+    {  
+        // Load data from XML file.  
+        DataSet dataSet = new DataSet();  
+        dataSet.ReadXml(@"c:\OrderData.xml");  
+        return dataSet.Tables[0];  
+    }  
+  
+    private DataTable LoadOrderDetailsData()  
+    {  
+        // Load data from XML file.  
+        DataSet dataSet = new DataSet();  
+        dataSet.ReadXml(@"c:\OrderDetailData.xml");  
+        return dataSet.Tables[0];  
+    }  
+  
+    void DemoSubreportProcessingEventHandler(object sender, SubreportProcessingEventArgs e)  
+    {  
+        if (orderDetailsData == null)  
+            orderDetailsData = LoadOrderDetailsData();  
+        e.DataSources.Add(new ReportDataSource("DataSet1_OrderDetails", orderDetailsData));  
+    }  
+  
+    public Demo()  
+    {  
+        this.Text = "Report Control Demo";  
+        this.ClientSize = new System.Drawing.Size(700, 600);  
+  
+        ReportViewer reportViewer = new ReportViewer();  
+  
+        // Set Processing Mode.  
+  
+        reportViewer.ProcessingMode = ProcessingMode.Local;  
+  
+        // Set RDL file.  
+  
+        reportViewer.LocalReport.ReportPath = @"c:\Orders.rdlc";  
+  
+        // Add a handler for SubreportProcessing.  
+  
+        reportViewer.LocalReport.SubreportProcessing +=  
+                    new SubreportProcessingEventHandler(DemoSubreportProcessingEventHandler);  
+  
+        // Supply a DataTable corresponding to each report dataset.  
+  
+        reportViewer.LocalReport.DataSources.Add(  
+            new ReportDataSource("DataSet1_Orders", LoadOrdersData()));  
+  
+        // Add the reportviewer to the form.  
+  
+        reportViewer.Dock = DockStyle.Fill;  
+        this.Controls.Add(reportViewer);  
+  
+        // Process and render the report.  
+  
+        reportViewer.RefreshReport();  
+    }  
+  
+    [STAThread]  
+    public static int Main(string[] args)  
+    {  
+        Application.Run(new Demo());  
+        return 0;  
+    }  
+}  
+```  
+  
+```vb#  
+Option Explicit On  
+Imports System  
+Imports System.Drawing  
+Imports Microsoft.Reporting.WinForms  
+  
+Public Class Form1  
+    Inherits System.Windows.Forms.Form  
+  
+    Private orderDetailsData As DataTable = Nothing  
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer  
+  
+    Function LoadOrdersData() As DataTable  
+        ' Load  
+        Dim dataSet As New DataSet()  
+        dataSet.ReadXml("c:\MyReports\OrderData.xml")  
+        Return dataSet.Tables(0)  
+  
+    End Function  
+  
+    Function LoadOrderDetailsData() As DataTable  
+        Dim dataSet As New DataSet()  
+        dataSet.ReadXml("c:\MyReports\OrderDetailData.xml")  
+        Return dataSet.Tables(0)  
+    End Function  
+  
+    Public Sub DemoSubreportProcessingEventHandler(ByVal sender As Object, _  
+     ByVal e As SubreportProcessingEventArgs)  
+  
+        If orderDetailsData Is Nothing Then  
+            orderDetailsData = LoadOrderDetailsData()  
+        End If  
+        e.DataSources.Add(New ReportDataSource("DataSet1_OrderDetails", orderDetailsData))  
+    End Sub  
+  
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load  
+  
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer  
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill  
+  
+        Me.Text = "Report Control Demo"  
+        Me.ClientSize = New System.Drawing.Size(700, 600)  
+        Me.ReportViewer1.ProcessingMode = ProcessingMode.Local  
+        Me.ReportViewer1.LocalReport.ReportPath = "c:\MyReports\Orders.rdlc"  
+        AddHandler Me.ReportViewer1.LocalReport.SubreportProcessing, AddressOf DemoSubreportProcessingEventHandler  
+        Me.ReportViewer1.LocalReport.DataSources.Add(New ReportDataSource("DataSet1_Orders", LoadOrdersData()))  
+        Me.Controls.Add(ReportViewer1)  
+        Me.ReportViewer1.RefreshReport()  
+  
+    End Sub  
+  
+End Class  
+```  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

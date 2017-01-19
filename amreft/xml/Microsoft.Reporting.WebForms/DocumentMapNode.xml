@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the label associated with the document map node.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ DocumentMapNode is returned by the `GetDocumentMap` methods of the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.LocalReport%2A&gt; and &lt;xref:Microsoft.Reporting.WebForms.ServerReport&gt; classes.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Children">

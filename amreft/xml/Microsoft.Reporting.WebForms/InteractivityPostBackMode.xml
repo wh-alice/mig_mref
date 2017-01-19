@@ -9,8 +9,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Perform synchronous postbacks on drillthrough actions, and asynchronous postbacks on other actions. In this mode, both clicking a drillthrough report and clicking the **Back to Parent** button will cause synchronous postbacks. For more information on drillthrough reports, see [Adding Drillthrough Reports](http://msdn.microsoft.com/en-us/d57866f5-d876-41ce-bc49-0e72486a9617) in SQL Server Books Online.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This enumeration is referenced by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.InteractivityPostBackMode%2A&gt; property in &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.  
+  
+ If you want the **ReportViewer** control to perform URL redirection on drillthrough actions, use F:Microsoft.Reporting.WebForms.InteractivityPostBackMode.SynchronousOnDrillthrough?qualifyHint=False&amp;autoUpgrade=True. URL redirection is not a supported response to asynchronous postbacks. For more information on synchronous and asynchronous postbacks, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysAsynchronous">

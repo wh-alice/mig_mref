@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Returns the name of the subreport.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.SubreportProcessingEventHandler&gt; when a &lt;xref:Microsoft.Reporting.WinForms.LocalReport.SubreportProcessing&gt; event occurs.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="DataSourceNames">

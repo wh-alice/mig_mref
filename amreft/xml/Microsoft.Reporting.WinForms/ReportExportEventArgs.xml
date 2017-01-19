@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Returns a &lt;see cref="T:Microsoft.Reporting.WinForms.RenderingExtension"&gt; used for exporting the report.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ For more information about device information settings for specific output formats, see [Device Information Settings](http://msdn.microsoft.com/en-us/fe718939-7efe-4c7f-87cb-5f5b09caeff4).  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

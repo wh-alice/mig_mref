@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The severity level of the warning is `Warning`.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This enumeration is used by the F:Microsoft.Reporting.WinForms.Severity.Warning?qualifyHint=False&amp;autoUpgrade=True class.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">

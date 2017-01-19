@@ -10,8 +10,17 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets or sets the instance of the report data source.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Value may be an instance of &lt;xref:System.Data.DataTable&gt;, a &lt;xref:System.Collections.IEnumerable&gt; value (for example, &lt;xref:System.Data.DataView&gt; or &lt;xref:System.Array&gt;), or a &lt;xref:System.Web.UI.IDataSource&gt;.  
+  
+ If this value is an instance of &lt;xref:System.Collections.IEnumerable&gt;, all elements in the collection must be of the same type, and names of the public properties of the element (as retrieved by the &lt;xref:System.ComponentModel.TypeDescriptor.GetProperties%2A&gt; method) must match the field names of the corresponding report data source.  
+  
+ If the type of Value is not any of the aforementioned types, this property throws an exception.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

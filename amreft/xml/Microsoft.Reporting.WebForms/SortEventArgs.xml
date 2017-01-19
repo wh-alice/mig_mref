@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the unique identifier of the sort action.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ The default value is `none`.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

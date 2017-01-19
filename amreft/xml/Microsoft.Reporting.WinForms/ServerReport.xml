@@ -14,8 +14,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets or sets the number of milliseconds to wait for server communications.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ A value of &lt;xref:System.Threading.Timeout.Infinite&gt; means that there is no time-out period.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

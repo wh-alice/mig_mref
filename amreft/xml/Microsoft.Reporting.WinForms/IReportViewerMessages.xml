@@ -7,8 +7,15 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides text for the **Zoom To Whole Page** item.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Provides the text for a page number message. For example,  
+  
+ `Page &lt;1&gt; of &lt;3&gt;`  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="BackButtonToolTip">

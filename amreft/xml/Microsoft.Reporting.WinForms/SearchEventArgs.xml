@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Returns the page number on which to start searching.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.SearchEventHandler&gt; delegate when a **Find** event occurs.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

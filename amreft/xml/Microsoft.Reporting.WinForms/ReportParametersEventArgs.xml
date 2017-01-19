@@ -15,8 +15,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the parameters from the parameter prompt area that are being submitted to the report server.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This collection property includes all visible report parameter values and not just the values that have changed. However, when parameters are being automatically submitted to update the dependent parameters without processing the report, the dependent parameters are not included.  
+  
+ Although it is read-only, you can modify the contents of the collection in the &lt;xref:Microsoft.Reporting.WinForms.ReportParametersEventHandler&gt; method before they are submitted to the report server.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoSubmit">

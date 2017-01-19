@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A `String` data type that represents an array of characters.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Use the ParameterDataType enumeration with the &lt;xref:Microsoft.Reporting.WebForms.ReportParameterInfo.DataType%2A&gt; property of the &lt;xref:Microsoft.Reporting.WebForms.ReportParameterInfo&gt; class.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">

@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the bookmark identification string.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.BookmarkNavigation&gt; event occurs.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

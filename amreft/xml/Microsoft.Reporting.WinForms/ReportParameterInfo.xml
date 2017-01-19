@@ -10,8 +10,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Determines whether the parameter can be displayed in the user interface.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ If Visible is set to `false`, the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.PromptUser%2A&gt; property is overridden.  
+  
+ If Visible is set to `true`, a prompt is displayed in the user interface if &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.PromptUser%2A&gt; is also set to `true`.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowBlank">

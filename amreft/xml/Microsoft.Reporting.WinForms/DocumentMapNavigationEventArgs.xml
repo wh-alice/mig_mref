@@ -15,8 +15,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets the unique identifier of the document map node selected.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.DocumentMapNavigationEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.DocumentMapNavigation&gt; event occurs  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

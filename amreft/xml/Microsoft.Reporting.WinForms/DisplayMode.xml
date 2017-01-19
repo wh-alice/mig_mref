@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies that the control is in print layout mode. In this mode, the control displays physical pages.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ A **DisplayMode** enumerator value is passed to the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.SetDisplayMode%2A&gt; method of the ReportViewer control.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Normal">

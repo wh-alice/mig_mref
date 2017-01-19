@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates that HTML-formatted content is presented inline; all other content is presented as an attachment.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is used as a value for the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.ExportContentDisposition%2A&gt; property of the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt; control to indicate whether content should be presented inline or as an attachment.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysAttachment">

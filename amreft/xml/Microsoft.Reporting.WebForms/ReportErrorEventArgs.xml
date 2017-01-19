@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates whether the host application has handled the error.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ Set this property to true to cause the ReportViewer control to ignore the error.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">

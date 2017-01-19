@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Adds a &lt;see cref="T:Microsoft.Reporting.WebForms.DeviceInfo"&gt; object to the collection using the specified name and value.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This class is referenced by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.InteractiveDeviceInfos%2A&gt; property in &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.  
+  
+ The keys in the collection represent the names of the device information settings.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">

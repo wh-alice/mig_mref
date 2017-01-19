@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets a list of warnings produced during report processing or rendering.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ This is passed to the &lt;xref:Microsoft.Reporting.WinForms.RenderingCompleteEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete&gt; event occurs.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">

@@ -13,8 +13,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Gets an &lt;see cref="T:Microsoft.Reporting.WebForms.ReportParameter"&gt; object in the collection by its name.</summary>
+    <remarks>&lt;!CDATA[  
+  
+## Remarks  
+ If multiple parameters in the collection match the `name` parameter, the first match is returned.  
+  
+ ]&gt;</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
