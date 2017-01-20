@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the exception that occurs when a parameter expected by the report has not been supplied.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

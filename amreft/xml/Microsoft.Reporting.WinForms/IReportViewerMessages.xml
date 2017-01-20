@@ -7,8 +7,304 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows applications to provide customized user interface messages.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ You can implement the IReportViewerMessages interface to provide custom localization of the ReportViewer control user interface. This implementation can be passed to the ReportViewer control by setting the <xref:Microsoft.Reporting.WinForms.ReportViewer.Messages%2A> property of the ReportViewer control.  
+  
+> [!NOTE]
+>  The IReportViewerMessages interface does not allow customization of local or server report processing error messages.  
+  
+ Returning a `null` string value for a property will cause the ReportViewer control to display the original user interface string for that item.  
+  
+   
+  
+## Examples  
+ The following code sample shows an implementation of IReportViewerMessages being passed to the ReportViewer control.  
+  
+```c#  
+using System;  
+using System.Collections.Generic;  
+using System.ComponentModel;  
+using System.Data;  
+using System.Drawing;  
+using System.Text;  
+using System.Windows.Forms;  
+using Microsoft.Reporting.WinForms;  
+using System.Diagnostics;  
+  
+namespace MySample  
+{  
+    public partial class Form1 : Form  
+    {  
+        public Form1()  
+        {  
+            InitializeComponent();  
+        }  
+  
+        private void Form1_Load(object sender, EventArgs e)  
+        {  
+            CCustomMessageClass myMessageClass = new CCustomMessageClass();  
+  
+            reportViewer1.Messages = myMessageClass;  
+  
+            this.reportViewer1.RefreshReport();  
+  
+         }  
+    }  
+  
+    public class CCustomMessageClass : IReportViewerMessages  
+    {  
+  
+        #region IReportViewerMessages Members  
+  
+        public string BackButtonToolTip  
+        {  
+            get { return ("BackButtonToolTip here."); }  
+        }  
+  
+        public string BackMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ChangeCredentialsText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string CurrentPageTextBoxToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string DocumentMapButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string DocumentMapMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ExportButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ExportMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FalseValueText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindButtonText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindNextButtonText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindNextButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FirstPageButtonToolTip  
+        {  
+            get { return("Custom first page tool tip"); }  
+        }  
+  
+        public string LastPageButtonToolTip  
+        {  
+            get { return(null); }  
+        }  
+  
+        public string NextPageButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NoMoreMatches  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NullCheckBoxText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NullCheckBoxToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NullValueText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PageOf  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PageSetupButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PageSetupMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ParameterAreaButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PasswordPrompt  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PreviousPageButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintLayoutButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintLayoutMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ProgressText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string RefreshButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string RefreshMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string SearchTextBoxToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string SelectAValue  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string SelectAll  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string StopButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string StopMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string TextNotFound  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string TotalPagesToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string TrueValueText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string UserNamePrompt  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ViewReportButtonText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ViewReportButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomControlToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomToPageWidth  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomToWholePage  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        #endregion  
+    }  
+}  
+```  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="BackButtonToolTip">
@@ -22,7 +318,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Back** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -38,7 +334,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Back** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -54,7 +350,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the Change Credentials button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -70,7 +366,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the Current Page text box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +382,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the Document Map button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +398,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the document map menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +414,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Export** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +430,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Export** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +446,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for a false value.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +462,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for a **Find** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,7 +478,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Find** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +494,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Find Next** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +510,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Find Next** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +526,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **First Page** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,7 +542,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Last Page** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +558,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Next Page** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,7 +574,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the no more matches message.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,7 +590,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Null** check box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,7 +606,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Null** check box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,7 +622,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for a `null` value.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -342,9 +638,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the pagination message.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Provides the text for a page number message. For example,  
+  
+ `Page <1> of <3>`  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSetupButtonToolTip">
@@ -358,7 +661,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Page Setup** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -374,7 +677,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Page Setup** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,7 +693,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Parameter Area** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,7 +709,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the password prompt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -422,7 +725,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Previous Page** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +741,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Print** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,7 +757,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Print Layout** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -470,7 +773,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Print Layout** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,7 +789,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Print** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -502,7 +805,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the progress message that is displayed when a report is processing.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -518,7 +821,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Refresh** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -534,7 +837,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Refresh** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,7 +853,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Search** text box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +869,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides text for the **Select All** item in a multivalue drop-down list box.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -582,7 +885,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides text for the **Select a value** prompt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -598,7 +901,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Stop** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -614,7 +917,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Stop** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,7 +933,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **text not found** message.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -646,7 +949,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Total Pages** item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -662,7 +965,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for a true value.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -678,7 +981,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the user name prompt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -694,7 +997,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **View Report** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -710,7 +1013,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **View Report** button.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -726,7 +1029,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the ToolTip text for the **Zoom** control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -742,7 +1045,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Zoom** menu item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -758,7 +1061,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides the text for the **Zoom To Page Width** option.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -774,7 +1077,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Provides text for the **Zoom To Whole Page** item.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

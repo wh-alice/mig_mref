@@ -9,8 +9,15 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the postback modes of the &lt;see cref="T:Microsoft.Reporting.WebForms.ReportViewer"&gt; control when the user interacts with the report viewer and the currently displayed report.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This enumeration is referenced by the <xref:Microsoft.Reporting.WebForms.ReportViewer.InteractivityPostBackMode%2A> property in <xref:Microsoft.Reporting.WebForms.ReportViewer>.  
+  
+ If you want the **ReportViewer** control to perform URL redirection on drillthrough actions, use F:Microsoft.Reporting.WebForms.InteractivityPostBackMode.SynchronousOnDrillthrough?qualifyHint=False&autoUpgrade=True. URL redirection is not a supported response to asynchronous postbacks. For more information on synchronous and asynchronous postbacks, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysAsynchronous">
@@ -24,7 +31,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.InteractivityPostBackMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always perform asynchronous postbacks.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlwaysSynchronous">
@@ -38,7 +45,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.InteractivityPostBackMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always perform synchronous postbacks.</summary>
       </Docs>
     </Member>
     <Member MemberName="SynchronousOnDrillthrough">
@@ -52,7 +59,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.InteractivityPostBackMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Perform synchronous postbacks on drillthrough actions, and asynchronous postbacks on other actions. In this mode, both clicking a drillthrough report and clicking the **Back to Parent** button will cause synchronous postbacks. For more information on drillthrough reports, see [Adding Drillthrough Reports](http://msdn.microsoft.com/en-us/d57866f5-d876-41ce-bc49-0e72486a9617) in SQL Server Books Online.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines configuration settings for Microsoft Bing Maps SOAP Services that provides a tile background for map report items in the report.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +38,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the application identifier (AppID) to use for Bing Maps SOAP Services.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Refer to your license agreement to see if you need to obtain your own AppID.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxConnections">
@@ -62,7 +67,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the maximum number of connections to Bing Maps SOAP Services.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +91,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the timeout in seconds to wait for a response from Bing Maps SOAP Services.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

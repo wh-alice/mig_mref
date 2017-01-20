@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the exception that occurs when the report server version is not compatible with the report control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

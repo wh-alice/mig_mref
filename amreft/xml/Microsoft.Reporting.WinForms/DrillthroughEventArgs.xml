@@ -15,8 +15,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.Drillthrough"&gt; event.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This is passed to the <xref:Microsoft.Reporting.WinForms.DrillthroughEventHandler> delegate when a <xref:Microsoft.Reporting.WinForms.ReportViewer.Drillthrough> event occurs.  
+  
+ You can examine the value of the <xref:Microsoft.Reporting.WinForms.DrillthroughEventArgs.ReportPath%2A> property and supply data corresponding to that report.  
+  
+ You can call the <xref:Microsoft.Reporting.WinForms.LocalReport.GetParameters%2A> method of the drillthrough report supplied in the `targetReport` parameter to examine the values of parameters being passed from the main report to the drillthrough report and to supply data corresponding to the parameter values.  
+  
+   
+  
+## Examples  
+ For an example, please see <xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough>.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,7 +47,7 @@
       <Docs>
         <param name="reportPath">To be added.</param>
         <param name="targetReport">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a new `DrillthroughEventArgs` object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,9 +62,14 @@
         <ReturnType>Microsoft.Reporting.WinForms.Report</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the target report of the drillthrough action.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Examples  
+ For an example, please see <xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough>.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportPath">
@@ -64,7 +83,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the path of the drillthrough report.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

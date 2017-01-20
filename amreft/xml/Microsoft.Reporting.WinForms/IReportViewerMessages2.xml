@@ -11,7 +11,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Defines methods and properties for implementing customized user interface messages.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +26,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text for the **All Files** filter option in the **Save As** dialog box when a report is exported.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -46,7 +46,7 @@
       </Parameters>
       <Docs>
         <param name="dataSourcePrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the error text to display when the user name has not been supplied for the data source credentials.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the ToolTip text to display when a pointer pauses over a report parameter with a data type of `DateTime`.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the title text for the dialog box when an error occurs exporting a report.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +94,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the ToolTip text to display when a pointer pauses over a report parameter with a data type of `Float`.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +114,7 @@
       </Parameters>
       <Docs>
         <param name="format">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns a localized name for the current export format.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the title text for the dialog box if an error occurs when the user selects a `Hyperlink` in the report.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +146,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the ToolTip text to display when a pointer pauses over a report parameter with a data type of `Integer`.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,7 +162,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the title text for the message box dialog box displayed by the report viewer.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,7 +182,7 @@
       </Parameters>
       <Docs>
         <param name="parameterPrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the error text to display when a selection has not been made for a multivalue report parameter.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +202,7 @@
       </Parameters>
       <Docs>
         <param name="parameterPrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the error text to display when a report parameter has not been specified.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +218,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text to display when the processing of a report has been stopped.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -234,7 +234,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the title text for the dialog box when an error occurs in the prompt area.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +250,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the ToolTip text to display when a pointer pauses over a report parameter with a data type of `String`.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

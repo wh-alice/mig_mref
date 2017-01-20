@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a list of errors or warnings that are returned when a report is rendered or processed.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ An array of **Warning** objects is returned by the **Render** and **RenderStream** methods of the <xref:Microsoft.Reporting.WebForms.LocalReport> and <xref:Microsoft.Reporting.WebForms.ServerReport> classes.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="Code">
@@ -25,7 +30,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the error code that is assigned to the warning. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -41,7 +46,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a message that describes the error or warning. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the object in the report definition that contributed to the warning. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +78,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the type of object in the report definition that caused the error or warning. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +94,14 @@
         <ReturnType>Microsoft.Reporting.WebForms.Severity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the severity type of the error or warning. Read-only.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The possible values of the Severity property are `Error` and `Warning`.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

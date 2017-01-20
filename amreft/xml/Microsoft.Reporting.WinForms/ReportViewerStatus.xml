@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Contains a set of read-only properties that indicate which operations are currently allowed in the **ReportViewer** control and the status of the prompt and document map areas.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,9 +30,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the prompt area of the **ReportViewer** control is currently visible.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The value of `false` indicates one or more of the following conditions:  
+  
+-   prompts are not supported  
+  
+-   the report does not have prompts to display  
+  
+-   the prompt area is currently collapsed  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeDisplayModes">
@@ -51,9 +62,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the **ReportViewer** control has not started processing the report or has completed processing the report, and can change the display mode without canceling a report processing operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property is `true` if the **ReportViewer** control is still generating pages for a processed report in <xref:Microsoft.Reporting.WinForms.DisplayMode> mode, even though changing the mode will cancel that operation. This is because generating the report pages is a rendering operation and not a processing operation.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeZoom">
@@ -72,7 +88,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the currently displayed content will be affected by a zoom change.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +109,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether there is a previous search to continue and whether you can continue the previous search without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +130,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the report can be exported without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +151,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the current report is a drillthrough report and you can navigate back to its parent report without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,9 +172,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.CurrentPage%2A&gt; property can be changed without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property can be `true` even when the report has only one page.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanPrint">
@@ -177,7 +198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether you can start printing the report without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,7 +219,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether you can refresh the report data without cancelling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,9 +240,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether you can search the report and highlight the search results without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The value of `true` indicates both of the following conditions:  
+  
+-   the current display mode is <xref:Microsoft.Reporting.WinForms.DisplayMode>  
+  
+-   the report has been successfully processed and is being displayed  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSubmitPromptAreaValues">
@@ -240,9 +270,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether prompted parameters and prompted data source credentials can be submitted for the current report without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The value of `true` indicates one of the following conditions:  
+  
+-   no report is being displayed and no report processing operation is currently running  
+  
+-   a report processing operation has completed with an error message  
+  
+-   a report processing operation has succeeded and the report is being displayed.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDocumentMapToDisplay">
@@ -261,9 +302,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the current report has a document map and the document map can be displayed in the current display mode.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property returns `false` when the report has not yet been processed.  
+  
+ Use the <xref:Microsoft.Reporting.WinForms.ReportViewer.DisplayMode%2A> property to find the current display mode of the **ReportViewer** control.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasPromptsToDisplay">
@@ -282,9 +330,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether prompting is supported and there are prompts that can be displayed based on the visibility settings in the **ReportViewer** control. This property does not indicate whether the prompt areas are actually visible.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Reporting.WinForms.ReportViewer.ShowParameterPrompts%2A> and <xref:Microsoft.Reporting.WinForms.ReportViewer.ShowCredentialPrompts%2A> properties both affect the value of HasPromptsToDisplay (see table below).  
+  
+||||  
+|-|-|-|  
+||<xref:Microsoft.Reporting.WinForms.ReportViewer.ShowCredentialPrompts%2A>=`false`|<xref:Microsoft.Reporting.WinForms.ReportViewer.ShowCredentialPrompts%2A>=`true`|  
+|<xref:Microsoft.Reporting.WinForms.ReportViewer.ShowParameterPrompts%2A>=`false`|HasPromptsToDisplay is always `false`.|HasPromptsToDisplay indicates whether there is currently a credentials prompt area that can be displayed.|  
+|<xref:Microsoft.Reporting.WinForms.ReportViewer.ShowParameterPrompts%2A>=`true`|HasPromptsToDisplay indicates whether there is currently a parameter prompt area that can be displayed.|HasPromptsToDisplay indicates whether there is currently a credentials prompt area or parameter prompt area that can be displayed.|  
+  
+ HasPromptsToDisplay does not indicate whether a prompt area is currently displayed. To see whether a prompt area is currently displayed, use <xref:Microsoft.Reporting.WinForms.ReportViewerStatus.ArePromptsVisible%2A>.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="InCancelableOperation">
@@ -303,7 +364,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether **ReportViewer** is currently performing a potentially lengthy operation that can be canceled.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -324,9 +385,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the report has a document map and the document map is currently displayed.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The value of `true` indicates both of the following conditions:  
+  
+-   the current report has a document map and the document map can be displayed in the current display mode  
+  
+-   the document map is not collapsed  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPromptingSupported">
@@ -345,9 +415,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a `Boolean` value that indicates whether the current processing mode supports prompting for parameters and data source credentials.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property does not indicate whether the current report has prompt areas for parameters or data source credentials prompts.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

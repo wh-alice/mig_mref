@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the page settings for a report.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,7 +25,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the orientation of the report as defined in the report definition file is landscape.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -41,7 +41,7 @@
         <ReturnType>System.Drawing.Printing.Margins</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the margins for a report page. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,9 +57,14 @@
         <ReturnType>System.Drawing.Printing.PaperSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Represents the paper size settings for a report page. Read-only.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The `Width` property is always less than or equal to the `Height` property in the returned <xref:System.Drawing.Printing.PaperSize> object. To find out the orientation of the report page, use <xref:Microsoft.Reporting.WinForms.ReportPageSettings.IsLandscape%2A>.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

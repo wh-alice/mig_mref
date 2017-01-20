@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a single node in the document map.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ DocumentMapNode is returned by the `GetDocumentMap` methods of the <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> and <xref:Microsoft.Reporting.WinForms.ServerReport> classes.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="Children">
@@ -25,7 +30,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WinForms.DocumentMapNode&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a collection of child document map nodes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -41,7 +46,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the unique identifier of the document map node.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +62,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the label associated with the document map node.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

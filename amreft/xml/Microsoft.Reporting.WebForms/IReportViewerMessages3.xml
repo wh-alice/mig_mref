@@ -11,8 +11,26 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Allows applications to provide customized user interface messages.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ You can implement the IReportViewerMessages3 interface to provide custom localization of the <xref:Microsoft.Reporting.WebForms.ReportViewer> control user interface. This implementation is loaded by the <xref:Microsoft.Reporting.WebForms.ReportViewer> control via a custom application setting in the Web.config configuration file with the key `ReportViewerMessages`.  
+  
+ For example:  
+  
+```  
+<appSettings>   
+<add key="ReportViewerMessages" value="MyNamespace.MyClass, APP_CODE" />   
+</appSettings>   
+```  
+  
+> [!NOTE]
+>  See [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for more information on Web.config file settings.  
+  
+ If a `null` string value for a property is returned, the <xref:Microsoft.Reporting.WebForms.ReportViewer> control will display the original user interface string for that item.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="CalendarLoading">
@@ -26,7 +44,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text displayed in the date and time picker when the control waits for the Web server to generate a calendar for a given month.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -42,7 +60,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text of the **Cancel** link in the wait control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,7 +82,7 @@
       <Docs>
         <param name="pageCount">To be added.</param>
         <param name="pageCountMode">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the string in the default toolbar that represents the total number of pages in the current report and the page count mode that is used.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

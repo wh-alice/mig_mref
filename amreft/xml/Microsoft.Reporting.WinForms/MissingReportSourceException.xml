@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the exception that occurs when no report source has been specified.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +23,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the &lt;see cref="T:Microsoft.Reporting.WinForms.MissingReportSourceException"&gt; class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

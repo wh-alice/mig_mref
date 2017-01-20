@@ -1,6 +1,6 @@
 <Namespace Name="Microsoft.Reporting.WinForms">
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The Microsoft.Reporting.WinForms namespace contains methods and properties for the ReportViewer Windows forms control.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Namespace>

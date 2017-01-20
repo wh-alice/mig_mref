@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the severity of a warning.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the F:Microsoft.Reporting.WinForms.Severity.Warning?qualifyHint=False&autoUpgrade=True class.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -24,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.Severity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The severity level of the warning is `Error`.</summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -38,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.Severity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The severity level of the warning is `Warning`.</summary>
       </Docs>
     </Member>
   </Members>

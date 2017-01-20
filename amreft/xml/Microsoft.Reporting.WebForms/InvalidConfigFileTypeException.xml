@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Occurs when an object supplied through an entry in the Web.config file is missing or invalid.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ See [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for more information.  
+  
+ ]]></remarks>
   </Docs>
   <Members />
 </Type>

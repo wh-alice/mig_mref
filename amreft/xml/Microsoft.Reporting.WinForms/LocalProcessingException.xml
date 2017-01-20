@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents errors that occur while viewing a locally processed report.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

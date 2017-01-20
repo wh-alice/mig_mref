@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the zoom mode for the ReportViewer control.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This enumerator is used with the <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomMode%2A> property.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="FullPage">
@@ -24,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ZoomMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the zoom mode to full page.</summary>
       </Docs>
     </Member>
     <Member MemberName="PageWidth">
@@ -38,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ZoomMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the zoom mode to page width.</summary>
       </Docs>
     </Member>
     <Member MemberName="Percent">
@@ -52,7 +57,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ZoomMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the zoom mode to a percentage.</summary>
       </Docs>
     </Member>
   </Members>

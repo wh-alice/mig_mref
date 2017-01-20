@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents the error that occurs when a report contains a security violation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

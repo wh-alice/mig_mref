@@ -15,7 +15,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.Print"&gt; and &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.PrintingBegin&gt; events.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,9 +30,16 @@
         <ReturnType>System.Drawing.Printing.PrinterSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the printer settings to use for the current operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ By default, this property contains the same values as the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrinterSettings%2A> property in <xref:Microsoft.Reporting.WinForms.ReportViewer>, except that its <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> property is always set to <xref:System.Drawing.Printing.PrintRange.AllPages> for the <xref:Microsoft.Reporting.WinForms.ReportViewer.Print> event.  
+  
+ This property cannot be set to `null` (`Nothing` in Visual Basic).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

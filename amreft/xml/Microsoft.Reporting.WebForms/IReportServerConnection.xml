@@ -11,8 +11,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides report server connection information when the ReportViewer Web forms control is used with no session state.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ You can implement this interface to provide connection information when using the ReportViewer Web forms control with no session state. The ReportViewer control's session state usage is configured in the Web.config settings file.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="ReportServerUrl">
@@ -26,7 +31,7 @@
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the URL of the report server.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -42,7 +47,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the number of milliseconds to wait for server communications.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates information about report parameters.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,9 +25,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether an empty string is a valid value for the parameter. Read-only.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The AllowBlank property is ignored if the value of the <xref:Microsoft.Reporting.WebForms.ReportParameterInfo.DataType%2A> property is not a string.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="AreDefaultValuesQueryBased">
@@ -41,7 +46,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the default values of the parameter are based on a query. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +62,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the parameter's valid values are based on a query. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +78,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the data type of the parameter. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +94,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportParameterInfoCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a list of parameters whose values are used to retrieve additional parameter values in a query. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +110,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportParameterInfoCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A list of parameters that use the value of this parameter as parameters into queries to retrieve &lt;xref:Microsoft.Reporting.WebForms.ReportParameterInfo.ValidValues%2A&gt; and/or &lt;xref:Microsoft.SqlServer.ReportingServices.ReportParameter.DefaultValues&gt;.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +126,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an error message returned when the parameter has failed validation. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +142,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the parameter is used in a query to an external data source. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,7 +158,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the parameter can be a multivalue parameter. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,7 +174,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the parameter. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +190,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the value of the parameter can be `null`. Read-only.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,9 +206,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The text that prompts the user to provide parameter values.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The default value for the Prompt property is retrieved from the report definition.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PromptUser">
@@ -217,7 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the user is prompted for the value of the parameter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -233,9 +243,14 @@
         <ReturnType>Microsoft.Reporting.WebForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Describes the state of the parameter. Read-only.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The value of the property may change based on input used during the validation of the parameter through the use of the <xref:Microsoft.Reporting.WebForms.Report.GetParameters%2A> method.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidValues">
@@ -249,9 +264,14 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WebForms.ValidValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the available valid values for the parameter. Read-only.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ You can display the valid values of a parameter to the user in a user interface.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -265,7 +285,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the values for the parameter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -281,9 +301,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Determines whether the parameter can be displayed in the user interface.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ If Visible is set to `false`, the <xref:Microsoft.Reporting.WebForms.ReportParameterInfo.PromptUser%2A> property is overridden.  
+  
+ If Visible is set to `true`, a prompt is displayed in the user interface if <xref:Microsoft.Reporting.WebForms.ReportParameterInfo.PromptUser%2A> is also set to `true`.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

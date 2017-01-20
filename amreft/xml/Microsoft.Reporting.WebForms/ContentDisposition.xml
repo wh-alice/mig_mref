@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Indicates how the report content should be presented.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This is used as a value for the <xref:Microsoft.Reporting.WebForms.ReportViewer.ExportContentDisposition%2A> property of the <xref:Microsoft.Reporting.WebForms.ReportViewer> control to indicate whether content should be presented inline or as an attachment.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysAttachment">
@@ -24,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ContentDisposition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that content is always presented as an attachment regardless of format.</summary>
       </Docs>
     </Member>
     <Member MemberName="AlwaysInline">
@@ -38,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ContentDisposition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that content is presented inline regardless of format.</summary>
       </Docs>
     </Member>
     <Member MemberName="OnlyHtmlInline">
@@ -52,7 +57,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ContentDisposition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates that HTML-formatted content is presented inline; all other content is presented as an attachment.</summary>
       </Docs>
     </Member>
   </Members>

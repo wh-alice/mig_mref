@@ -9,8 +9,13 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the data type of a parameter.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ Use the ParameterDataType enumeration with the <xref:Microsoft.Reporting.WinForms.ReportParameterInfo.DataType%2A> property of the <xref:Microsoft.Reporting.WinForms.ReportParameterInfo> class.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -24,7 +29,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A `Boolean` data type that represents a true or false condition.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -38,7 +43,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A `DateTime` data type that represents the date and time.</summary>
       </Docs>
     </Member>
     <Member MemberName="Float">
@@ -52,7 +57,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A `Float` data type that represents a floating point decimal value.</summary>
       </Docs>
     </Member>
     <Member MemberName="Integer">
@@ -66,7 +71,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>An `Integer` data type.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -80,7 +85,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>A `String` data type that represents an array of characters.</summary>
       </Docs>
     </Member>
   </Members>

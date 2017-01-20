@@ -13,8 +13,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of strings that contain custom headers.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ The ReportViewerHeaderCollection class provides a simple collection object that can be used to store a set of custom headers.  
+  
+ ]]></remarks>
   </Docs>
   <Members />
 </Type>

@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Occurs when the ASP.NET session has been disabled.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members />

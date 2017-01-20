@@ -10,7 +10,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a parameter for a report.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,7 +23,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Instantiates a new **ReportParameter**.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +39,7 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Instantiates a new **ReportParameter** with a name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +57,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Instantiates a new **ReportParameter** with a name and a value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +75,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Instantiates a new multivalued **ReportParameter** with a name.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +95,7 @@
         <param name="name">To be added.</param>
         <param name="value">To be added.</param>
         <param name="visible">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Instantiates a new **ReportParameter** with a name, a value, and a visibility flag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
         <param name="name">To be added.</param>
         <param name="values">To be added.</param>
         <param name="visible">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Instantiates a new **ReportParameter** with a name, multiple values, and a visibility flag.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the name of the parameter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +146,7 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a collection of `string` objects containing one or more values for the parameter.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,9 +162,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Determines whether the parameter can be displayed in the user interface.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Reporting.WebForms.ReportViewer> control may only display the parameter input user interface if the control's <xref:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode%2A> property is set to <xref:Microsoft.Reporting.WebForms.ProcessingMode>.  
+  
+ The following conditions must also be met for the parameter input area to be displayed:  
+  
+-   The <xref:Microsoft.Reporting.WebForms.ReportViewer.PromptAreaCollapsed%2A> property of the **ReportViewer** control must be `false` (this is the default value).  
+  
+-   The <xref:Microsoft.Reporting.WebForms.ReportViewer.ShowParameterPrompts%2A> must be `true` (this is the default value).  
+  
+-   The <xref:Microsoft.Reporting.WebForms.ReportParameterInfo.PromptUser%2A> property is set to `true.`  
+  
+ If the **ReportViewer** control is set to <xref:Microsoft.Reporting.WebForms.ProcessingMode> mode, the host application must provide a user interface for accepting parameter values and passing these parameters to the report.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

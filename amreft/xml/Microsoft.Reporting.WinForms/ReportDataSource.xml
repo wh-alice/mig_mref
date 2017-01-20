@@ -10,8 +10,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a data source for a report.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ The ReportDataSource class is used with the <xref:Microsoft.Reporting.WinForms.LocalReport.DataSources%2A> collection of a <xref:Microsoft.Reporting.WinForms.LocalReport> object to add one or more required data sources to a local report. This is necessary when adding a report to the ReportViewer control.  
+  
+   
+  
+## Examples  
+ For code examples, see <xref:Microsoft.Reporting.WinForms.LocalReport>.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -23,7 +33,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructs an empty data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -39,7 +49,7 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +67,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with an &lt;xref:System.Collections.IEnumerable&gt; object in the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +85,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with a &lt;xref:System.Data.DataTable&gt; object in the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,8 +103,24 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Constructs a named data source with a value.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A> may be an instance of <xref:System.Data.DataTable>, a <xref:System.Collections.IEnumerable> value (for example, <xref:System.Data.DataView> or <xref:System.Array>), or a <xref:System.Windows.Forms.BindingSource>.  
+  
+ If this value is an instance of <xref:System.Collections.IEnumerable>, all elements in the collection must be of the same type, and names of the public properties of the element (as retrieved by the <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> method) must match the field names of the corresponding report data source.  
+  
+ <xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A> may also be an instance of <xref:System.Type>. In this case, an instance of the supplied type is automatically created and added to an automatically created collection.  
+  
+ If the type of <xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A> is not any of the aforementioned types, it is added to an automatically created collection.  
+  
+   
+  
+## Examples  
+ For code examples, see <xref:Microsoft.Reporting.WinForms.LocalReport>.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,7 +137,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property initialized as a particular type.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +155,7 @@
       <Docs>
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Constructs a named data source with a &lt;xref:System.Windows.Forms.BindingSource&gt; object in the &lt;xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A&gt; property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,7 +178,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the name of the report data source.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,9 +194,20 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the instance of the report data source.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Value may be an instance of <xref:System.Data.DataTable>, a <xref:System.Collections.IEnumerable> value (for example, <xref:System.Data.DataView> or <xref:System.Array>), or a <xref:System.Windows.Forms.BindingSource>.  
+  
+ If this value is an instance of <xref:System.Collections.IEnumerable>, all elements in the collection must be of the same type, and names of the public properties of the element (as retrieved by the <xref:System.ComponentModel.TypeDescriptor.GetProperties%2A> method) must match the field names of the corresponding report data source.  
+  
+ Value may also be an instance of <xref:System.Type>. In this case, an instance of the supplied type is automatically created and added to an automatically created collection.  
+  
+ If the type of Value is not any of the aforementioned types, this property throws an exception.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
   </Members>

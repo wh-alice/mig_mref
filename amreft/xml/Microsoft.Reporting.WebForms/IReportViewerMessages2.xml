@@ -11,8 +11,26 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods and properties for implementing customized user interface messages.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ You can implement the IReportViewerMessages2 interface to provide custom localization of the **ReportViewer** control user interface. This implementation is loaded by the **ReportViewer** control via a custom application setting in the Web.config configuration file with the key `ReportViewerMessages`.  
+  
+ For example:  
+  
+ `<appSettings>`  
+  
+ `<add key="ReportViewerMessages" value="MyClass, MyAssembly" />`  
+  
+ `</appSettings>`  
+  
+> [!NOTE]
+>  Please see [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for more information on Web.config file settings.  
+  
+ If a `null` string value for a property is returned, the **ReportViewer** control will display the original user interface string for that item.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="ClientNoScript">
@@ -26,7 +44,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text to display when scripting is disabled on the client browser.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -42,7 +60,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text to display if an error occurs when the client loads the print control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,7 +80,7 @@
       </Parameters>
       <Docs>
         <param name="dataSourcePrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the error text to display when the user name has not been supplied for the data source credentials.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +100,7 @@
       </Parameters>
       <Docs>
         <param name="format">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns a localized name for the current export format.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +116,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the ToolTip text to display when a pointer pauses over the down arrow of a multivalue parameter drop-down list.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +136,7 @@
       </Parameters>
       <Docs>
         <param name="parameterPrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the error text to display when a selection has not been made for a multivalue report parameter.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,7 +156,7 @@
       </Parameters>
       <Docs>
         <param name="parameterPrompt">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the error text to display when the value for a report parameter has not been specified.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

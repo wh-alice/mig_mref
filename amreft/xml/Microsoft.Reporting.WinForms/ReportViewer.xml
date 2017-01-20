@@ -18,8 +18,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Encapsulates the methods and properties used for the ReportViewer control.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This control shows the report and its associated user interface.  
+  
+ The control is able to work in either local or remote processing mode. In local processing mode, the control processes and renders the report locally. In remote processing mode, processing is done on a report server and displayed locally. The remote processing mode requires a Microsoft SQL Server 2008 or later instance of report server.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,7 +38,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructs a `ReportViewer` object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,8 +53,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.BackEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a user navigates back to a parent report from a drillthrough report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Occurs when a user navigates back to a parent report from a drillthrough report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -66,7 +80,7 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the background color of the control's report area.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,7 +96,7 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the background image of the ReportViewer control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,7 +112,7 @@
         <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the layout for the background image of the ReportViewer control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,8 +128,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user navigates to a bookmark in a report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user navigates to a bookmark in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -134,7 +155,7 @@
         <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the border style of the ReportViewer control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +175,7 @@
       </Parameters>
       <Docs>
         <param name="millisecondsTimeout">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Stops background processing of the report.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,8 +192,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Clears the report view and fills it with the background color of the control.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The **Clear** method resets the ReportViewer user interface elements to their default states.  
+  
+   
+  
+## Examples  
+  
+```c#  
+private void button1_Click(object sender, EventArgs e)  
+{  
+   reportViewer.Clear();  
+}  
+```  
+  
+```vb#  
+Private Sub Button1_Click(ByVal sender As System.Object, _  
+            ByVal e As System.EventArgs) Handles Button1.Click  
+   ReportViewer1.Clear()  
+End Sub  
+```  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentPage">
@@ -194,7 +238,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the current page of the ReportViewer control's active report.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,9 +262,14 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportViewerStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a &lt;see cref="T:Microsoft.Reporting.WinForms.ReportViewerStatus"&gt; object that indicates which operations can currently be performed on the **ReportViewer** control, the status of the prompt area, and the status of the document map area.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property always returns the same instance of the <xref:Microsoft.Reporting.WinForms.ReportViewerStatus> object, even when the status of the control changes.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -239,9 +288,14 @@
         <ReturnType>Microsoft.Reporting.WinForms.DisplayMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a &lt;see cref="T:Microsoft.Reporting.WinForms.DisplayMode"&gt; value that indicates the current display mode of the **ReportViewer** control.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property is read-only. To programmatically change the display mode of the **ReportViewer** control, use the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetDisplayMode%2A> method.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -259,7 +313,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Releases the unmanaged resources used by the &lt;see cref="T:Microsoft.Reporting.WinForms.ReportViewer"&gt; and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,7 +336,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the collapsed state of the document map.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,8 +352,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.DocumentMapNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a document map node is selected.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when a document map node is selected. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.DocumentMapNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.DocumentMapNavigationEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="DocumentMapWidth">
@@ -321,7 +382,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the width of the document map in pixels.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,8 +398,150 @@
         <ReturnType>Microsoft.Reporting.WinForms.DrillthroughEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a drillthrough item is selected in a report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when a drillthrough item is selected in a report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.DrillThroughEventArgs> object to the <xref:Microsoft.Reporting.WinForms.DrillThroughEventHandler> delegate, which handles the event.  
+  
+ If the drillthrough report has subreports, you must supply data for those subreports. To do this, provide a <xref:Microsoft.Reporting.WinForms.LocalReport.SubreportProcessing> event handler to the drillthrough report that is passed via the <xref:Microsoft.ReportingServices.DrillthroughEventArgs> object.  
+  
+ To load data for the drillthrough report, you must call the **DataSources.Add** method of the drillthrough report that is passed via the <xref:Microsoft.Reporting.WinForms.DrillThroughEventArgs> object, rather than the <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> object used by the ReportViewer control.  
+  
+ The name of the data source added in the drillthrough event handler method must match the data source name that was specified in the drillthrough report. The name of this data source can be viewed in the Report Designer by clicking the **Report** menu and selecting **Data Sources**. This opens the **Report Data Sources** dialog box that displays the names of the report data sources defined in the report.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following sample code loads a sample report containing a series of drillthrough items and sets up an event handler to handle the drillthrough events. The arguments passed to the drillthrough event handler include a drillthrough report object. The event handler adds a data source to this report before the drillthrough report is rendered in the ReportViewer control.  
+  
+```c#  
+using System;  
+using System.Data;  
+using System.Windows.Forms;  
+using Microsoft.Reporting.WinForms;  
+  
+public class Demo : Form  
+{  
+    private DataTable LoadEmployeesData()  
+    {  
+        DataSet dataSet = new DataSet();  
+        dataSet.ReadXml(@"c:\employees.xml");  
+        return dataSet.Tables[0];  
+    }  
+  
+    private DataTable LoadDepartmentsData()  
+    {  
+        DataSet dataSet = new DataSet();  
+        dataSet.ReadXml(@"c:\departments.xml");  
+        return dataSet.Tables[0];  
+    }  
+  
+    void DemoDrillthroughEventHandler(object sender,   
+        DrillthroughEventArgs e)  
+    {  
+        LocalReport localReport = (LocalReport)e.Report;  
+        localReport.DataSources.Add(new ReportDataSource("Employees",  
+            LoadEmployeesData()));  
+    }  
+  
+    public Demo()  
+    {  
+        this.Text = "Report Control Demo";  
+        this.ClientSize = new System.Drawing.Size(950, 600);  
+  
+        ReportViewer reportViewer = new ReportViewer();  
+  
+        // Set Processing Mode.  
+        reportViewer.ProcessingMode = ProcessingMode.Local;  
+  
+        // Set RDL file.  
+        reportViewer.LocalReport.ReportPath = @"c:\Departments.rdlc";  
+  
+        // Supply a DataTable corresponding to each report   
+        // data source.  
+        reportViewer.LocalReport.DataSources.Add(  
+            new ReportDataSource("Departments",   
+            LoadDepartmentsData()));  
+  
+        // Add a handler for drillthrough.  
+        reportViewer.Drillthrough += new   
+            DrillthroughEventHandler(DemoDrillthroughEventHandler);  
+  
+        // Add the reportviewer to the form.  
+        reportViewer.Dock = DockStyle.Fill;  
+        this.Controls.Add(reportViewer);  
+  
+        // Process and render the report.  
+        reportViewer.RefreshReport();  
+    }  
+  
+    [STAThread]  
+    public static int Main(string[] args)  
+    {  
+        Application.Run(new Demo());  
+        return 0;  
+    }  
+}  
+```  
+  
+ The Visual Basic sample below assumes that you have created a Windows application with a form and a ReportViewer control.  
+  
+```vb#  
+Imports System.Data  
+Imports Microsoft.Reporting.WinForms  
+  
+Public Class Form1  
+  
+    Private Function LoadEmployeesData() As DataTable  
+        Dim dataSet As New DataSet()  
+        dataSet.ReadXml("c:\My Reports\employees.xml")  
+        LoadEmployeesData = dataSet.Tables(0)  
+    End Function  
+  
+    Private Function LoadDepartmentsData()  
+        Dim dataSet As New DataSet()  
+        dataSet.ReadXml("c:\My Reports\departments.xml")  
+        LoadDepartmentsData = dataSet.Tables(0)  
+    End Function  
+  
+    Public Sub DemoDrillthroughEventHandler(ByVal sender As Object, _  
+        ByVal e As DrillthroughEventArgs)  
+        Dim localReport = e.Report  
+        localReport.DataSources.Add(New ReportDataSource( _  
+            "Employees", LoadEmployeesData()))  
+    End Sub  
+  
+    Private Sub Form1_Load(ByVal sender As System.Object, _  
+        ByVal e As System.EventArgs) Handles MyBase.Load  
+  
+        ReportViewer1.ProcessingMode = ProcessingMode.Local  
+  
+        Dim localReport = ReportViewer1.LocalReport  
+  
+        ''Set RDL file.   
+        localReport.ReportPath = "c:\My Reports\Departments.rdlc"  
+  
+        '' Supply a DataTable corresponding to each report   
+        '' data source.   
+        Dim myReportDataSource = New ReportDataSource( _  
+            "Departments", LoadDepartmentsData())  
+        localReport.DataSources.Add(myReportDataSource)  
+  
+        ''Add a handler for drillthrough.   
+        AddHandler ReportViewer1.Drillthrough, _  
+            AddressOf DemoDrillthroughEventHandler  
+  
+        '' Process and render the report.   
+        Me.ReportViewer1.RefreshReport()  
+  
+    End Sub  
+End Class  
+```  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportDialog">
@@ -356,9 +559,14 @@
       </Parameters>
       <Docs>
         <param name="extension">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Opens in the **Exporting** dialog box for a specific rendering extension.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Invoking this method is equivalent to a user selecting an export format from the **Export** drop-down list on the toolbar.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportDialog">
@@ -378,9 +586,14 @@
       <Docs>
         <param name="extension">To be added.</param>
         <param name="deviceInfo">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Opens in the export dialog box for a specific rendering extension.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Invoking this method is similar to a user selecting an export format from the **Export** drop-down list on the toolbar.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportDialog">
@@ -402,9 +615,14 @@
         <param name="extension">To be added.</param>
         <param name="deviceInfo">To be added.</param>
         <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Opens in the **Exporting** dialog box for a specific rendering extension and specifies device information and saves the exported report to a file with the specified file name.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Invoking this method is similar to a user selecting an export format from the **Export** drop-down list on the toolbar, specifying a file name in the **Save As** dialog box, and then clicking **OK**.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -424,7 +642,7 @@
       <Docs>
         <param name="searchString">To be added.</param>
         <param name="startPage">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Searches the report for the specified text string.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -441,7 +659,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Continues the search for the specified text string.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,9 +676,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the page settings that are used to print the current report in the **ReportViewer** control or display it in print layout mode.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ By default, the **ReportViewer** control uses the page settings specified in the report definition when printing the current report or displaying it in print layout mode. Modifying the page settings by changing the properties of the returned <xref:System.Drawing.Printing.PageSettings> object has no effect. To modify page settings, you must use the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetPageSettings%2A> method.  
+  
+ The returned page settings only apply to the current report in the **ReportViewer** control, and do not apply to its parent report or the drillthrough reports accessible from it.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalPages">
@@ -475,9 +700,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the total number of pages in the report.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ When the report is displayed in normal mode (<xref:Microsoft.Reporting.WinForms.ReportViewer.DisplayMode%2A> is <xref:Microsoft.Reporting.WinForms.DisplayMode>), this method returns the same value as <xref:Microsoft.Reporting.WinForms.Report.GetTotalPages%2A> in <xref:Microsoft.Reporting.WinForms.LocalReport> or <xref:Microsoft.Reporting.WinForms.ServerReport>, depending on the current value of <xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A>. When the report is displayed in print layout mode (<xref:Microsoft.Reporting.WinForms.ReportViewer.DisplayMode%2A> is <xref:Microsoft.Reporting.WinForms.DisplayMode.PrintLayout>?qualifyHint=False&autoUpgrade=True), this method returns the total number of pages that have been generated currently. If report pages are still being generated (the <xref:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete> event is not yet triggered), this value will update as more pages are generated.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalPages">
@@ -511,8 +741,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.HyperlinkEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a user clicks a hyperlink in a report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when a user clicks a hyperlink in a report, before the hyperlink is followed. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.HyperlinkEventArgs> object to the <xref:Microsoft.Reporting.WinForms.HyperlinkEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDocumentMapWidthFixed">
@@ -534,7 +771,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the size of the document map panel is fixed or changes when the viewer resizes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -554,7 +791,7 @@
       </Parameters>
       <Docs>
         <param name="bookmarkId">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Moves the report to the specified bookmark.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -573,7 +810,7 @@
       </Parameters>
       <Docs>
         <param name="documentMapId">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Moves to the specified area of the document map.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,9 +830,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a `Boolean` value that indicates whether to keep the report server session from expiring as long as **ReportViewer** is running.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ In remote processing mode, setting this property to `true` causes the **ReportViewer** control to keep the report server session from expiring. The **ReportViewer** control pings the report server to keep the report server session from expiring. If you want to keep a report server session active for a user even when there is no activity on their part, set KeepSessionAlive to `true`. To let the session timeout and expire in your application, set KeepSessionAlive to `false`.  
+  
+ In local processing mode, setting this property has no effect.  
+  
+ If KeepSessionAlive is set to `false` and the report server session has already been created, you cannot set this property to `true`. Doing so will cause an <xref:System.InvalidOperationException> to be thrown.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalReport">
@@ -614,9 +860,14 @@
         <ReturnType>Microsoft.Reporting.WinForms.LocalReport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns the local report in the ReportViewer control.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Examples  
+ See <xref:Microsoft.Reporting.WinForms.LocalReport> for a code example.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumPageCount">
@@ -631,8 +882,17 @@
       </ReturnValue>
       <MemberValue>2147483647</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>A constant that represents the maximum number of pages in a report when the current page count mode is &lt;see cref="T:Microsoft.Reporting.WinForms.PageCountMode"&gt;.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Use MaximumPageCount to specify the last page of a report even when you do not have the maximum page count.  
+  
+ To navigate to the last page of a report when the current page count mode is <xref:Microsoft.Reporting.WinForms.PageCountMode>, set the <xref:Microsoft.Reporting.WinForms.ReportViewer.CurrentPage%2A> property to MaximumPageCount. If you do this in <xref:Microsoft.Reporting.WinForms.PageCountMode> mode, the **ReportViewer** throws an <xref:System.InvalidOperationException>.  
+  
+ Certain operations cause the **ReportViewer** control to calculate the actual total number of pages, such as exporting a report or navigating to the last page of the report. Before setting the <xref:Microsoft.Reporting.WinForms.ReportViewer.CurrentPage%2A> property to MaximumPageCount, you should verify that the current page count is an estimated page count by using the <xref:Microsoft.Reporting.WinForms.Report.GetTotalPages%2A> method in the <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> or <xref:Microsoft.Reporting.WinForms.ReportViewer.ServerReport%2A> object.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Messages">
@@ -654,9 +914,306 @@
         <ReturnType>Microsoft.Reporting.WinForms.IReportViewerMessages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets an object that contains custom messages for use by the ReportViewer control.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ You can implement the <xref:Microsoft.Reporting.WinForms.IReportViewerMessages> interface to provide custom localization of the ReportViewer control user interface. This implementation can be passed to the ReportViewer control by setting the Messages property of the ReportViewer control.  
+  
+> [!NOTE]
+>  The <xref:Microsoft.Reporting.WinForms.IReportViewerMessages> interface does not allow customization of local or server report processing error messages.  
+  
+ Returning a `null` string value for a property will cause the ReportViewer control to display the original user interface string for that item.  
+  
+   
+  
+## Examples  
+ The following code sample shows an implementation of <xref:Microsoft.Reporting.WinForms.IReportViewerMessages> being passed to the ReportViewer control.  
+  
+```c#  
+using System;  
+using System.Collections.Generic;  
+using System.ComponentModel;  
+using System.Data;  
+using System.Drawing;  
+using System.Text;  
+using System.Windows.Forms;  
+using Microsoft.Reporting.WinForms;  
+using System.Diagnostics;  
+  
+namespace MySample  
+{  
+    public partial class Form1 : Form  
+    {  
+        public Form1()  
+        {  
+            InitializeComponent();  
+        }  
+  
+        private void Form1_Load(object sender, EventArgs e)  
+        {  
+            CCustomMessageClass myMessageClass = new CCustomMessageClass();  
+  
+            reportViewer1.Messages = myMessageClass;  
+  
+            this.reportViewer1.RefreshReport();  
+  
+         }  
+    }  
+  
+    public class CCustomMessageClass : IReportViewerMessages  
+    {  
+  
+        #region IReportViewerMessages Members  
+  
+        public string BackButtonToolTip  
+        {  
+            get { return ("BackButtonToolTip here."); }  
+        }  
+  
+        public string BackMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ChangeCredentialsText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string CurrentPageTextBoxToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string DocumentMapButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string DocumentMapMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ExportButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ExportMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FalseValueText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindButtonText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindNextButtonText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FindNextButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string FirstPageButtonToolTip  
+        {  
+            get { return("Custom first page tool tip"); }  
+        }  
+  
+        public string LastPageButtonToolTip  
+        {  
+            get { return(null); }  
+        }  
+  
+        public string NextPageButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NoMoreMatches  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NullCheckBoxText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NullCheckBoxToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string NullValueText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PageOf  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PageSetupButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PageSetupMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ParameterAreaButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PasswordPrompt  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PreviousPageButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintLayoutButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintLayoutMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string PrintMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ProgressText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string RefreshButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string RefreshMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string SearchTextBoxToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string SelectAValue  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string SelectAll  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string StopButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string StopMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string TextNotFound  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string TotalPagesToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string TrueValueText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string UserNamePrompt  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ViewReportButtonText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ViewReportButtonToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomControlToolTip  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomMenuItemText  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomToPageWidth  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        public string ZoomToWholePage  
+        {  
+            get { return("Add your custom text here."); }  
+        }  
+  
+        #endregion  
+    }  
+```  
+  
+ }  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLayout">
@@ -674,7 +1231,7 @@
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Raises the `Layout` event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,7 +1250,7 @@
       </Parameters>
       <Docs>
         <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Raises the `Load` event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,9 +1270,17 @@
         <ReturnType>Microsoft.Reporting.WinForms.PageCountMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a &lt;see cref="T:Microsoft.Reporting.WinForms.PageCountMode"&gt; enumeration value that indicates the default page count mode to use when rendering a report in the report area.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Set PageCountMode to control how to calculate the total number of pages when rendering a report in the report area. When PageCountMode is <xref:Microsoft.Reporting.WinForms.PageCountMode>, the **ReportViewer** control displays the actual total number of pages in the toolbar. When PageCountMode is <xref:Microsoft.Reporting.WinForms.PageCountMode>, the **ReportViewer** control may calculate either the actual total or an estimated total, depending on the report. When the calculated value is an estimated total, it is followed by a estimate indicator in the toolbar, and the displayed value may change as the user navigates through report pages.  
+  
+> [!NOTE]
+>  Using estimated page counts can help improve the performance of the **ReportViewer** control when rendering reports.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNavigation">
@@ -729,8 +1294,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.PageNavigationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a user changes pages in a report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when a user changes pages in a report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.PageNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.PageNavigationEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSettingsChanged">
@@ -744,8 +1316,15 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the margins or the page size for the current report in the **ReportViewer** control have changed.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event can occur when page settings for the current report are changed by the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetPageSettings%2A> method, when the user modifies the page settings in the **Page Setup** dialog box and clicks the **OK** button, or when the report definition changes, such as when the user navigates to a drillthrough report. Information about this event is passed in a <xref:System.EventArgs> object to the <xref:System.EventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSetupDialog">
@@ -760,9 +1339,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Opens the page setup dialog box.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Invoking this method is functionally equivalent to clicking the **Page Setup** button on the control's toolbar. The current value of <xref:Microsoft.Reporting.WinForms.ReportViewer.GetPageSettings%2A> is used to initialize the dialog.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformBack">
@@ -777,8 +1361,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Navigates the report viewer control back to the parent report from a drillthrough report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This method does not raise the <xref:Microsoft.Reporting.WinForms.ReportViewer.Back> event when called.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -792,8 +1381,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportPrintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when a user prints the report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when a user prints the report.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintDialog">
@@ -808,9 +1404,32 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the **Print** dialog box.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Calling this method while the report is being rendered in the control causes an <xref:System.InvalidOperationException> to be thrown.  
+  
+   
+  
+## Examples  
+  
+```c#  
+private void button1_Click(object sender, EventArgs e)  
+{  
+   reportViewer.PrintDialog();  
+}  
+```  
+  
+```vb#  
+Private Sub Button1_Click(ByVal sender As System.Object, _  
+            ByVal e As System.EventArgs) Handles Button1.Click  
+   ReportViewer1.PrintDialog()  
+End Sub  
+```  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintDialog">
@@ -828,9 +1447,14 @@
       </Parameters>
       <Docs>
         <param name="printerSettings">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Displays the **Print** dialog box.</summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Invoking this method is similar to the user clicking the **Print** button, except it does not trigger the <xref:Microsoft.Reporting.WinForms.ReportViewer.Print> event. If the user clicks the **Print** button in the **Print** dialog box, this method triggers the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrintingBegin> event.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrinterSettings">
@@ -852,9 +1476,14 @@
         <ReturnType>System.Drawing.Printing.PrinterSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a &lt;xref:System.Drawing.Printing.PrinterSettings&gt; object that contains the settings for the default printer and print options that are used to initialize the **Print** dialog and the printer's **Preferences** dialog.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ You should also update this property to reflect the user's changes in those dialogs. Note that the page range settings, such as the <xref:System.Drawing.Printing.PrintRange>, <xref:System.Drawing.Printing.FromPage>, and <xref:System.Drawing.Printing.ToPage> properties, are not used by the **ReportViewer** when initializing the print dialog. To set the page range settings when launching the dialog, use the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrintDialog%2A> method.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintingBegin">
@@ -868,8 +1497,17 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportPrintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user clicks the **Print** button in the **Print** dialog box.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event can occur when the **Print** dialog box is launched by the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrintDialog%2A> method or by the user clicking the **Print** button in the toolbar. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportPrintEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportPrintEventHandler> delegate, which handles the event.  
+  
+ The event arguments contain the printer settings the user selects in the **Print** dialog box. If this event is not cancelled, the printer settings are saved into the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrinterSettings%2A> property. If this event is cancelled, the **Printing** dialog box is not displayed, the report is not printed, and the printer settings are not saved.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessingMode">
@@ -888,7 +1526,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ProcessingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the processing mode of the ReportViewer control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -912,7 +1550,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the collapsed state of the parameter prompt area or the credentials prompt area.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -929,8 +1567,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Causes the current report in the Report Viewer to be processed and rendered.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Calling the **RefreshReport** method causes all data in the report to be reloaded and rendered. A call to **RefreshReport** is automatically added to the Form Load event handler when a ReportViewer control is added to a form.  
+  
+   
+  
+## Examples  
+  
+```vb#  
+Private Sub Form1_Load(ByVal sender As System.Object, _  
+            ByVal e As System.EventArgs) Handles MyBase.Load  
+   Me.ReportViewer1.RefreshReport()  
+End Sub  
+```  
+  
+```c#  
+private void Form1_Load(object sender, EventArgs e)  
+{  
+   this.reportViewer.RefreshReport();  
+}  
+```  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderingBegin">
@@ -944,8 +1605,15 @@
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the report in the ReportViewer begins rendering.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the report begins rendering. Information about this event is passed in a **CancelEventArgs** object to a **CancelEventHandler** delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="RenderingComplete">
@@ -959,8 +1627,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.RenderingCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the report finishes rendering.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the report finishes rendering. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.RenderingCompleteEventArgs> object to the <xref:Microsoft.Reporting.WinForms.RenderingCompleteEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportError">
@@ -974,8 +1649,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportErrorEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Raised when an error occurs in the report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event is raised when an error occurs in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportErrorEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportErrorEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportExport">
@@ -989,8 +1671,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.ExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user clicks the **Export** button.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user clicks the **Export** button, before the report is actually exported. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportExportEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ExportEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportRefresh">
@@ -1004,8 +1693,15 @@
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the report is refreshed.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the report is refreshed.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1020,8 +1716,34 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the control to its default values.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ Calling the **Reset** method resets the ReportViewer control to its default state. The existing <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> object is replaced with a new instance.  
+  
+> [!NOTE]
+>  Because the <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> object is replaced with a new instance when Reset is called, any reference to the <xref:Microsoft.Reporting.WinForms.LocalReport.SubreportProcessing> event handler is removed. You must reinstate the **SubReportProcessing** event handler after calling **Reset** to handle sub-report processing events.  
+  
+   
+  
+## Examples  
+  
+```c#  
+private void button1_Click(object sender, EventArgs e)  
+{  
+   reportViewer.Reset();  
+}  
+```  
+  
+```vb#  
+Private Sub Button1_Click(ByVal sender As System.Object, _  
+            ByVal e As System.EventArgs) Handles Button1.Click  
+   ReportViewer1.Reset()  
+End Sub  
+```  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetPageSettings">
@@ -1036,8 +1758,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reverts the page settings for the current report in the **ReportViewer** control to the settings in the report definition.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ If you changed the printer settings in a previous call to <xref:Microsoft.Reporting.WinForms.ReportViewer.SetPageSettings%2A> using the `PrinterSettings` property of the `pageSettings` parameter, these changes are not reverted. Also, only the changes you made to the current in the **ReportViewer** control are reverted, and calling this method does not affect its parent report or the drillthrough reports accessible from it.  
+  
+ If the **ReportViewer** control is in print layout mode when this method is called, the it cancels any currently running report rendering operation and rerenders the report immediately.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Search">
@@ -1051,8 +1780,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.SearchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>This event occurs when the user clicks the **Find** or **Find Next** button, or when a search operation is invoked programmatically.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the report is refreshed. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.SearchEventArgs> object to the <xref:Microsoft.Reporting.WinForms.SearchEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="SearchState">
@@ -1074,7 +1810,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.SearchState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the search text and the start page of the current report search operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1095,9 +1831,14 @@
         <ReturnType>Microsoft.Reporting.WinForms.ServerReport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a server report in the Report Viewer.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Examples  
+ See <xref:Microsoft.Reporting.WinForms.ServerReport> for a code example.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDisplayMode">
@@ -1115,7 +1856,7 @@
       </Parameters>
       <Docs>
         <param name="mode">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Sets the control display to normal or print preview mode.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1134,8 +1875,17 @@
       </Parameters>
       <Docs>
         <param name="pageSettings">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Sets the page settings that are used to print the current report in the **ReportViewer** control or display it in print layout mode.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ By default, the **ReportViewer** control uses the page settings specified in the report definition when printing the current report or displaying it in print layout mode. Use this method to change the page settings for the current report (not the current page), such as margins or paper size. This method validates the margin and page size values in the `pageSettings` parameter. Note that the change only affects the current report in the **ReportViewer** control, and does not affect its parent report or the drillthrough reports accessible from it.  
+  
+ The **ReportViewer** control uses the `pageSettings``.PrinterSettings` property to initialize the **Print** dialog, but does not validate the `pageSettings``.PrinterSettings` property. The printer settings in `pageSettings``.PrinterSettings` affect all reports displayed in the **ReportViewer** control. If `pageSettings``.PrinterSettings` is `null`, the existing printer settings remain unchanged.  
+  
+ If the **ReportViewer** control is in print layout mode when this method is called, the it cancels any currently running report rendering operation and rerenders the report immediately.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowBackButton">
@@ -1154,7 +1904,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Back** button is visible on the control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1178,7 +1928,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Context** menu is visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1202,9 +1952,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether prompts for user credentials will be displayed.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property is ignored when <xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A> is set to `Local`.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDocumentMapButton">
@@ -1223,7 +1978,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the button that shows and collapses the document map is visible on the split bar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1244,7 +1999,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Export** button is visible on the control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1265,7 +2020,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Find** text box is visible on the control.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1286,7 +2041,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the page navigation controls are visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1310,7 +2065,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether parameter prompts are visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1331,9 +2086,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that indicates whether the **Print** button is visible.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The buttons affected by this property include print, page setup, and Print Preview.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowProgress">
@@ -1355,7 +2115,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether progress animation is displayed during report processing.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1376,7 +2136,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the button that shows and collapses the prompt area is visible on the split bar.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1397,7 +2157,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Refresh** button is visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1418,7 +2178,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Stop** button is visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1442,7 +2202,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the Toolbar is visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1463,7 +2223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Indicates whether the **Zoom** list box is visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1479,8 +2239,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.SortEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user activates a sort.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user activates a sort. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.SortEventArgs> object to the <xref:Microsoft.Reporting.WinForms.SortEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusChanged">
@@ -1494,8 +2261,17 @@
         <ReturnType>System.EventHandler&lt;System.EventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs whenever the user interface state of the **ReportViewer** control changes.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event can occur in response to method calls as well as background operations in the **ReportViewer** control, such as rendering a report page. Information about this event is passed in a <xref:System.EventArgs> object to the <xref:System.EventHandler> delegate, which handles the event.  
+  
+ It is useful to subscribe to this event when implementing your own toolbar or replacing portions of the built-in user interface.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmittingDataSourceCredentials">
@@ -1509,8 +2285,17 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportCredentialsEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user submits new data source credentials viaby using the built-in prompt area.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user submits data source credentials. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportCredentialsEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportCredentialsEventHandler> delegate, which handles the event. This event only applies to remote processing mode.  
+  
+ Handle this event to read or modify the data source credentials before they are submitted to the report server.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmittingParameterValues">
@@ -1524,8 +2309,38 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportParametersEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when parameter values are submitted to the report server.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user clicks the **View Report** button, when the user navigates back to a parent report that contains report parameters from a drillthrough report, or when report parameters are automatically submitted due to dependencies between them. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportParametersEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportParametersEventHandler> delegate, which handles the event. This event only applies to remote processing mode.  
+  
+ Handle this event to read or modify the report parameters before they are submitted to the report server.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ If you want to prevent parameters from being automatically submitted, subscribe to this event and use the following code:  
+  
+```vb  
+Private Sub reportViewer1_SubmittingParameterValues(ByVal sender As Object, ByVal e As ReportParametersEventArgs)  
+    If e.AutoSubmit Then  
+        e.Cancel = True  
+    End If  
+End Sub  
+```  
+  
+```c#  
+void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEventArgs e)  
+{  
+    if (e.AutoSubmit)  
+        e.Cancel = true;  
+}  
+```  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="Toggle">
@@ -1539,8 +2354,15 @@
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user toggles the visibility of an item in the report.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user toggles the visibility of an item in the report.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToolStripRenderer">
@@ -1562,9 +2384,14 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the &lt;xref:System.Windows.Forms.ToolStripRenderer&gt; used to customize the look and feel of the **ReportViewer** control's toolbar as well as the context menu on the report.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This property behaves in the same way as the <xref:System.Windows.Forms.ToolStrip.Renderer%2A> property in <xref:System.Windows.Forms.ToolStrip>.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewButtonClick">
@@ -1578,8 +2405,15 @@
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user clicks the **View** button.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user clicks the **View** button.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="WaitControlDisplayAfter">
@@ -1598,7 +2432,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the delay in milliseconds before the busy status indicator is displayed to the user.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1619,9 +2453,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the page zoom that is calculated based on the zoom mode.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ When <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomMode%2A> is set to <xref:Microsoft.Reporting.WinForms.ZoomMode> or <xref:Microsoft.Reporting.WinForms.ZoomMode>, this property returns the calculated zoom value rounded to the nearest integer. The minimum value is `1`. When <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomMode%2A> is set to <xref:Microsoft.Reporting.WinForms.ZoomMode>, this property returns the same value as <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomPercent%2A>.  
+  
+ If no report page is currently displayed, the value `100` is returned.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomChange">
@@ -1635,8 +2476,15 @@
         <ReturnType>Microsoft.Reporting.WinForms.ZoomChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the user changes the zoom level of the ReportViewer control.</summary>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ This event occurs when the user changes the zoom level of the ReportViewer control. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ZoomChangeEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ZoomChangedEventHandler> delegate, which handles the event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomMode">
@@ -1658,9 +2506,18 @@
         <ReturnType>Microsoft.Reporting.WinForms.ZoomMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the zoom mode of the control.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks><![CDATA[  
+  
+## Remarks  
+ The **Zoom** drop-down list contains the following options: 500%, 200%, 150%, 100%, 75%, 50%, 25%, Page Width, and Whole Page. In Normal mode, the default option is 100%. In Print Preview mode, the default option is Whole Page.  
+  
+ When the control is in Print Preview mode, the Page Width and Whole Page options use the dimensions of the physical page to calculate the zoom factor.  
+  
+ When the control is not in Print Preview mode, the Page Width and Whole Page options use the dimensions of the logical page to calculate the zoom factor.  
+  
+ ]]></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZoomPercent">
@@ -1682,7 +2539,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the percentage of zoom used for the report display.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

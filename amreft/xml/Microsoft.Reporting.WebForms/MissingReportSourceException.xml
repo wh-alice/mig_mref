@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the exception that occurs when no report source has been specified.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ Example  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -23,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the &lt;see cref="T:Microsoft.Reporting.WebForms.MissingReportSourceException"&gt; class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -10,8 +10,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete"&gt; event.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This is passed to the <xref:Microsoft.Reporting.WinForms.RenderingCompleteEventHandler> delegate when a <xref:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete> event occurs.  
+  
+ ]]></remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -25,7 +30,7 @@
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Contains an Exception object if an exception has occurred.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -41,7 +46,7 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WinForms.Warning&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a list of warnings produced during report processing or rendering.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

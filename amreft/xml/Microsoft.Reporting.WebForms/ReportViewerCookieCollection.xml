@@ -13,8 +13,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of &lt;xref:System.Net.Cookie?displayProperty=fullName&gt; objects.</summary>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ The ReportViewerCookieCollection class provides a simple collection object that can be used to store a set of <xref:System.Net.Cookie?displayProperty=fullName> objects.  
+  
+ For more information, see the <xref:Microsoft.Reporting.WebForms.ServerReport.Cookies%2A> property in <xref:Microsoft.Reporting.WebForms.ServerReport>.  
+  
+ ]]></remarks>
   </Docs>
   <Members />
 </Type>

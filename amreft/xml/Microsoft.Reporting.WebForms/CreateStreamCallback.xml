@@ -24,8 +24,242 @@
     <param name="encoding">To be added.</param>
     <param name="mimeType">To be added.</param>
     <param name="willSeek">To be added.</param>
-    <summary>To be added.</summary>
+    <summary>Provides a stream to the ReportViewer control for rendering.</summary>
     <returns>To be added.</returns>
-    <remarks>To be added.</remarks>
+    <remarks><![CDATA[  
+  
+## Remarks  
+ This delegate function may be passed into the [M:Microsoft.ReportingServices.LocalReport.Render(Microsoft.ReportingServices.ReportRendering.IRenderingExtension,System.String,System.String,Microsoft.ReportingServices.Interfaces.CreateAndRegisterStream,Microsoft.ReportingServices.Warning\[\]@)](assetId:///M:Microsoft.ReportingServices.LocalReport.Render(Microsoft.ReportingServices.ReportRendering.IRenderingExtension,System.String,System.String,Microsoft.ReportingServices.Interfaces.CreateAndRegisterStream,Microsoft.ReportingServices.Warning[]@)?qualifyHint=False&autoUpgrade=True) method of the <xref:Microsoft.ReportingServices.WebForms.ReportViewer.LocalReport%2A> object to support custom handling of secondary streams. The main body of the report is the first stream that is created.  
+  
+   
+  
+## Examples  
+ The following code snippet shows a CreateStreamCallback callback function being passed to the [M:Microsoft.ReportingServices.LocalReport.Render(Microsoft.ReportingServices.ReportRendering.IRenderingExtension,System.String,System.String,Microsoft.ReportingServices.Interfaces.CreateAndRegisterStream,Microsoft.ReportingServices.Warning\[\]@)](assetId:///M:Microsoft.ReportingServices.LocalReport.Render(Microsoft.ReportingServices.ReportRendering.IRenderingExtension,System.String,System.String,Microsoft.ReportingServices.Interfaces.CreateAndRegisterStream,Microsoft.ReportingServices.Warning[]@)?qualifyHint=False&autoUpgrade=True) method.  
+  
+```vb#  
+Imports System.IO  
+Imports System.Data  
+Imports System.Text  
+Imports System.Drawing.Imaging  
+Imports System.Drawing.Printing  
+Imports System.Collections.Generic  
+Imports Microsoft.Reporting.WebForms  
+  
+Public Class Demo  
+    Implements IDisposable  
+  
+    private m_currentPageIndex As Integer  
+    private m_streams As IList(Of Stream)  
+  
+    Private Function LoadSalesData() As DataTable  
+        Dim dataSet As New DataSet()  
+        dataSet.ReadXml("data.xml")  
+        Return dataSet.Tables(0)  
+    End Function  
+  
+    Private Function CreateStream(name As String, _  
+         fileNameExtension As String, _  
+              encoding As Encoding, mimeType As String, _  
+                  willSeek As Boolean) As Stream  
+        Dim stream As Stream = New FileStream(name + "." +  fileNameExtension, FileMode.Create)  
+        m_streams.Add(stream)  
+        Return stream  
+    End Function  
+  
+    Private Sub Export(report As LocalReport)  
+        Dim deviceInfo As string = _  
+          "<DeviceInfo>" + _  
+          "  <OutputFormat>EMF</OutputFormat>" + _  
+          "  <PageWidth>8.5in</PageWidth>" + _  
+          "  <PageHeight>11in</PageHeight>" + _  
+          "  <MarginTop>0.25in</MarginTop>" + _  
+          "  <MarginLeft>0.25in</MarginLeft>" + _  
+          "  <MarginRight>0.25in</MarginRight>" + _  
+          "  <MarginBottom>0.25in</MarginBottom>" + _  
+          "</DeviceInfo>"  
+        Dim warnings() As Warning = Nothing  
+        m_streams = New List(Of Stream)()  
+        report.Render("Image", deviceInfo, _  
+              AddressOf CreateStream, warnings)  
+  
+        Dim stream As Stream  
+        For Each stream In m_streams  
+            stream.Position = 0  
+        Next  
+    End Sub  
+  
+    Private Sub PrintPage(sender As Object, ev As PrintPageEventArgs)  
+        Dim pageImage As New Metafile(m_streams(m_currentPageIndex))  
+        ev.Graphics.DrawImage(pageImage, ev.PageBounds)  
+  
+        m_currentPageIndex += 1  
+        ev.HasMorePages = (m_currentPageIndex < m_streams.Count)  
+    End Sub  
+  
+    Private Sub Print()  
+        Const printerName As String = "Microsoft Office Document Image Writer"  
+  
+        If m_streams Is Nothing Or m_streams.Count = 0 Then  
+            Return  
+        End If   
+  
+        Dim printDoc As New PrintDocument()  
+        printDoc.PrinterSettings.PrinterName = printerName  
+        If Not printDoc.PrinterSettings.IsValid Then  
+            Dim msg As String = String.Format(_  
+                 "Can't find printer ""{0}"".", printerName)  
+            Console.WriteLine(msg)  
+            Return  
+        End If  
+        AddHandler printDoc.PrintPage, AddressOf PrintPage  
+        printDoc.Print()  
+    End Sub  
+  
+    Private Sub Run()  
+        Dim report As LocalReport = new LocalReport()  
+        report.ReportPath = "Report.rdlc"  
+        report.DataSources.Add(new ReportDataSource("Sales", LoadSalesData()))  
+  
+        Export(report)  
+  
+        m_currentPageIndex = 0  
+        Print()  
+    End Sub  
+  
+    Public Overloads Sub Dispose() Implements IDisposable.Dispose  
+        If Not (m_streams Is Nothing) Then  
+            Dim stream As Stream  
+            For Each stream In m_streams  
+               stream.Close()  
+            Next  
+            m_streams = Nothing  
+        End If  
+    End Sub  
+  
+    Public Shared Sub Main(args as string())  
+        Using demo As Demo = new Demo()  
+            demo.Run()  
+        End Using  
+    End Sub  
+End Class  
+```  
+  
+```c#  
+using System;  
+using System.IO;  
+using System.Data;  
+using System.Text;  
+using System.Drawing.Imaging;  
+using System.Drawing.Printing;  
+using System.Collections.Generic;  
+using Microsoft.Reporting.WebForms;  
+  
+public class Demo : IDisposable  
+{  
+    private int m_currentPageIndex;  
+    private IList<Stream> m_streams;  
+  
+    private DataTable LoadSalesData()  
+    {  
+        DataSet dataSet = new DataSet();  
+        dataSet.ReadXml("data.xml");  
+        return dataSet.Tables[0];  
+    }  
+  
+    private Stream CreateStream(string name, string fileNameExtension,  
+        Encoding encoding,  
+            string mimeType, bool willSeek)  
+    {  
+        Stream stream = new FileStream(name + "." + fileNameExtension,   
+            FileMode.Create);  
+        m_streams.Add(stream);  
+        return stream;  
+    }  
+  
+    private void Export(LocalReport report)  
+    {  
+        string deviceInfo =  
+          "<DeviceInfo>" +  
+          "  <OutputFormat>EMF</OutputFormat>" +   
+          "  <PageWidth>8.5in</PageWidth>" +  
+          "  <PageHeight>11in</PageHeight>" +  
+          "  <MarginTop>0.25in</MarginTop>" +  
+          "  <MarginLeft>0.25in</MarginLeft>" +  
+          "  <MarginRight>0.25in</MarginRight>" +  
+          "  <MarginBottom>0.25in</MarginBottom>" +  
+          "</DeviceInfo>";  
+        Warning[] warnings;  
+        m_streams = new List<Stream>();  
+        report.Render("Image", deviceInfo, CreateStream, out warnings);  
+  
+        foreach (Stream stream in m_streams)  
+            stream.Position = 0;  
+    }  
+  
+    private void PrintPage(object sender, PrintPageEventArgs ev)  
+    {  
+        Metafile pageImage = new Metafile(m_streams[m_currentPageIndex]);  
+        ev.Graphics.DrawImage(pageImage, 0, 0);  
+  
+        m_currentPageIndex++;  
+        ev.HasMorePages = (m_currentPageIndex < m_streams.Count);  
+    }  
+  
+    private void Print()  
+    {  
+        const string printerName = "Microsoft Office Document Image   
+            Writer";  
+  
+        if (m_streams == null || m_streams.Count == 0)  
+            return;  
+  
+        PrintDocument printDoc = new PrintDocument();   
+        printDoc.PrinterSettings.PrinterName = printerName;  
+        if (!printDoc.PrinterSettings.IsValid)  
+        {  
+            string msg = String.Format("Can't find printer \"{0}\".",   
+                printerName);  
+            Console.WriteLine(msg);  
+            return;  
+        }  
+        printDoc.PrintPage += new PrintPageEventHandler(PrintPage);  
+        printDoc.Print();  
+    }  
+  
+    private void Run()  
+    {  
+        LocalReport report = new LocalReport();  
+        report.ReportPath = "Report.rdlc";  
+        report.DataSources.Add(new ReportDataSource("Sales",   
+            LoadSalesData()));  
+  
+        Export(report);  
+  
+        m_currentPageIndex = 0;  
+        Print();  
+    }  
+  
+    public void Dispose()  
+    {  
+        if (m_streams != null)  
+        {  
+            foreach (Stream stream in m_streams)  
+                stream.Close();  
+            m_streams = null;  
+        }  
+    }  
+  
+    public static int Main(string[] args)   
+    {  
+        using (Demo demo = new Demo())  
+        {  
+            demo.Run();  
+        }  
+        return 0;  
+    }  
+}  
+```  
+  
+ ]]></remarks>
   </Docs>
 </Type>
