@@ -14,17 +14,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a report that is processed on the report server.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The ServerReport object serves as a proxy for a report on a report server. It processes reports at the report server, rather than locally. It can open Report Definition Language (RDL) files that have been published to the server, and it can also load a report definition from a &lt;xref:System.IO.Stream&gt; or a &lt;xref:System.IO.TextReader&gt; to the server for remote processing.  
-  
- The ServerReport object exposes additional functionality supported by the report server, including parameters, and the ability to export reports to any format supported by the report server.  
-  
- The ServerReport object requires a [!INCLUDE[ssKatmai](../../../../../../includes/sskatmai_md.md)] version of Reporting Services, or later.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +27,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the &lt;see cref="T:Microsoft.Reporting.WinForms.ServerReport"&gt; class.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,16 +50,9 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportViewerCookieCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of &lt;xref:System.Net.Cookie&gt; objects. The &lt;xref:Microsoft.Reporting.WinForms.ServerReport&gt; object uses the cookies in this collection when making server requests.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- To use custom authentication cookies in server requests, add the custom authentication cookies to this collection property.  
-  
- Unlike the behavior of &lt;xref:System.Net.HttpWebRequest&gt;, the &lt;xref:Microsoft.Reporting.WinForms.ServerReport&gt; object does not update this collection with the cookies return by the server.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataSources">
@@ -83,45 +67,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves information about the data sources used for a report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This method returns the data source names and user prompt strings of any data sources used in the report that can prompt for credentials.  
-  
-   
-  
-## Examples  
-  
-```c#  
-private void button1_Click(object sender, EventArgs e)  
-{  
-  
-   ReportDataSourceInfoCollection rdsic =  
-      this.reportViewer1.ServerReport.GetDataSources();  
-  
-   foreach (ReportDataSourceInfo rdsi in rdsic)  
-   {  
-      Debug.WriteLine(rdsi.Name + ":" + rdsi.Prompt);  
-   }  
-}  
-```  
-  
-```vb#  
-Private Sub Button2_Click(ByVal sender As System.Object, _  
-   ByVal e As System.EventArgs) Handles Button2.Click  
-    Dim rdsic As ReportDataSourceInfoCollection = _  
-       ReportViewer1.ServerReport.GetDataSources  
-  
-    For Each rdsi As ReportDataSourceInfo In rdsic  
-        Debug.WriteLine(rdsi.Name + ":" + rdsi.Prompt)  
-    Next  
-  
-End Sub  
-```  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataSources">
@@ -156,38 +104,9 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the default page settings specified in the report definition.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The &lt;xref:Microsoft.Reporting.WinForms.ReportPageSettings&gt; object that is returned can be used to pass page margin and page size information via the `deviceInfo` argument passed to the &lt;xref:Microsoft.Reporting.WinForms.ServerReport.Render%2A&gt; method.  
-  
-   
-  
-## Examples  
-  
-```vb#  
-Private Sub Button2_Click(ByVal sender As System.Object, _  
-   ByVal e As System.EventArgs) Handles Button2.Click  
-   Dim pageSettings As ReportPageSettings  
-  
-   pageSettings = ReportViewer1.ServerReport.GetDefaultPageSettings  
-  
-   Debug.WriteLine(pageSettings.Margins.Top)  
-   Debug.WriteLine(pageSettings.Margins.Bottom)  
-   Debug.WriteLine(pageSettings.Margins.Left)  
-   Debug.WriteLine(pageSettings.Margins.Right)  
-   Debug.WriteLine(pageSettings.PaperSize.Kind)  
-   Debug.WriteLine(pageSettings.PaperSize.RawKind)  
-   Debug.WriteLine(pageSettings.PaperSize.PaperName)  
-   Debug.WriteLine(pageSettings.PaperSize.Height)  
-   Debug.WriteLine(pageSettings.PaperSize.Width)  
-  
-End Sub  
-```  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExecutionId">
@@ -202,14 +121,9 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the current execution ID, or null (`Nothing` in Visual Basic) if no execution ID is available.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The value returned may be used with the &lt;xref:Microsoft.Reporting.WinForms.ServerReport.SetExecutionId%2A&gt; method in situations where you need to pass a report execution from one **ReportViewer** control to another.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -224,14 +138,9 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns report parameter properties for the report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The GetParameters method can also be used to validate parameter values against parameters for a report.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetServerVersion">
@@ -246,20 +155,9 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the version of the report server.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Examples  
-  
-```vb#  
-Private Sub Button2_Click(ByVal sender As System.Object,   
-    ByVal e As System.EventArgs) Handles Button2.Click  
-    Debug.WriteLine(ReportViewer1.ServerReport.GetServerVersion)  
-End Sub  
-```  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalPages">
@@ -301,7 +199,7 @@ End Sub
         <ReturnType>Microsoft.Reporting.WinForms.ReportViewerHeaderCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of strings that contain custom headers.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,7 +223,7 @@ End Sub
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the unique identifier of the report history snapshot used for the server report.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -342,16 +240,9 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the report can execute queries.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- Returns `false` if executing from a snapshot.  
-  
- This may be used to determine if a report can execute queries for report data or for valid or default values of parameters.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListRenderingExtensions">
@@ -366,32 +257,9 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns all available rendering extensions for the server report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This method can be used to populate drop-down lists to allow users to select a rendering extension for export.  
-  
-   
-  
-## Examples  
-  
-```vb#  
-Private Sub Button2_Click(ByVal sender As System.Object, _  
-     ByVal e As System.EventArgs) Handles Button2.Click  
-   Dim extensions As RenderingExtension() = _  
-   ReportViewer1.ServerReport.ListRenderingExtensions()  
-  
-   For Each extension As RenderingExtension In extensions  
-   Debug.WriteLine("Extension: " + extension.Name + _  
-     " Visible? " + extension.Visible.ToString)  
-   Next  
-  
-End Sub  
-```  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadReportDefinition">
@@ -409,13 +277,8 @@ End Sub
       </Parameters>
       <Docs>
         <param name="report">To be added.</param>
-        <summary>Loads the report definition on the report server for remote processing using a &lt;xref:System.IO.TextReader&gt;.</summary>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The LoadReportDefinition method can be used in cases where the report definition is dynamically generated.  
-  
- ]&gt;</remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -430,13 +293,8 @@ End Sub
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the report to be rendered with new data.</summary>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The Refreshmethod reprocesses the report and reloads the data from the report data sources.  
-  
- ]&gt;</remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -577,14 +435,9 @@ End Sub
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the path to the report on the server.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Examples  
- For more information and a code example, see [M:Microsoft.Reporting.WinForms.ServerReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String\[\]@,Microsoft.Reporting.WinForms.Warning\[\]@)](assetId:///M:Microsoft.Reporting.WinForms.ServerReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WinForms.Warning[]@)?qualifyHint=False&amp;autoUpgrade=True).  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportServerCredentials">
@@ -606,14 +459,9 @@ End Sub
         <ReturnType>Microsoft.Reporting.WinForms.ReportServerCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the credentials to be used with the report server.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Examples  
- For more information and a code example,  see &lt;xref:Microsoft.Reporting.WinForms.ReportServerCredentials&gt;.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportServerUrl">
@@ -635,14 +483,9 @@ End Sub
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the URL for the report server.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Examples  
- For more information and a code example,  see [M:Microsoft.Reporting.WinForms.ServerReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String\[\]@,Microsoft.Reporting.WinForms.Warning\[\]@)](assetId:///M:Microsoft.Reporting.WinForms.ServerReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WinForms.Warning[]@)?qualifyHint=False&amp;autoUpgrade=True).  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetDataSourceCredentials">
@@ -679,13 +522,8 @@ End Sub
       </Parameters>
       <Docs>
         <param name="executionId">To be added.</param>
-        <summary>Initializes a server report using a specific report execution on the server.</summary>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This method may set the &lt;xref:Microsoft.Reporting.WinForms.ServerReport.ReportPath%2A&gt; and &lt;xref:Microsoft.Reporting.WinForms.ServerReport.HistoryId%2A&gt; properties of the &lt;xref:Microsoft.Reporting.WinForms.ServerReport&gt;.  
-  
- ]&gt;</remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
@@ -755,14 +593,9 @@ End Sub
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of milliseconds to wait for server communications.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- A value of &lt;xref:System.Threading.Timeout.Infinite&gt; means that there is no time-out period.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

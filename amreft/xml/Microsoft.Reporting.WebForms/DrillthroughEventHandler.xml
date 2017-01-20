@@ -18,19 +18,7 @@
   <Docs>
     <param name="sender">To be added.</param>
     <param name="e">To be added.</param>
-    <summary>Represents the method that will handle the &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough"&gt; event of a &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- You must supply a data source for any drillthrough reports that are referenced by the main report. To do this, you must supply an event handler for the drillthrough event.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
-   
-  
-## Examples  
- Please see the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough&gt; method of the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt; class for an example.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

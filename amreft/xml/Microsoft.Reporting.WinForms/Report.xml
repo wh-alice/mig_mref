@@ -15,13 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains methods and properties that can apply to both local and server reports.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This class is used as a base class for the &lt;xref:Microsoft.Reporting.WinForms.LocalReport&gt; and &lt;xref:Microsoft.Reporting.WinForms.ServerReport&gt; objects. For implementation-specific information, see &lt;xref:Microsoft.Reporting.WinForms.LocalReport&gt; and &lt;xref:Microsoft.Reporting.WinForms.ServerReport&gt;.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DisplayName">
@@ -43,16 +38,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display name of the report.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The value of the DisplayName property will appear at the root of the document map.  
-  
- The DisplayName will be used as the default file name when exporting and printing a report.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultPageSettings">
@@ -67,14 +55,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the default page settings specified in the report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- Please see &lt;xref:Microsoft.Reporting.WinForms.LocalReport&gt; and &lt;xref:Microsoft.Reporting.WinForms.ServerReport&gt; for implementation-specific information.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDocumentMap">
@@ -89,7 +72,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the representation of the document map for the local report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +89,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns report parameter properties for the report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,18 +106,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the total number of soft pages in the report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The page count mode that is used to generate the total number of pages depends on how the report is rendered by the &lt;xref:Microsoft.Reporting.WinForms.Report&gt; object. If the report is rendered using the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; mode, GetTotalPages uses the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; page count mode. If the report is rendered using the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; mode, GetTotalPages may use either the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; or &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; mode depending on the report. By default, the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; mode is used to calculate the page count. For more information, see the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode&gt; class and the &lt;xref:Microsoft.Reporting.WinForms.Report.Render%2A&gt; method.  
-  
- To retrieve the page count mode used to calculate the total number of pages, use &lt;xref:Microsoft.Reporting.WinForms.Report.GetTotalPages%2A&gt;.  
-  
- When the **ReportViewer** control is in print layout mode, this method always uses the &lt;xref:Microsoft.Reporting.WinForms.PageCountMode.Actual&gt; page count mode?qualifyHint=False&amp;autoUpgrade=True.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalPages">
@@ -173,7 +147,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the report is a drillthrough report.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,16 +168,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a `Boolean` value that indicates whether a report definition and all required parameters have been specified, and all data sources are ready for use.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- In remote processing mode, all prompt data source credentials must be specified for this property to be `true`. In local processing mode, all required datasets must be loaded for this property to be `true`.  
-  
- This property does not indicate that all information specified is valid, but only that the &lt;xref:Microsoft.Reporting.WinForms.Report&gt; object has sufficient information to attempt to render the report. For example, it returns `true` if the prompt data source credentials have been specified but are not valid.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ListRenderingExtensions">
@@ -218,7 +185,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns all available rendering extensions for the local report.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,7 +205,7 @@
       </Parameters>
       <Docs>
         <param name="report">To be added.</param>
-        <summary>Loads a report definition for processing using a &lt;xref:System.IO.Stream&gt;.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +224,7 @@
       </Parameters>
       <Docs>
         <param name="report">To be added.</param>
-        <summary>Loads a report definition for processing using a &lt;xref:System.IO.TextReader&gt;.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,13 +240,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes the report to be rendered with new data.</summary>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The Refresh method reprocesses the report and reloads the data from the report data sources.  
-  
- ]&gt;</remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -297,7 +259,7 @@
       </Parameters>
       <Docs>
         <param name="format">To be added.</param>
-        <summary>Processes the report and renders it in the specified format.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -319,7 +281,7 @@
       <Docs>
         <param name="format">To be added.</param>
         <param name="deviceInfo">To be added.</param>
-        <summary>Processes the report and renders it in the specified format.</summary>
+        <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,13 +367,8 @@
       </Parameters>
       <Docs>
         <param name="parameter">To be added.</param>
-        <summary>Sets report parameter properties for the report.</summary>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The parameter specified for this method must be defined in the report definition.  
-  
- ]&gt;</remarks>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">

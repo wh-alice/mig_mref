@@ -10,13 +10,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates a rendering extension that can be used with the ReportViewer's report.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This class is returned by the **ListRenderingExtensions** methods of the &lt;xref:Microsoft.Reporting.WebForms.ServerReport&gt; and &lt;xref:Microsoft.Reporting.WebForms.LocalReport&gt; classes.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="LocalizedName">
@@ -30,7 +25,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the localized display name of the rendering extension.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -46,7 +41,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the rendering extension.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,7 +57,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the rendering extension is visible in the user interface.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

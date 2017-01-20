@@ -15,13 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the report &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.ReportExport"&gt; event.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This is passed to the &lt;xref:Microsoft.Reporting.WinForms.ReportExportEventHandler&gt; delegate when an &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.ReportExport&gt; event occurs.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +31,7 @@
       </Parameters>
       <Docs>
         <param name="extension">To be added.</param>
-        <summary>Constructs a `ReportExportEventArgs` object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,14 +46,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an XML string that contains the device-specific content that is required by the rendering extension specified in the `Extension` parameter.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- For more information about device information settings for specific output formats, see [Device Information Settings](http://msdn.microsoft.com/en-us/fe718939-7efe-4c7f-87cb-5f5b09caeff4).  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Extension">
@@ -72,7 +62,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.RenderingExtension</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a &lt;see cref="T:Microsoft.Reporting.WinForms.RenderingExtension"&gt; used for exporting the report.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

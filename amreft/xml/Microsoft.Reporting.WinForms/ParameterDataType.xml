@@ -9,13 +9,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the data type of a parameter.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- Use the ParameterDataType enumeration with the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.DataType%2A&gt; property of the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo&gt; class.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">
@@ -29,7 +24,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A `Boolean` data type that represents a true or false condition.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="DateTime">
@@ -43,7 +38,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A `DateTime` data type that represents the date and time.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Float">
@@ -57,7 +52,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A `Float` data type that represents a floating point decimal value.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Integer">
@@ -71,7 +66,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An `Integer` data type.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -85,7 +80,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A `String` data type that represents an array of characters.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

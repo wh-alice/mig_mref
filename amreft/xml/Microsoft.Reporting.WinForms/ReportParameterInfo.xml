@@ -10,198 +10,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates information about report parameters.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The ReportParameterInfo class can be used to determine parameter requirements for a report at runtime.  
-  
-   
-  
-## Examples  
- The following code sample assumes a WinForms application with a ReportViewer control. The code programmatically loads a sample report from the report server and iterates through the parameters encapsulated in the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfoCollection&gt; property of the &lt;xref:Microsoft.ReportingServices.ServerReport&gt; object, showing information about each report parameter.  
-  
- [C#]  
-  
-```  
-using System;  
-using System.Collections.Generic;  
-using System.ComponentModel;  
-using System.Data;  
-using System.Drawing;  
-using System.Text;  
-using System.Windows.Forms;  
-using Microsoft.Reporting.WinForms;  
-  
-namespace ParamSample  
-{  
-    public partial class Form1 : Form  
-    {  
-        public Form1()  
-        {  
-            InitializeComponent();  
-        }  
-  
-        private void Form1_Load(object sender, EventArgs e)  
-        {  
-  
-            // Set Processing Mode  
-            reportViewer1.ProcessingMode = ProcessingMode.Remote;  
-  
-            // Set report server and report path  
-            reportViewer1.ServerReport.ReportServerUrl = new  
-            Uri("http://localhost/reportserver");  
-            reportViewer1.ServerReport.ReportPath =   
-               "/AdventureWorks Sample Reports/Employee Sales Summary";  
-  
-            // Display the parameters for this report  
-            DumpParameterInfo(reportViewer1.ServerReport);  
-  
-            // Set the parameters for this report  
-            List&lt;ReportParameter&gt; paramList = new List&lt;ReportParameter&gt;();  
-  
-            paramList.Add(new ReportParameter("EmpID", "288", false));  
-            paramList.Add(new ReportParameter("ReportMonth", "12", false));  
-            paramList.Add(  
-               new ReportParameter("ReportYear", "2003", false));  
-  
-            this.reportViewer1.ServerReport.SetParameters(paramList);  
-  
-            // Process and render the report  
-            reportViewer1.RefreshReport();  
-  
-        }  
-  
-        public void DumpParameterInfo(ServerReport sReport)  
-        {  
-            ReportParameterInfoCollection pInfo = sReport.GetParameters();  
-  
-            if (pInfo.Count == 0)  
-            {  
-                Console.WriteLine("&lt;No parameters are defined for this report&gt;");  
-            }  
-            else  
-            {  
-                Console.WriteLine("===========================================================================");  
-                Console.WriteLine("Parameter Info for " + sReport.ReportPath);  
-  
-                foreach (ReportParameterInfo p in pInfo)  
-                {  
-                    Console.WriteLine("----------------------------------------------------------------------");  
-                    Console.WriteLine("Parameter Name: {0}", p.Name);  
-                    Console.WriteLine("Data Type: {0}", p.DataType);  
-                    Console.WriteLine("State: {0}", p.State);  
-                    Console.WriteLine("Allow Blank? {0}", p.AllowBlank);  
-                    Console.WriteLine("Nullable? {0}", p.Nullable);  
-                    Console.WriteLine("Prompt User? {0}", p.PromptUser);  
-                    Console.WriteLine("User Prompt: {0}", p.Prompt);  
-                    Console.WriteLine("Visible? {0}", p.Visible);  
-                    Console.WriteLine("MultiValued? {0}", p.MultiValue);  
-                    Console.WriteLine("Default values query-based? {0}", p.AreDefaultValuesQueryBased);  
-                    Console.Write("Default value(s): ");  
-  
-                    // Show a list of default values for the report params  
-                    IList&lt;string&gt; dvList = p.Values;  
-                    int t;  
-  
-                    if (dvList.Count != 0)  
-                    {  
-  
-                        t = 1;  
-  
-                        foreach (string dv in dvList)  
-                        {  
-                            if (t != dvList.Count)  
-                            {  
-                                t++;  
-                                Console.Write(dv + ", ");  
-                            }  
-                            else  
-                            {  
-                                if (t == 1)  
-                                    Console.WriteLine(dv);  
-                                else  
-                                    Console.WriteLine("or " + dv);  
-                            }  
-                        }  
-                    }  
-                    else  
-                    {  
-                        Console.WriteLine("&lt;no default values defined&gt;");  
-                    }  
-  
-                    Console.WriteLine("Valid values query based? {0}", p.AreValidValuesQueryBased);  
-                    Console.Write("Valid values: ");  
-  
-                    // Show a list of valid values for the report params  
-  
-                    IList&lt;ValidValue&gt; vvList = p.ValidValues;  
-  
-                    if (vvList != null)  
-                    {  
-  
-                        t = 1;  
-  
-                        foreach (ValidValue vv in vvList)  
-                        {  
-                            if (t != vvList.Count)  
-                            {  
-                                t++;  
-                                Console.Write(vv.Value + ", ");  
-                            }  
-                            else  
-                            {  
-                                if (t == 1)  
-                                    Console.WriteLine(vv.Value);  
-                                else  
-                                    Console.WriteLine("or " + vv.Value);  
-                            }  
-                        }  
-                    }  
-                    else  
-                    {  
-                        Console.WriteLine("&lt;no valid values defined&gt;");  
-                    }  
-  
-                    Console.Write("Dependent parameters: ");  
-  
-                    ReportParameterInfoCollection dpInfo = p.Dependencies;  
-                    t = 1;  
-  
-                    if (dpInfo.Count != 0)  
-                    {  
-  
-                        foreach (ReportParameterInfo dp in dpInfo)  
-                        {  
-                            if (t != dpInfo.Count)  
-                            {  
-                                t++;  
-                                Console.Write(dp.Name + ", ");  
-                            }  
-                            else  
-                            {  
-                                if (t == 1)  
-                                    Console.WriteLine(dp.Name);  
-                                else  
-                                    Console.WriteLine("or " + dp.Name);  
-                            }  
-                        }  
-                    }  
-                    else  
-                    {  
-                        Console.WriteLine("&lt;no dependent parameters defined&gt;");  
-                    }  
-  
-                }  
-  
-            }  
-            Console.WriteLine("----------------------------------------------------------------------");  
-        }  
-    }  
-}  
-```  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowBlank">
@@ -215,14 +25,9 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether an empty string is a valid value for the parameter. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The AllowBlank property is ignored if the value of the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.DataType%2A&gt; property is not a string.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AreDefaultValuesQueryBased">
@@ -236,7 +41,7 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the default values of the parameter are based on a query. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,7 +57,7 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the parameter's valid values are based on a query. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +73,7 @@ namespace ParamSample
         <ReturnType>Microsoft.Reporting.WinForms.ParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the parameter. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,7 +89,7 @@ namespace ParamSample
         <ReturnType>Microsoft.Reporting.WinForms.ReportParameterInfoCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of parameters whose values are used to retrieve additional parameter values in a query. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +105,7 @@ namespace ParamSample
         <ReturnType>Microsoft.Reporting.WinForms.ReportParameterInfoCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A list of parameters that use the value of this parameter as parameters into queries to retrieve &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.ValidValues%2A&gt; and/or &lt;xref:Microsoft.SqlServer.ReportingServices.ReportParameter.DefaultValues&gt;.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +121,7 @@ namespace ParamSample
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the error message that is returned when the parameter fails validation. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,7 +137,7 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the parameter is used in a query to an external data source. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,7 +153,7 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the parameter can be a multi-value parameter. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -364,7 +169,7 @@ namespace ParamSample
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the parameter. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -380,7 +185,7 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the value of the parameter can be `null`. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,14 +201,9 @@ namespace ParamSample
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The text that prompts the user to provide parameter values.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The default value for the Prompt property is retrieved from the report definition.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PromptUser">
@@ -417,7 +217,7 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the user is prompted for the value of the parameter.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -433,14 +233,9 @@ namespace ParamSample
         <ReturnType>Microsoft.Reporting.WinForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Describes the state of the parameter. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- The value of the property may change based on input used during the validation of the parameter through the use of the &lt;xref:Microsoft.Reporting.WinForms.Report.GetParameters%2A&gt; method.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidValues">
@@ -454,14 +249,9 @@ namespace ParamSample
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Reporting.WinForms.ValidValue&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the available valid values for the parameter. Read-only.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- You can display the valid values of a parameter to the user in a user interface.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -475,7 +265,7 @@ namespace ParamSample
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the values for the parameter.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -491,16 +281,9 @@ namespace ParamSample
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether the parameter can be displayed in the user interface.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- If Visible is set to `false`, the &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.PromptUser%2A&gt; property is overridden.  
-  
- If Visible is set to `true`, a prompt is displayed in the user interface if &lt;xref:Microsoft.Reporting.WinForms.ReportParameterInfo.PromptUser%2A&gt; is also set to `true`.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -10,13 +10,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents errors that occur when the &lt;see cref="T:Microsoft.Reporting.WebForms.ReportViewer"&gt; control is rendering a processed report from report page layout (RPL) format into HTML format.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- For errors that occur in local processing mode when processing a report or when rendering into RPL format, see &lt;xref:Microsoft.Reporting.WebForms.LocalProcessingException&gt;. For errors that occur in remote processing mode when processing a report or when rendering into RPL format, see &lt;xref:Microsoft.Reporting.WebForms.ReportServerException&gt;.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members />
 </Type>

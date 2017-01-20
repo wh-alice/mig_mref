@@ -9,13 +9,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the state of a parameter.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- Use the ParameterState enumeration with the &lt;xref:Microsoft.Reporting.WebForms.ReportParameter.State&gt; property of the &lt;xref:Microsoft.Reporting.WebForms.ReportParameter&gt; class.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="DynamicValuesUnavailable">
@@ -29,7 +24,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parameter values are unavailable. This state indicates that no valid query-based values were returned as a result of the query.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasOutstandingDependencies">
@@ -43,7 +38,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The parameter has outstanding dependencies. This generally occurs when the valid values or the default value of a parameter is query-based and dependencies exist that have not been submitted to the M:Microsoft.Reporting.WebForms.Report.GetParameters?qualifyHint=False&amp;autoUpgrade=True method.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="HasValidValue">
@@ -57,7 +52,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A valid value for the parameter exists.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="MissingValidValue">
@@ -71,7 +66,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ParameterState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A valid value for the parameter does not exist.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

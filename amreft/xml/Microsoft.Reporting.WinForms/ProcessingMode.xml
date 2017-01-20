@@ -9,13 +9,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Sets the processing mode of the ReportViewer control.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This enumerator is used to set the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A&gt; property of the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt; control.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Local">
@@ -29,7 +24,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ProcessingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the report will be processed and rendered using the reporting engine provided by the ReportViewer control.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Remote">
@@ -43,7 +38,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.ProcessingMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies remote processing mode against a Reporting Services report server.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

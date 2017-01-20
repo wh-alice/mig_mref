@@ -18,12 +18,7 @@
   <Docs>
     <param name="sender">To be added.</param>
     <param name="e">To be added.</param>
-    <summary>Represents the method that will handle the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.DocumentMapNavigation"&gt; event of a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt;.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.SubmittingParameterValues"&gt; event.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This collection property includes all visible report parameter values and not just the values that have changed. However, when parameters are being automatically submitted to update the dependent parameters without processing the report, the dependent parameters are not included.  
-  
- Although it is read-only, you can modify the contents of the collection in the &lt;xref:Microsoft.Reporting.WinForms.ReportParametersEventHandler&gt; method before they are submitted to the report server.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="AutoSubmit">
@@ -37,7 +30,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.SubmittingParameterValues"&gt; event is triggered by the automatic submission of report parameters due to dependencies between them.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -53,16 +46,9 @@
         <ReturnType>Microsoft.Reporting.WinForms.ReportParameterCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parameters from the parameter prompt area that are being submitted to the report server.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This collection property includes all visible report parameter values and not just the values that have changed. However, when parameters are being automatically submitted to update the dependent parameters without processing the report, the dependent parameters are not included.  
-  
- Although it is read-only, you can modify the contents of the collection in the &lt;xref:Microsoft.Reporting.WinForms.ReportParametersEventHandler&gt; method before they are submitted to the report server.  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

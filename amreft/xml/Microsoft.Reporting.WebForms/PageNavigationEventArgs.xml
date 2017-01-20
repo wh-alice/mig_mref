@@ -15,13 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for a &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.PageNavigation"&gt; event.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This is passed to the &lt;xref:Microsoft.Reporting.WebForms.PageNavigationEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.PageNavigation&gt; event occurs.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,7 +31,7 @@
       </Parameters>
       <Docs>
         <param name="newPage">To be added.</param>
-        <summary>Constructs a new `PageNavigationEventArgs` object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,7 +46,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of the page resulting from the &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.PageNavigation"&gt; event.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

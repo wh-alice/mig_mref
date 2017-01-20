@@ -9,13 +9,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the direction of a sort operation.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- Used by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.Sort&gt; event.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">
@@ -29,7 +24,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates an ascending sort.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -43,7 +38,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.SortOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates a descending sort.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

@@ -15,13 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for a &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.Search"&gt; event in the ReportViewer control.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This is passed to the &lt;xref:Microsoft.Reporting.WebForms.SearchEventHandler&gt; delegate when a **Find** event occurs.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,7 +35,7 @@
         <param name="searchString">To be added.</param>
         <param name="startPage">To be added.</param>
         <param name="isFindNext">To be added.</param>
-        <summary>Constructs a new `SearchEventArgs` object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,7 +50,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that this event is occurring as a result of a **Find Next** command.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,7 +66,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the search string being used for the search.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns the page number on which to start searching.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

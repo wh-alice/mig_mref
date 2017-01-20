@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the **Back** event.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This is passed to the &lt;xref:Microsoft.Reporting.WinForms.BackEventHandler&gt; delegate when a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Back&gt; event occurs.  
-  
- A &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Back&gt; event occurs when the user has navigated to a drillthrough report and clicks the **Back** button to return to the parent report. The parent report is passed as an argument to the delegate that handles the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Back&gt; event.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -38,7 +31,7 @@
       </Parameters>
       <Docs>
         <param name="parentReport">To be added.</param>
-        <summary>Constructs a new `BackEventArgs` object.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +46,7 @@
         <ReturnType>Microsoft.Reporting.WinForms.Report</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent report of the drillthrough report.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -9,13 +9,8 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of content displayed in the report area.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This class is referenced by the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType%2A&gt; property of &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -29,7 +24,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The report area displays an error message.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -43,7 +38,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The report area displays nothing.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="ReportPage">
@@ -57,7 +52,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The report area displays a report page.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -71,7 +66,7 @@
         <ReturnType>Microsoft.Reporting.WebForms.ReportAreaContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The current content type displayed in the report area is unknown. For more information, see P:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType?qualifyHint=False&amp;autoUpgrade=True.</summary>
+        <summary>To be added.</summary>
       </Docs>
     </Member>
   </Members>

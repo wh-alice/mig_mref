@@ -15,15 +15,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.Print"&gt; and &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.PrintingBegin&gt; events.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- By default, this property contains the same values as the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.PrinterSettings%2A&gt; property in &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt;, except that its &lt;xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A&gt; property is always set to &lt;xref:System.Drawing.Printing.PrintRange.AllPages&gt; for the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Print&gt; event.  
-  
- This property cannot be set to `null` (`Nothing` in Visual Basic).  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="PrinterSettings">
@@ -37,16 +30,9 @@
         <ReturnType>System.Drawing.Printing.PrinterSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the printer settings to use for the current operation.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
-        <remarks>&lt;!CDATA[  
-  
-## Remarks  
- By default, this property contains the same values as the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.PrinterSettings%2A&gt; property in &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt;, except that its &lt;xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A&gt; property is always set to &lt;xref:System.Drawing.Printing.PrintRange.AllPages&gt; for the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.Print&gt; event.  
-  
- This property cannot be set to `null` (`Nothing` in Visual Basic).  
-  
- ]&gt;</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

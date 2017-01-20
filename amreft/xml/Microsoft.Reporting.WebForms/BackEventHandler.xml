@@ -18,14 +18,7 @@
   <Docs>
     <param name="sender">To be added.</param>
     <param name="e">To be added.</param>
-    <summary>Represents the method that will handle the &lt;xref:Microsoft.Reporting.WebForms.Back&gt; event of a &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- A &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.Back&gt; event occurs when the user has navigated to a drillthrough report and clicks the **Back** button to return to the parent report. The &lt;xref:Microsoft.Reporting.WebForms.BackEventArgs&gt; object contains the parent report.  
-  
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
 </Type>

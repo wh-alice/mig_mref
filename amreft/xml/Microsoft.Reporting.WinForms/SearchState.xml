@@ -10,13 +10,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains the search text and the start page of a search operation.</summary>
-    <remarks>&lt;!CDATA[  
-  
-## Remarks  
- This class is referenced by the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.SearchState%2A&gt; property in &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt;.  
-  
- ]&gt;</remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="StartPage">
@@ -30,7 +25,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the start page of the search operation.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -46,7 +41,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the search text.</summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
