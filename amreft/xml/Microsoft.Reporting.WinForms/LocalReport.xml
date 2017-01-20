@@ -117,7 +117,7 @@ End Sub
         <remarks><![CDATA[  
   
 ## Remarks  
- This method allows the specified assembly to be referenced by the report. The specified assembly will be granted `FullTrust` permissions in the sandboxed application domain. You should use this method instead of <xref:Microsoft.Reporting.WinForms.LocalReport.AddTrustedCodeModuleInCurrentAppDomain%2A>. In [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the <xref:Microsoft.Reporting.WinForms.LocalReport.ExecuteReportInSandboxAppDomain%2A> method to switch to the sandboxed application domain mode.  
+ This method allows the specified assembly to be referenced by the report. The specified assembly will be granted `FullTrust` permissions in the sandboxed application domain. You should use this method instead of <xref:Microsoft.Reporting.WinForms.LocalReport.AddTrustedCodeModuleInCurrentAppDomain%2A>. In [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the <xref:Microsoft.Reporting.WinForms.LocalReport.ExecuteReportInSandboxAppDomain%2A> method to switch to the sandboxed application domain mode.  
   
  By default, only the assemblies in [!INCLUDE[ssRSnoversion](../Token/ssRSnoversion_md.md)] are given full trust.  
   
@@ -150,9 +150,9 @@ End Sub
 ## Remarks  
   
 > [!IMPORTANT]
->  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. You should use <xref:Microsoft.Reporting.WinForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A> and <xref:Microsoft.Reporting.WinForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A>. If you want to continue to use this method with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4, you must use the  in the Web.config file of your ASP.NET application. Otherwise, this method will throw an <xref:System.InvalidOperationException>.  
+>  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. You should use <xref:Microsoft.Reporting.WinForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A> and <xref:Microsoft.Reporting.WinForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A>. If you want to continue to use this method with [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4, you must use the  in the Web.config file of your ASP.NET application. Otherwise, this method will throw an <xref:System.InvalidOperationException>.  
 >   
->  This method will continue to work with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5.  
+>  This method will continue to work with [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 3.5.  
 >   
 >  For more information, see [Code Access Security Policy Compatibility and Migration](../Topic/Code%20Access%20Security%20Policy%20Compatibility%20and%20Migration.md).  
   
@@ -336,15 +336,15 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utiliti
 ## Remarks  
   
 > [!IMPORTANT]
->  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. You should use <xref:Microsoft.Reporting.WinForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A> and <xref:Microsoft.Reporting.WinForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A>. If you want to continue to use this method with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4, you must use the  in the Web.config file of your ASP.NET application. Otherwise, this method will throw an <xref:System.InvalidOperationException>.  
+>  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. You should use <xref:Microsoft.Reporting.WinForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A> and <xref:Microsoft.Reporting.WinForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A>. If you want to continue to use this method with [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4, you must use the  in the Web.config file of your ASP.NET application. Otherwise, this method will throw an <xref:System.InvalidOperationException>.  
 >   
 >  For more information, see [Code Access Security Policy Compatibility and Migration](../Topic/Code%20Access%20Security%20Policy%20Compatibility%20and%20Migration.md).  
   
- Expressions in the report will be run in the current <xref:System.AppDomain> with only the **Execution** security permission flag. By default, custom assemblies are not allowed in this mode. In [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5, this is the default mode and is the mode to use for trusted reports. See the table below for the default application domain modes in different [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] versions.  
+ Expressions in the report will be run in the current <xref:System.AppDomain> with only the **Execution** security permission flag. By default, custom assemblies are not allowed in this mode. In [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 3.5, this is the default mode and is the mode to use for trusted reports. See the table below for the default application domain modes in different [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] versions.  
   
 |||||  
 |-|-|-|-|  
-|[!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] Version|LegacySecurityPolicy Enabled?|Default Application Domain|Useable Application Domain Modes|  
+|[!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] Version|LegacySecurityPolicy Enabled?|Default Application Domain|Useable Application Domain Modes|  
 |4|No (Default)|Sandboxed|Sandboxed|  
 |4|Yes|Current|Sandboxed and current|  
 |3.5|N/A|Current|Sandboxed and current|  
@@ -410,17 +410,17 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utiliti
 ## Remarks  
   
 > [!IMPORTANT]
->  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. To set the base permissions for the sandboxed application domain, use <xref:Microsoft.Reporting.WinForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A>. To allow full-trust processing extensions, use <xref:Microsoft.Reporting.WinForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A>.  
+>  This method is deprecated for [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4 because the code access security (CAS) feature it relies on is deprecated in [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4. Instead, the ReportViewer control always executes in the sandboxed application domain. To set the base permissions for the sandboxed application domain, use <xref:Microsoft.Reporting.WinForms.LocalReport.SetBasePermissionsForSandboxAppDomain%2A>. To allow full-trust processing extensions, use <xref:Microsoft.Reporting.WinForms.LocalReport.AddFullTrustModuleInSandboxAppDomain%2A>.  
 >   
->  When used with [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4, this method has no effect unless you use the  in the Web.config file of your ASP.NET application. This scenario is only applicable if you want to switch between the sandboxed application domain and current application domain modes.  
+>  When used with [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4, this method has no effect unless you use the  in the Web.config file of your ASP.NET application. This scenario is only applicable if you want to switch between the sandboxed application domain and current application domain modes.  
 >   
 >  For more information, see [Code Access Security Policy Compatibility and Migration](../Topic/Code%20Access%20Security%20Policy%20Compatibility%20and%20Migration.md).  
   
- See the table below for the default application domain modes in different [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] versions.  
+ See the table below for the default application domain modes in different [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] versions.  
   
 |||||  
 |-|-|-|-|  
-|[!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] Version|LegacySecurityPolicy Enabled?|Default Application Domain|Useable Application Domain Modes|  
+|[!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] Version|LegacySecurityPolicy Enabled?|Default Application Domain|Useable Application Domain Modes|  
 |4|No (Default)|Sandboxed|Sandboxed|  
 |4|Yes|Current|Sandboxed and current|  
 |3.5|N/A|Current|Sandboxed and current|  
@@ -727,7 +727,7 @@ End Sub
         <remarks><![CDATA[  
   
 ## Remarks  
- In local processing mode, the report viewer loads the expression host assembly into either the current application domain or a sandboxed application domain based on the [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] version (see <xref:Microsoft.Reporting.WinForms.LocalReport.ExecuteReportInSandboxAppDomain%2A>). The sandboxed application domain is shared by multiple instances of the <xref:Microsoft.Reporting.WinForms.LocalReport> class. By default, <xref:Microsoft.Reporting.WinForms.LocalReport> causes the application domain to expire after a set time to reclaim memory.  
+ In local processing mode, the report viewer loads the expression host assembly into either the current application domain or a sandboxed application domain based on the [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] version (see <xref:Microsoft.Reporting.WinForms.LocalReport.ExecuteReportInSandboxAppDomain%2A>). The sandboxed application domain is shared by multiple instances of the <xref:Microsoft.Reporting.WinForms.LocalReport> class. By default, <xref:Microsoft.Reporting.WinForms.LocalReport> causes the application domain to expire after a set time to reclaim memory.  
   
  Use this method to force the <xref:Microsoft.Reporting.WinForms.LocalReport> object to release its reference to the sandboxed application domain immediately and help reduce the time it takes for memory to be reclaimed.  
   
@@ -910,7 +910,7 @@ End Sub
 ## Remarks  
  The base permissions in the sandboxed application domain apply to custom code assemblies and the evaluation of report expressions. Note that this method replaces any existing base permission set with the supplied permission set. You should make sure that the supplied permission set includes the **Execution** permission. Otherwise, no custom code assemblies can be executed and no expressions can be evaluated.  
   
- If you change the permissions, make sure that the <xref:Microsoft.Reporting.WinForms.LocalReport> object cannot be used to access any untrusted report definitions. In [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the <xref:Microsoft.Reporting.WinForms.LocalReport.ExecuteReportInSandboxAppDomain%2A> method to switch to the sandboxed application domain mode.  
+ If you change the permissions, make sure that the <xref:Microsoft.Reporting.WinForms.LocalReport> object cannot be used to access any untrusted report definitions. In [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the <xref:Microsoft.Reporting.WinForms.LocalReport.ExecuteReportInSandboxAppDomain%2A> method to switch to the sandboxed application domain mode.  
   
    
   

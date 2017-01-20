@@ -22,7 +22,7 @@
   
  The ServerReport object exposes additional functionality supported by the report server, including parameters, and the ability to export reports to any format supported by the report server.  
   
- The ServerReport object requires a [!INCLUDE[ssKatmai](../../../../../../includes/sskatmai_md.md)] version of Reporting Services, or later.  
+ The ServerReport object requires a [!INCLUDE[ssKatmai](../../../../../../add/includes/sskatmai_md.md)] version of Reporting Services, or later.  
   
  ]]></remarks>
   </Docs>

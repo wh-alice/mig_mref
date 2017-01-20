@@ -14,7 +14,7 @@
     <remarks><![CDATA[  
   
 ## Remarks  
- In [!INCLUDE[vsprvs](../../../../../../includes/vsprvs_md.md)] 2010, the **ReportViewer** control is an AJAX control and requires a <xref:System.Web.UI.ScriptManager> on the Web form.  
+ In [!INCLUDE[vsprvs](../../../../../../add/includes/vsprvs_md.md)] 2010, the **ReportViewer** control is an AJAX control and requires a <xref:System.Web.UI.ScriptManager> on the Web form.  
   
  ]]></remarks>
   </Docs>
