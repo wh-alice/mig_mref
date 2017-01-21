@@ -12,7 +12,8 @@
   </Interfaces>
   <Docs>
     <summary>Provides report server connection information when the **ReportViewer** Web forms control is used with no session state.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  When an implementation of the IReportServerConnection2 interface is specified in the Web.config settings, the values for the <xref:Microsoft.Reporting.WebForms.ServerReport.ReportServerUrl%2A>, <xref:Microsoft.Reporting.WebForms.ServerReport.Timeout%2A>, <xref:Microsoft.Reporting.WebForms.ServerReport.Cookies%2A> and <xref:Microsoft.Reporting.WebForms.ServerReport.Headers%2A> properties on the <xref:Microsoft.Reporting.WebForms.ServerReport> instance will not be used. The values provided by the IReportServerConnection2 implementation will be used instead. In addition to these properties, the credential information that is provided by the IReportServerConnection2 implementation will also be used.  
@@ -246,7 +247,8 @@ Public NotInheritable Class MyReportServerConnection
 End Class  
 ```  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Cookies">

@@ -11,12 +11,14 @@
   <Interfaces />
   <Docs>
     <summary>Encapsulates a rendering extension that can be used with the ReportViewer's report.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is returned by the **ListRenderingExtensions** methods of the <xref:Microsoft.Reporting.WebForms.ServerReport> and <xref:Microsoft.Reporting.WebForms.LocalReport> classes.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="LocalizedName">

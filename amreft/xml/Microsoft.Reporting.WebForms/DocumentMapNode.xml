@@ -11,12 +11,14 @@
   <Interfaces />
   <Docs>
     <summary>Represents a single node in the document map.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  DocumentMapNode is returned by the `GetDocumentMap` methods of the <xref:Microsoft.Reporting.WebForms.ReportViewer.LocalReport%2A> and <xref:Microsoft.Reporting.WebForms.ServerReport> classes.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Children">

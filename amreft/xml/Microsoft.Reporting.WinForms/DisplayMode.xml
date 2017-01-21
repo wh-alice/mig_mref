@@ -10,12 +10,14 @@
   </Base>
   <Docs>
     <summary>Represents a possible display mode for the ReportViewer control.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  A **DisplayMode** enumerator value is passed to the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetDisplayMode%2A> method of the ReportViewer control.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Normal">

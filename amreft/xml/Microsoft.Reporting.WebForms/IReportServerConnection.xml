@@ -12,12 +12,14 @@
   </Interfaces>
   <Docs>
     <summary>Provides report server connection information when the ReportViewer Web forms control is used with no session state.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can implement this interface to provide connection information when using the ReportViewer Web forms control with no session state. The ReportViewer control's session state usage is configured in the Web.config settings file.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ReportServerUrl">

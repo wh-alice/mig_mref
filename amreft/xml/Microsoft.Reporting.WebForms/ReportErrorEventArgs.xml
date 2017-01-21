@@ -11,12 +11,14 @@
   <Interfaces />
   <Docs>
     <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.ReportError"&gt; event.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WebForms.ReportErrorEventHandler> when a <xref:Microsoft.Reporting.WebForms.ReportViewer.ReportError> occurs.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">
@@ -48,12 +50,14 @@
       <Docs>
         <summary>Indicates whether the host application has handled the error.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Set this property to true to cause the ReportViewer control to ignore the error.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

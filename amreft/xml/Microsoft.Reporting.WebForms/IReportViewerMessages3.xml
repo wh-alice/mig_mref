@@ -12,7 +12,8 @@
   </Interfaces>
   <Docs>
     <summary>Allows applications to provide customized user interface messages.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can implement the IReportViewerMessages3 interface to provide custom localization of the <xref:Microsoft.Reporting.WebForms.ReportViewer> control user interface. This implementation is loaded by the <xref:Microsoft.Reporting.WebForms.ReportViewer> control via a custom application setting in the Web.config configuration file with the key `ReportViewerMessages`.  
@@ -30,7 +31,8 @@
   
  If a `null` string value for a property is returned, the <xref:Microsoft.Reporting.WebForms.ReportViewer> control will display the original user interface string for that item.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CalendarLoading">

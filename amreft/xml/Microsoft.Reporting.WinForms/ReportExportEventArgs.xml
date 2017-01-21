@@ -16,12 +16,14 @@
   </Attributes>
   <Docs>
     <summary>Provides data for the report &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.ReportExport"&gt; event.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WinForms.ReportExportEventHandler> delegate when an <xref:Microsoft.Reporting.WinForms.ReportViewer.ReportExport> event occurs.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,12 +55,14 @@
       <Docs>
         <summary>Gets or sets an XML string that contains the device-specific content that is required by the rendering extension specified in the `Extension` parameter.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For more information about device information settings for specific output formats, see [Device Information Settings](http://msdn.microsoft.com/en-us/fe718939-7efe-4c7f-87cb-5f5b09caeff4).  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extension">

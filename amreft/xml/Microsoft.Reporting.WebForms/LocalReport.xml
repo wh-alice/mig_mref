@@ -18,7 +18,8 @@
   </Interfaces>
   <Docs>
     <summary>Represents a report that is processed and rendered locally without connecting to a report server.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The LocalReport class represents reports that are processed and rendered locally without connecting to a report server. This class is the same object that is used by the **ReportViewer** control, but it also can be used independently as a non-visual object that encapsulates the core functionality of the **ReportViewer** control.  
@@ -90,7 +91,8 @@ End Sub
   
 ```  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -122,14 +124,16 @@ End Sub
       <Docs>
         <param name="assemblyName">To be added.</param>
         <summary>Adds the supplied assembly to the list of assemblies that run in full trust mode in the sandboxed application domain.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This method allows the specified assembly to be referenced by the report. The specified assembly will be granted `FullTrust` permissions in the sandboxed application domain. You should use this method instead of <xref:Microsoft.Reporting.WebForms.LocalReport.AddTrustedCodeModuleInCurrentAppDomain%2A>. In [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 3.5 (or in [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] 4 with  enabled), you must explicitly call the <xref:Microsoft.Reporting.WebForms.LocalReport.ExecuteReportInSandboxAppDomain%2A> method to switch to the sandboxed application domain mode.  
   
  By default, only the assemblies in [!INCLUDE[ssRSnoversion](../Token/ssRSnoversion_md.md)] are given full trust.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTrustedCodeModuleInCurrentAppDomain">
@@ -153,7 +157,8 @@ End Sub
       <Docs>
         <param name="assemblyName">To be added.</param>
         <summary>Adds the supplied assembly to the list of assemblies that are trusted to execute in the current &lt;xref:System.AppDomain&gt;.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -196,7 +201,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
   
  For more information on custom assemblies, see "Using Custom Assemblies with Reports" in the SQL Server Books Online.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSources">
@@ -226,12 +232,14 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
       <Docs>
         <summary>Gets a collection of data sources used by the report.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Although the collection property is ready only, you can add or remove data sources in the returned <xref:Microsoft.Reporting.WebForms.ReportDataSourceCollection> object.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -274,7 +282,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
       <Docs>
         <summary>Indicates whether the report can be rendered if it has external images.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If this property is set to `false`, then attempting to render a report that has external images will result in a <xref:Microsoft.Reporting.WebForms.ReportSecurityException>.  
@@ -282,7 +291,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
 > [!IMPORTANT]
 >  Local reports that contain external images are not allowed to execute by default. Setting this property to true will enable local reports with external images to execute. This can be a security risk.  You should not enable this property on non-trusted reports.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableHyperlinks">
@@ -309,7 +319,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
       <Docs>
         <summary>Indicates whether the report can be rendered if it contains hyperlink actions.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If this property is set to `false`, then attempting to render a report that has external images will result in a <xref:Microsoft.Reporting.WebForms.ReportSecurityException>.  
@@ -317,7 +328,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
 > [!IMPORTANT]
 >  Local reports that contain hyperlinks are not allowed to execute by default. Setting this property to true will enable local reports with hyperlinks to execute. This can be a security risk.  You should not enable this property on non-trusted reports.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteReportInCurrentAppDomain">
@@ -341,7 +353,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(
       <Docs>
         <param name="reportEvidence">To be added.</param>
         <summary>Causes processing extensions and expressions in the report to be executed in the current &lt;xref:System.AppDomain&gt;.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -394,7 +407,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utiliti
       Version=1.0.271.0, Culture=neutral, PublicKeyToken=89012dab8080cc90");  
 ```  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteReportInSandboxAppDomain">
@@ -415,7 +429,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utiliti
       <Parameters />
       <Docs>
         <summary>Causes processing extensions and expressions to be run with limited permissions in an application domain.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -439,7 +454,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utiliti
   
  This mode negatively impacts performance.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataSourceNames">
@@ -473,7 +489,8 @@ reportViewer.LocalReport.AddTrustedCodeModuleInCurrentAppDomain("Contoso.Utiliti
       <Docs>
         <summary>Gets the default page settings specified in the local report.</summary>
         <returns>To be added.</returns>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The returned <xref:Microsoft.Reporting.WebForms.ReportPageSettings> object can be used to pass page margin and page size information through a `deviceInfo` argument that is passed to the [M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String\[\]@,Microsoft.Reporting.WebForms.Warning\[\]@)](assetId:///M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)?qualifyHint=False&autoUpgrade=True) method.  
@@ -516,7 +533,8 @@ End Sub
 End Sub  
 ```  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -533,12 +551,14 @@ End Sub
       <Docs>
         <summary>Returns report parameter properties for the report.</summary>
         <returns>To be added.</returns>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The GetParameters method can also be used to validate parameter values against parameters for a local report if valid values have been supplied.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalPages">
@@ -575,12 +595,14 @@ End Sub
       <Docs>
         <summary>Returns all available rendering extensions for the local report.</summary>
         <returns>To be added.</returns>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This method can be used to populate drop-down lists to allow users to select a rendering extension for export.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadReportDefinition">
@@ -599,14 +621,16 @@ End Sub
       <Docs>
         <param name="report">To be added.</param>
         <summary>Loads a report definition from the local file system using a &lt;xref:System.IO.TextReader&gt;.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The LoadReportDefinition method can be used in cases where the report definition is dynamically generated.  
   
  If the loaded report definition contains any subreports, you must call <xref:Microsoft.Reporting.WebForms.LocalReport.LoadSubreportDefinition%2A> and provide data for any subreports.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadSubreportDefinition">
@@ -627,12 +651,14 @@ End Sub
         <param name="reportName">To be added.</param>
         <param name="report">To be added.</param>
         <summary>Loads a subreport definition using a &lt;xref:System.IO.Stream&gt;.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The **ReportViewer** control requires the definitions for all subreports before it can process a report. If the local report was loaded from the file system by specifying the <xref:Microsoft.Reporting.WebForms.LocalReport.ReportPath%2A> property or loaded from an embedded resource by specifying the <xref:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource%2A> property, the **ReportViewer** control automatically loads the subreports from the file system or embedded resource, respectively. In cases where the local report was loaded from a stream, these methods may be used to load subreport definitions.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadSubreportDefinition">
@@ -653,12 +679,14 @@ End Sub
         <param name="reportName">To be added.</param>
         <param name="report">To be added.</param>
         <summary>Loads a subreport definition using a &lt;xref:System.IO.TextReader&gt;.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The **ReportViewer** control requires the report definitions for all subreports be available before it can process a report. If the local report was loaded from the file system by specifying the <xref:Microsoft.Reporting.WebForms.LocalReport.ReportPath%2A> property or loaded from an embedded resource by specifying the <xref:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource%2A> property, the **ReportViewer** control automatically loads the subreports from the file system or embedded resource, respectively. In cases where the local report was loaded from a stream, these methods can be used to load report definitions for subreports.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MapTileServerConfiguration">
@@ -725,12 +753,14 @@ End Sub
       <Parameters />
       <Docs>
         <summary>Causes the local report to be rendered with new data.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The Refresh method reprocesses the report and reloads the data from the report data sources.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseSandboxAppDomain">
@@ -746,7 +776,8 @@ End Sub
       <Parameters />
       <Docs>
         <summary>Causes the &lt;see cref="T:Microsoft.Reporting.WebForms.LocalReport"&gt; object to release its reference to the sandboxed application domain immediately.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  In local processing mode, the report viewer loads the expression host assembly into either the current application domain or a sandboxed application domain based on the [!INCLUDE[dnprdnshort](../../../../../../add/includes/dnprdnshort_md.md)] version (see <xref:Microsoft.Reporting.WebForms.LocalReport.ExecuteReportInSandboxAppDomain%2A>). The sandboxed application domain is shared by multiple instances of the <xref:Microsoft.Reporting.WebForms.LocalReport> class. By default, <xref:Microsoft.Reporting.WebForms.LocalReport> causes the application domain to expire after a set time to reclaim memory.  
@@ -755,7 +786,8 @@ End Sub
   
  If the <xref:Microsoft.Reporting.WebForms.LocalReport> object requires the sandboxed application domain after the sandboxed application domain has already expired, the <xref:Microsoft.Reporting.WebForms.LocalReport> object will create a new one.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -868,7 +900,8 @@ End Sub
       <Docs>
         <summary>Gets or sets the name of the report embedded resource.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Setting the ReportEmbeddedResource property will cause the **ReportViewer** control to automatically load any required subreports from an embedded resource.  
@@ -877,7 +910,8 @@ End Sub
   
  If the <xref:Microsoft.Reporting.WebForms.LocalReport.ReportPath%2A> property has been set, the ReportEmbeddedResource property is ignored. It also causes the report loaded with <xref:Microsoft.Reporting.WebForms.Report.LoadReportDefinition%2A> to be ignored.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportPath">
@@ -901,14 +935,16 @@ End Sub
       <Docs>
         <summary>Gets or sets the local file system path of the local report.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Setting the ReportPath property will cause the **ReportViewer** control to automatically load any required subreports from the file system.  
   
  Setting this property will cause the value of the <xref:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource%2A> property to be ignored. It also causes the report loaded with <xref:Microsoft.Reporting.WebForms.Report.LoadReportDefinition%2A> to be ignored.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBasePermissionsForSandboxAppDomain">
@@ -927,7 +963,8 @@ End Sub
       <Docs>
         <param name="permissions">To be added.</param>
         <summary>Sets the base permissions for the sandboxed application domain with the supplied permission set.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The base permissions in the sandboxed application domain apply to custom code assemblies and the evaluation of report expressions. Note that this method replaces any existing base permission set with the supplied permission set. You should make sure that the supplied permission set includes the **Execution** permission. Otherwise, no custom code assemblies can be executed and no expressions can be evaluated.  
@@ -955,7 +992,8 @@ permissions.AddPermission(New SecurityPermission(SecurityPermissionFlag.Executio
 ReportViewer1.LocalReport.SetBasePermissionForSandboxAppDomain(permissions)  
 ```  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParameters">
@@ -998,7 +1036,8 @@ ReportViewer1.LocalReport.SetBasePermissionForSandboxAppDomain(permissions)
       <Docs>
         <summary>Gets or sets a `Boolean` value that indicates whether detailed messages should be displayed when an error occurs in a subreport.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property is useful for debugging subreport errors. If it is set to `false`, the generic message "An error occurred during subreport processing" is displayed.  
@@ -1008,7 +1047,8 @@ ReportViewer1.LocalReport.SetBasePermissionForSandboxAppDomain(permissions)
   
  Changing this property causes the report definition to be updated and the report to be reprocessed.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubreportProcessing">
@@ -1023,7 +1063,8 @@ ReportViewer1.LocalReport.SetBasePermissionForSandboxAppDomain(permissions)
       </ReturnValue>
       <Docs>
         <summary>Occurs when a subreport is processed.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The SubreportProcessing event is triggered for every instance of the subreport in the main report, and not just for each subreport definition. If a report contains multiple subreports instances from the same report definition, this event is triggered for each instance.  
@@ -1151,7 +1192,8 @@ Partial Class _Default
 End Class  
 ```  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">

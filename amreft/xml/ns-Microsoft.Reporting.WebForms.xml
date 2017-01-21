@@ -1,11 +1,13 @@
 <Namespace Name="Microsoft.Reporting.WebForms">
   <Docs>
     <summary>The Microsoft.Reporting.WebForms namespace contains methods and properties for the ReportViewer Web server control.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Please see [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for information about using the ReportViewer Web server control in a scale-out deployment or without session state.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

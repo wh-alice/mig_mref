@@ -59,12 +59,14 @@
       <Docs>
         <summary>Represents the paper size settings for a report page. Read-only.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The `Width` property is always less than or equal to the `Height` property in the returned <xref:System.Drawing.Printing.PaperSize> object. To find out the orientation of the report page, use <xref:Microsoft.Reporting.WebForms.ReportPageSettings.IsLandscape%2A>.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

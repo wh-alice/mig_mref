@@ -164,7 +164,8 @@
       <Docs>
         <summary>Determines whether the parameter can be displayed in the user interface.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:Microsoft.Reporting.WinForms.ReportViewer> control may only display the parameter input user interface if the control's <xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A> property is set to <xref:Microsoft.Reporting.WinForms.ProcessingMode>.  
@@ -179,7 +180,8 @@
   
  If the **ReportViewer** control is set to <xref:Microsoft.Reporting.WinForms.ProcessingMode> mode, the host application must provide a user interface for accepting parameter values and passing these parameters to the report.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -11,14 +11,16 @@
   <Interfaces />
   <Docs>
     <summary>Represents a possible valid value for a parameter.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  ValidValue is used by the <xref:Microsoft.Reporting.WebForms.ReportParameterInfo> and <xref:Microsoft.Reporting.WebForms.ParameterState> classes.  
   
  You can use the **ValidValue** class to display the possible valid values of a parameter in a user interface.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Label">

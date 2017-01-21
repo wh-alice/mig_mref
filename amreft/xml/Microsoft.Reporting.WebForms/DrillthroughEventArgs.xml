@@ -16,7 +16,8 @@
   </Attributes>
   <Docs>
     <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough"&gt; event.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WebForms.DrillthroughEventHandler> delegate when a <xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough> event occurs.  
@@ -30,7 +31,8 @@
 ## Examples  
  For an example, please see <xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough>.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,12 +66,14 @@
       <Docs>
         <summary>Gets the target report of the drillthrough action.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Examples  
  For an example, please see <xref:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough>.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReportPath">

@@ -11,7 +11,8 @@
   <Interfaces />
   <Docs>
     <summary>Represents a data source for a report.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The ReportDataSource class is used with the <xref:Microsoft.Reporting.WinForms.LocalReport.DataSources%2A> collection of a <xref:Microsoft.Reporting.WinForms.LocalReport> object to add one or more required data sources to a local report. This is necessary when adding a report to the ReportViewer control.  
@@ -21,7 +22,8 @@
 ## Examples  
  For code examples, see <xref:Microsoft.Reporting.WinForms.LocalReport>.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -104,7 +106,8 @@
         <param name="name">To be added.</param>
         <param name="dataSourceValue">To be added.</param>
         <summary>Constructs a named data source with a value.</summary>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  <xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A> may be an instance of <xref:System.Data.DataTable>, a <xref:System.Collections.IEnumerable> value (for example, <xref:System.Data.DataView> or <xref:System.Array>), or a <xref:System.Windows.Forms.BindingSource>.  
@@ -120,7 +123,8 @@
 ## Examples  
  For code examples, see <xref:Microsoft.Reporting.WinForms.LocalReport>.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,7 +200,8 @@
       <Docs>
         <summary>Gets or sets the instance of the report data source.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Value may be an instance of <xref:System.Data.DataTable>, a <xref:System.Collections.IEnumerable> value (for example, <xref:System.Data.DataView> or <xref:System.Array>), or a <xref:System.Windows.Forms.BindingSource>.  
@@ -207,7 +212,8 @@
   
  If the type of Value is not any of the aforementioned types, this property throws an exception.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

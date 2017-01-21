@@ -10,14 +10,16 @@
   </Base>
   <Docs>
     <summary>Specifies the postback modes of the &lt;see cref="T:Microsoft.Reporting.WebForms.ReportViewer"&gt; control when the user interacts with the report viewer and the currently displayed report.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This enumeration is referenced by the <xref:Microsoft.Reporting.WebForms.ReportViewer.InteractivityPostBackMode%2A> property in <xref:Microsoft.Reporting.WebForms.ReportViewer>.  
   
  If you want the **ReportViewer** control to perform URL redirection on drillthrough actions, use F:Microsoft.Reporting.WebForms.InteractivityPostBackMode.SynchronousOnDrillthrough?qualifyHint=False&autoUpgrade=True. URL redirection is not a supported response to asynchronous postbacks. For more information on synchronous and asynchronous postbacks, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysAsynchronous">

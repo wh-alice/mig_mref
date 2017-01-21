@@ -10,12 +10,14 @@
   </Base>
   <Docs>
     <summary>Specifies the state of a parameter.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Use the ParameterState enumeration with the <xref:Microsoft.Reporting.WebForms.ReportParameter.State> property of the <xref:Microsoft.Reporting.WebForms.ReportParameter> class.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DynamicValuesUnavailable">

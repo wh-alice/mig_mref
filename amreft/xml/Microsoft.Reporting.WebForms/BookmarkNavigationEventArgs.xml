@@ -16,12 +16,14 @@
   </Attributes>
   <Docs>
     <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WebForms.ReportViewer.BookmarkNavigation"&gt; event.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WebForms.BookmarkNavigationEventHandler> delegate when a <xref:Microsoft.Reporting.WebForms.ReportViewer.BookmarkNavigation> event occurs.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

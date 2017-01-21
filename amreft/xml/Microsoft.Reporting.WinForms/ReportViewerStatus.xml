@@ -32,7 +32,8 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether the prompt area of the **ReportViewer** control is currently visible.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `false` indicates one or more of the following conditions:  
@@ -43,7 +44,8 @@
   
 -   the prompt area is currently collapsed  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeDisplayModes">
@@ -64,12 +66,14 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether the **ReportViewer** control has not started processing the report or has completed processing the report, and can change the display mode without canceling a report processing operation.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property is `true` if the **ReportViewer** control is still generating pages for a processed report in <xref:Microsoft.Reporting.WinForms.DisplayMode> mode, even though changing the mode will cancel that operation. This is because generating the report pages is a rendering operation and not a processing operation.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanChangeZoom">
@@ -174,12 +178,14 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.CurrentPage%2A&gt; property can be changed without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property can be `true` even when the report has only one page.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanPrint">
@@ -242,7 +248,8 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether you can search the report and highlight the search results without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `true` indicates both of the following conditions:  
@@ -251,7 +258,8 @@
   
 -   the report has been successfully processed and is being displayed  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSubmitPromptAreaValues">
@@ -272,7 +280,8 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether prompted parameters and prompted data source credentials can be submitted for the current report without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `true` indicates one of the following conditions:  
@@ -283,7 +292,8 @@
   
 -   a report processing operation has succeeded and the report is being displayed.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDocumentMapToDisplay">
@@ -304,14 +314,16 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether the current report has a document map and the document map can be displayed in the current display mode.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property returns `false` when the report has not yet been processed.  
   
  Use the <xref:Microsoft.Reporting.WinForms.ReportViewer.DisplayMode%2A> property to find the current display mode of the **ReportViewer** control.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasPromptsToDisplay">
@@ -332,7 +344,8 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether prompting is supported and there are prompts that can be displayed based on the visibility settings in the **ReportViewer** control. This property does not indicate whether the prompt areas are actually visible.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:Microsoft.Reporting.WinForms.ReportViewer.ShowParameterPrompts%2A> and <xref:Microsoft.Reporting.WinForms.ReportViewer.ShowCredentialPrompts%2A> properties both affect the value of HasPromptsToDisplay (see table below).  
@@ -345,7 +358,8 @@
   
  HasPromptsToDisplay does not indicate whether a prompt area is currently displayed. To see whether a prompt area is currently displayed, use <xref:Microsoft.Reporting.WinForms.ReportViewerStatus.ArePromptsVisible%2A>.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InCancelableOperation">
@@ -387,7 +401,8 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether the report has a document map and the document map is currently displayed.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `true` indicates both of the following conditions:  
@@ -396,7 +411,8 @@
   
 -   the document map is not collapsed  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPromptingSupported">
@@ -417,12 +433,14 @@
       <Docs>
         <summary>Gets a `Boolean` value that indicates whether the current processing mode supports prompting for parameters and data source credentials.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property does not indicate whether the current report has prompt areas for parameters or data source credentials prompts.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

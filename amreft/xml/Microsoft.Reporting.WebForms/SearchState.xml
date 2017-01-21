@@ -11,12 +11,14 @@
   <Interfaces />
   <Docs>
     <summary>Contains the search text and the start page of a search operation.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is referenced by the <xref:Microsoft.Reporting.WebForms.ReportViewer.SearchState%2A> property in <xref:Microsoft.Reporting.WebForms.ReportViewer>.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="StartPage">

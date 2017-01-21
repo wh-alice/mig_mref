@@ -10,12 +10,14 @@
   </Base>
   <Docs>
     <summary>Indicates how the report content should be presented.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is used as a value for the <xref:Microsoft.Reporting.WebForms.ReportViewer.ExportContentDisposition%2A> property of the <xref:Microsoft.Reporting.WebForms.ReportViewer> control to indicate whether content should be presented inline or as an attachment.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysAttachment">

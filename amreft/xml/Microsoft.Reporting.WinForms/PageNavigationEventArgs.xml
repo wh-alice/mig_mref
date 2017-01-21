@@ -16,12 +16,14 @@
   </Attributes>
   <Docs>
     <summary>Provides data for a &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.PageNavigation"&gt; event.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WinForms.PageNavigationEventHandler> delegate when a <xref:Microsoft.Reporting.WinForms.ReportViewer.PageNavigation> event occurs.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

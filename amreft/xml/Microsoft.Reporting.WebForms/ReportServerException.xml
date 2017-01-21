@@ -65,12 +65,14 @@
       <Docs>
         <summary>Returns the error code from the exception.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For a list of errors that the report server returns, see [SoapException Errors Table](http://msdn.microsoft.com/en-us/d57866f5-d876-41ce-bc49-0e72486a9617) in SQL Server Books Online.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">

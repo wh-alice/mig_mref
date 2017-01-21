@@ -10,12 +10,14 @@
   </Base>
   <Docs>
     <summary>Indicates the direction of a sort operation.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Used by the <xref:Microsoft.Reporting.WebForms.ReportViewer.Sort> event.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Ascending">

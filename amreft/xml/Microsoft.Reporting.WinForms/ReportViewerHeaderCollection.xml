@@ -14,12 +14,14 @@
   <Interfaces />
   <Docs>
     <summary>Represents a collection of strings that contain custom headers.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The ReportViewerHeaderCollection class provides a simple collection object that can be used to store a set of custom headers.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members />
 </Type>

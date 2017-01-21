@@ -8,7 +8,8 @@
   <Interfaces />
   <Docs>
     <summary>Allows applications to provide customized user interface messages.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can implement the IReportViewerMessages interface to provide custom localization of the ReportViewer control user interface. This implementation can be passed to the ReportViewer control by adding a custom application setting to the the web.config configuration file using the key “ReportViewerMessages”.  
@@ -248,7 +249,8 @@ namespace MySample
 }  
 ```  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="BackButtonToolTip">
@@ -600,14 +602,16 @@ namespace MySample
       <Docs>
         <summary>Provides the text for the pagination message.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Provides the text for a page number message. For example,  
   
  `Page <1> of <3>`  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterAreaButtonToolTip">

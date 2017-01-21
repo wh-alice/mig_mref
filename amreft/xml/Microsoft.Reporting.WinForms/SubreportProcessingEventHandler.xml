@@ -19,7 +19,8 @@
     <param name="sender">To be added.</param>
     <param name="e">To be added.</param>
     <summary>Represents the method that will handle the &lt;see cref="E:Microsoft.Reporting.WinForms.LocalReport.SubreportProcessing"&gt; event of a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt;.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You must supply data for any data sources used in subreports. To do this, you must supply an event handler for the subreport processing event.  
@@ -31,6 +32,7 @@
 ## Examples  
  For an example, see the <xref:Microsoft.Reporting.WinForms.LocalReport.SubreportProcessing> method of the <xref:Microsoft.Reporting.WinForms.LocalReport> class.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
 </Type>

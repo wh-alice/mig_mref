@@ -8,12 +8,14 @@
   <Interfaces />
   <Docs>
     <summary>Provides custom storage for temporary data.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default the ReportViewer control holds temporary data (such as output of rendering) in memory. You can implement ITemporaryStorage to provide an alternate location to store temporary data. This may be configured as a custom application setting by using the `ReportViewerTemporaryStorage` key in the Web.config file.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateTemporaryStream">

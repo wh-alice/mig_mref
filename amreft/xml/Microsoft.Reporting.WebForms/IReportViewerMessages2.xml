@@ -12,7 +12,8 @@
   </Interfaces>
   <Docs>
     <summary>Defines methods and properties for implementing customized user interface messages.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can implement the IReportViewerMessages2 interface to provide custom localization of the **ReportViewer** control user interface. This implementation is loaded by the **ReportViewer** control via a custom application setting in the Web.config configuration file with the key `ReportViewerMessages`.  
@@ -30,7 +31,8 @@
   
  If a `null` string value for a property is returned, the **ReportViewer** control will display the original user interface string for that item.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ClientNoScript">

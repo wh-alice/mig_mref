@@ -10,12 +10,14 @@
   </Base>
   <Docs>
     <summary>Specifies the data type of a parameter.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Use the ParameterDataType enumeration with the <xref:Microsoft.Reporting.WinForms.ReportParameterInfo.DataType%2A> property of the <xref:Microsoft.Reporting.WinForms.ReportParameterInfo> class.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Boolean">

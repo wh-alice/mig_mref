@@ -11,12 +11,14 @@
   <Interfaces />
   <Docs>
     <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete"&gt; event.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WinForms.RenderingCompleteEventHandler> delegate when a <xref:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete> event occurs.  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Exception">

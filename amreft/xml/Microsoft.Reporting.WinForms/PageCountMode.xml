@@ -10,7 +10,8 @@
   </Base>
   <Docs>
     <summary>Represents values that control whether to calculate the actual page count or use an estimate.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Pagination in a processed report occurs when the report is rendered. Until the report is rendered, the total page count is unknown.  
@@ -20,7 +21,8 @@
 > [!NOTE]
 >  Rendering in F:Microsoft.Reporting.WinForms.PageCountMode.Estimate?qualifyHint=False&autoUpgrade=True mode can be more performant than F:Microsoft.Reporting.WinForms.PageCountMode.Actual?qualifyHint=False&autoUpgrade=True mode  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Actual">

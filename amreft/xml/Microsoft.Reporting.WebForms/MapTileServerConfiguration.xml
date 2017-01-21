@@ -40,12 +40,14 @@
       <Docs>
         <summary>Gets or sets the application identifier (AppID) to use for Bing Maps SOAP Services.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Refer to your license agreement to see if you need to obtain your own AppID.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxConnections">

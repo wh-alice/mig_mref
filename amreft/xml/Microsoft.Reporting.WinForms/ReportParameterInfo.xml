@@ -11,7 +11,8 @@
   <Interfaces />
   <Docs>
     <summary>Encapsulates information about report parameters.</summary>
-    <remarks><![CDATA[  
+    <remarks>
+      <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The ReportParameterInfo class can be used to determine parameter requirements for a report at runtime.  
@@ -201,7 +202,8 @@ namespace ParamSample
 }  
 ```  
   
- ]]></remarks>
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowBlank">
@@ -217,12 +219,14 @@ namespace ParamSample
       <Docs>
         <summary>Indicates whether an empty string is a valid value for the parameter. Read-only.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The AllowBlank property is ignored if the value of the <xref:Microsoft.Reporting.WinForms.ReportParameterInfo.DataType%2A> property is not a string.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AreDefaultValuesQueryBased">
@@ -398,12 +402,14 @@ namespace ParamSample
       <Docs>
         <summary>The text that prompts the user to provide parameter values.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The default value for the Prompt property is retrieved from the report definition.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PromptUser">
@@ -435,12 +441,14 @@ namespace ParamSample
       <Docs>
         <summary>Describes the state of the parameter. Read-only.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of the property may change based on input used during the validation of the parameter through the use of the <xref:Microsoft.Reporting.WinForms.Report.GetParameters%2A> method.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidValues">
@@ -456,12 +464,14 @@ namespace ParamSample
       <Docs>
         <summary>Gets the available valid values for the parameter. Read-only.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can display the valid values of a parameter to the user in a user interface.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -493,14 +503,16 @@ namespace ParamSample
       <Docs>
         <summary>Determines whether the parameter can be displayed in the user interface.</summary>
         <value>To be added.</value>
-        <remarks><![CDATA[  
+        <remarks>
+          <format Type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If Visible is set to `false`, the <xref:Microsoft.Reporting.WinForms.ReportParameterInfo.PromptUser%2A> property is overridden.  
   
  If Visible is set to `true`, a prompt is displayed in the user interface if <xref:Microsoft.Reporting.WinForms.ReportParameterInfo.PromptUser%2A> is also set to `true`.  
   
- ]]></remarks>
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>
