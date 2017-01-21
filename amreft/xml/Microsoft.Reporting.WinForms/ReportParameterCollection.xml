@@ -15,7 +15,7 @@
   <Docs>
     <summary>Represents a collection of &lt;see cref="T:Microsoft.Reporting.WinForms.ReportParameter"&gt; objects.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is referenced by the <xref:Microsoft.Reporting.WinForms.ReportParametersEventArgs.Parameters%2A> property in <xref:Microsoft.Reporting.WinForms.ReportParametersEventArgs>.  
@@ -55,7 +55,7 @@
         <summary>Gets an &lt;see cref="T:Microsoft.Reporting.WebForms.ReportParameter"&gt; object in the collection by its name.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If multiple parameters in the collection match the `name` parameter, the first match is returned.  

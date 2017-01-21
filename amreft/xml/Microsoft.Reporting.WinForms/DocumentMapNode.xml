@@ -12,7 +12,7 @@
   <Docs>
     <summary>Represents a single node in the document map.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  DocumentMapNode is returned by the `GetDocumentMap` methods of the <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> and <xref:Microsoft.Reporting.WinForms.ServerReport> classes.  

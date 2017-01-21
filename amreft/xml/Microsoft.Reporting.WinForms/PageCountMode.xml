@@ -11,7 +11,7 @@
   <Docs>
     <summary>Represents values that control whether to calculate the actual page count or use an estimate.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Pagination in a processed report occurs when the report is rendered. Until the report is rendered, the total page count is unknown.  

@@ -17,7 +17,7 @@
   <Docs>
     <summary>Provides data for the **Back** event.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WinForms.BackEventHandler> delegate when a <xref:Microsoft.Reporting.WinForms.ReportViewer.Back> event occurs.  

@@ -27,7 +27,7 @@
     <summary>Provides a stream to the ReportViewer control for rendering.</summary>
     <returns>To be added.</returns>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This delegate function may be passed into the [M:Microsoft.ReportingServices.LocalReport.Render(Microsoft.ReportingServices.ReportRendering.IRenderingExtension,System.String,System.String,Microsoft.ReportingServices.Interfaces.CreateAndRegisterStream,Microsoft.ReportingServices.Warning\[\]@)](assetId:///M:Microsoft.ReportingServices.LocalReport.Render(Microsoft.ReportingServices.ReportRendering.IRenderingExtension,System.String,System.String,Microsoft.ReportingServices.Interfaces.CreateAndRegisterStream,Microsoft.ReportingServices.Warning[]@)?qualifyHint=False&autoUpgrade=True) method of the <xref:Microsoft.ReportingServices.WinForms.ReportViewer.LocalReport%2A> object to support custom handling of secondary streams. The main body of the report is the first stream that is created.  

@@ -21,7 +21,7 @@
   <Docs>
     <summary>Represents a collection of device information settings.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is referenced by the <xref:Microsoft.Reporting.WebForms.ReportViewer.InteractiveDeviceInfos%2A> property in <xref:Microsoft.Reporting.WebForms.ReportViewer>.  

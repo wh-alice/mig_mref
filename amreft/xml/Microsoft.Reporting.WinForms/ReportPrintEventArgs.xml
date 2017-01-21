@@ -33,7 +33,7 @@
         <summary>Gets or sets the printer settings to use for the current operation.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default, this property contains the same values as the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrinterSettings%2A> property in <xref:Microsoft.Reporting.WinForms.ReportViewer>, except that its <xref:System.Drawing.Printing.PrinterSettings.PrintRange%2A> property is always set to <xref:System.Drawing.Printing.PrintRange.AllPages> for the <xref:Microsoft.Reporting.WinForms.ReportViewer.Print> event.  

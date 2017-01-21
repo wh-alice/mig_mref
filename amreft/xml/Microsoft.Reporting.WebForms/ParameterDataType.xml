@@ -11,7 +11,7 @@
   <Docs>
     <summary>Specifies the data type of a parameter.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Use the ParameterDataType enumeration with the <xref:Microsoft.Reporting.WebForms.ReportParameterInfo.DataType%2A> property of the <xref:Microsoft.Reporting.WebForms.ReportParameterInfo> class.  

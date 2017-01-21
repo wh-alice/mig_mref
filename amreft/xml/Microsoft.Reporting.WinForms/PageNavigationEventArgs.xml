@@ -17,7 +17,7 @@
   <Docs>
     <summary>Provides data for a &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.PageNavigation"&gt; event.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WinForms.PageNavigationEventHandler> delegate when a <xref:Microsoft.Reporting.WinForms.ReportViewer.PageNavigation> event occurs.  

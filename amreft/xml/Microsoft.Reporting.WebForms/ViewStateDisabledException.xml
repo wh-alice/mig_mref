@@ -12,7 +12,7 @@
   <Docs>
     <summary>Occurs when the **ReportViewer** control detects that view state is disabled.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You must enable view state in your ASP.NET page for the **ReportViewer** control to function properly. For more information, see [ASP.NET View State Overview](../Topic/ASP.NET%20View%20State%20Overview.md).  

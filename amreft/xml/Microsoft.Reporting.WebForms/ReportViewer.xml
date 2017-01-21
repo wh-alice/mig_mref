@@ -27,7 +27,7 @@
   <Docs>
     <summary>Encapsulates the methods and properties used for the **ReportViewer** control.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This control shows the report and its associated user interface.  
@@ -78,7 +78,7 @@
         <summary>Gets or sets a `Boolean` value that indicates whether the report is rendered asynchronously from the rest of the Web page when the Web page is being loaded.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  After the report is rendered on page load, this property no longer determines the report rendering behavior. By default, all subsequent report renderings are accomplished with AJAX partial-page updates through asynchronous postbacks, and changing this property has no effect. For more information on partial-page updates and asynchronous postbacks, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
@@ -102,7 +102,7 @@
       <Docs>
         <summary>Occurs when a user navigates from a drillthrough report back to the parent report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user moves from a drillthrough report back to the parent report. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.BackEventArgs> object to the <xref:Microsoft.Reporting.WebForms.BackEventHandler> delegate, which handles the event.  
@@ -147,7 +147,7 @@
       <Docs>
         <summary>Occurs when a user browses to a bookmark in a report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a user browses to a bookmark in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.BookmarkNavigationEventArgs> object to the <xref:Microsoft.Reporting.WebForms.BookmarkNavigationEventHandler> delegate, which handles the event.  
@@ -271,7 +271,7 @@
       <Docs>
         <summary>Occurs when a document map node is selected.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a document map node is selected. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.DocumentMapNavigationEventArgs> object to the <xref:Microsoft.Reporting.WebForms.DocumentMapNavigationEventHandler> delegate, which handles the event.  
@@ -322,7 +322,7 @@
       <Docs>
         <summary>Occurs when a drillthrough item is selected.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a drillthrough item is selected. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.DrillThroughEventArgs> object to the <xref:Microsoft.Reporting.WebForms.DrillThroughEventHandler> delegate, which handles the event.  
@@ -458,7 +458,7 @@ public partial class _Default : System.Web.UI.Page
         <summary>Gets or sets a value that indicates whether content should be present in-line or as an attachment.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Valid values are `AlwaysAttachment`, `AlwayInline`, or `OnlyHtmlInline`.  
@@ -503,7 +503,7 @@ public partial class _Default : System.Web.UI.Page
         <summary>Returns the page settings that are used to print the current report in the **ReportViewer** control.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default, the **ReportViewer** control uses the page settings specified in the report definition when printing the current report. Modifying the page settings by changing the properties of the returned <xref:System.Drawing.Printing.PageSettings> object has no effect. To modify page settings, you must use the <xref:Microsoft.Reporting.WebForms.ReportViewer.SetPageSettings%2A> method.  
@@ -535,7 +535,7 @@ public partial class _Default : System.Web.UI.Page
         <summary>Gets or sets the height of the control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For more information, see <xref:System.Web.UI.WebControls.WebControl.Height%2A?displayProperty=fullName>.  
@@ -582,7 +582,7 @@ public partial class _Default : System.Web.UI.Page
         <summary>Specifies the ID of the control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For more information, see <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName>.  
@@ -613,7 +613,7 @@ public partial class _Default : System.Web.UI.Page
         <summary>Gets the &lt;see cref="T:Microsoft.Reporting.WebForms.DeviceInfoCollection"&gt; object that the **ReportViewer** control uses to render the report in the report area as HTML.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can add or remove device information settings in the InteractiveDeviceInfos property to specify how the report should be rendered in the report area. Device information settings in the property applies apply only to the report that is rendered in the report area. It doesThey do not apply to the **Export** function in the **ReportViewer** user interface. For example, it doesthey do not apply to a server report that you export in MHTML format using the **Export** user interface.  
@@ -659,7 +659,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets or sets an &lt;see cref="T:Microsoft.Reporting.WebForms.InteractivityPostBackMode"&gt; value that indicates the postback mode of the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt; control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For more information, see <xref:Microsoft.Reporting.WebForms.InteractivityPostBackMode>.  
@@ -809,7 +809,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets or sets a `Boolean` value that indicates whether to keep the user session from expiring as long as the Web page is displayed in the browser.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Setting this property to `true` causes the **ReportViewer** control to keep the ASP.NET session from expiring if session is enabled in your ASP.NET application. Also, in remote processing mode, it causes the **ReportViewer** control to keep the report server session from expiring.  
@@ -946,7 +946,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets the instance of the &lt;see cref="T:Microsoft.Reporting.WebForms.Report"&gt; class that is used when the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode%2A&gt; for the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt; control is set to &lt;xref:Microsoft.Reporting.WebForms.ProcessingMode&gt;.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Examples  
  See <xref:Microsoft.Reporting.WebForms.LocalReport> for a code example.  
@@ -969,7 +969,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>A constant that represents the maximum number of pages in a report when the current page count mode is &lt;see cref="T:Microsoft.Reporting.WebForms.PageCountMode"&gt;.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Use MaximumPageCount to specify the last page of a report even when you do not have the maximum page count.  
@@ -1042,7 +1042,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets or sets a &lt;see cref="T:Microsoft.Reporting.WebForms.PageCountMode"&gt; enumeration value that indicates the default page count mode to use when rendering a report in the report area.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Set PageCountMode to control how to calculate the total number of pages when rendering a report in the report area. When PageCountMode is <xref:Microsoft.Reporting.WebForms.PageCountMode>, the **ReportViewer** control displays the actual total number of pages in the toolbar. When PageCountMode is <xref:Microsoft.Reporting.WebForms.PageCountMode>, the **ReportViewer** control may calculate either the actual total or an estimated total, depending on the report. When the calculated value is an estimated total, it is followed by an estimate indicator in the toolbar, and the displayed value may change as the user navigates through report pages.  
@@ -1067,7 +1067,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when a user moves to a different page in a report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a user moves to a different page in a report. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.PageNavigationEventArgs> object to the <xref:Microsoft.Reporting.WebForms.PageNavigationEventHandler> delegate, which handles the event.  
@@ -1092,7 +1092,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Navigates the **ReportViewer** control back to the parent report from a drillthrough report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This method does not raise the <xref:Microsoft.Reporting.WebForms.ReportViewer.Back> event when called.  
@@ -1172,7 +1172,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <param name="control">To be added.</param>
         <summary>Registers the specified control with the **ReportViewer** control. The **ReportViewer** control displays the wait control when the registered control causes a postback.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default, theThe **ReportViewer** control shows the wait control only when it determines that a postback is caused by the **ReportViewer** control itself. Registering your custom control using this method allows you to cause the wait control to be displayed as a result of an action on the custom control. This method registers the specified control and all the child controls that it contains.  
@@ -1224,7 +1224,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets a &lt;see cref="T:Microsoft.Reporting.WebForms.ReportAreaContent"&gt; object that indicates the current content type of the report area.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can use this property to check whether the report area contains a report.  
@@ -1248,7 +1248,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when an error is found in the report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event is raised when an error occurs in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.ReportErrorEventArgs> object to the <xref:Microsoft.Reporting.WebForms.ReportErrorEventHandler> delegate, which handles the event.  
@@ -1272,7 +1272,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when the report is refreshed.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the report is refreshed. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.ReportRefreshEventArgs> object to the <xref:Microsoft.Reporting.WebForms.ReportRefreshEventHandler> delegate, which handles the event.  
@@ -1297,7 +1297,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Resets the control to its default values.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Call the Reset method to reset the <xref:Microsoft.Reporting.WebForms.ReportViewer> control to its default state.  
@@ -1320,7 +1320,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Reverts the page settings for the current report in the **ReportViewer** control to the settings in the report definition.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Only the changes you made to the current in the **ReportViewer** control are reverted, and calling this method does not affect its parent report or the drillthrough reports accessible from it.  
@@ -1359,7 +1359,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when the **Find** or **Find Next** button is clicked, or when a search operation is invoked programmatically.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.SearchEventArgs> object to the <xref:Microsoft.Reporting.WebForms.SearchEventHandler> delegate, which handles the event.  
@@ -1416,7 +1416,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets the instance of the &lt;see cref="T:Microsoft.Reporting.WebForms.Report"&gt; class that is used when the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode%2A&gt; for the &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt; control is set to &lt;xref:Microsoft.Reporting.WebForms.ProcessingMode&gt;.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Examples  
  See <xref:Microsoft.Reporting.WebForms.ServerReport> for a code example.  
@@ -1442,7 +1442,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <param name="pageSettings">To be added.</param>
         <summary>Sets the page settings that are used to print the current report in the **ReportViewer** control.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default, the **ReportViewer** control uses the page settings specified in the report definition when printing the current report. Use this method to change the page settings for the current report (not the current page), such as margins or paper size. This method validates the margin and page size values in the `pageSettings` parameter. Note that the change only affects the current report in the **ReportViewer** control, and does not affect its parent report or the drillthrough reports accessible from it.  
@@ -1500,7 +1500,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
         <summary>Gets or sets a value that indicates whether to display a prompt for user credentials.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property is ignored when <xref:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode%2A> is set to `Local`.  
@@ -1849,7 +1849,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when the user activates a sort on the report data.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user activates a sort on the report data. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.SortEventArgs> object to the <xref:Microsoft.Reporting.WebForms.SortEventHandler> delegate, which handles the event.  
@@ -1900,7 +1900,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when the user submits new data source credentials using the data source prompt area.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user submits data source credentials. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.ReportCredentialsEventArgs> object to the <xref:Microsoft.Reporting.WebForms.ReportCredentialsEventHandler> delegate, which handles the event. This event only applies to remote processing mode.  
@@ -1924,7 +1924,7 @@ Me.ReportViewer1.InteractiveDeviceInfos.Add("AccessibleTablix", "true")
       <Docs>
         <summary>Occurs when report parameter values are submitted to the report server.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user clicks the **View Report** button or when report parameters are automatically submitted due to dependencies between them. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.ReportParametersEventArgs> object to the <xref:Microsoft.Reporting.WebForms.ReportParametersEventHandler> delegate, which handles the event. This event only applies to remote processing mode.  
@@ -2019,7 +2019,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
       <Docs>
         <summary>Occurs when the user toggles the visibility of an item in the report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user toggles the visibility of an item in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WebForms.ToggleEventArgs> object to the <xref:Microsoft.Reporting.WebForms.ToggleEventHandler> delegate, which handles the event.  
@@ -2268,7 +2268,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
         <summary>Gets or sets the delay in milliseconds before the wait control is displayed to the user when the report is loaded.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  When the **ReportViewer** is rendering a report on page load, the wait control is always displayed immediately if <xref:Microsoft.Reporting.WebForms.ReportViewer.AsyncRendering%2A> is set to `true`. If <xref:Microsoft.Reporting.WebForms.ReportViewer.AsyncRendering%2A> is set to `false`, the wait control is not displayed when the Web page is loaded. Once the Web page is loaded, the wait control is always displayed on report actions that cause asynchronous postbacks, and this property specifies the delay in displaying the wait control.  
@@ -2323,7 +2323,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
         <summary>Gets or sets the width of the control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For more information, see <xref:System.Web.UI.WebControls.WebControl.Width%2A?displayProperty=fullName>.  
@@ -2357,7 +2357,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
         <summary>Gets or sets the zoom mode of the control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The **Zoom** drop-down list contains the following options: 500%, 200%, 150%, 100%, 75%, 50%, 25%, **Page Width** and **Whole Page**.  

@@ -20,7 +20,7 @@
   <Docs>
     <summary>Encapsulates the methods and properties used for the ReportViewer control.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This control shows the report and its associated user interface.  
@@ -57,7 +57,7 @@
       <Docs>
         <summary>Occurs when a user navigates back to a parent report from a drillthrough report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Occurs when a user navigates back to a parent report from a drillthrough report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler> delegate, which handles the event.  
@@ -134,7 +134,7 @@
       <Docs>
         <summary>Occurs when the user navigates to a bookmark in a report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user navigates to a bookmark in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.BookmarkNavigationEventHandler> delegate, which handles the event.  
@@ -200,7 +200,7 @@
       <Docs>
         <summary>Clears the report view and fills it with the background color of the control.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The **Clear** method resets the ReportViewer user interface elements to their default states.  
@@ -273,7 +273,7 @@ End Sub
         <summary>Gets a &lt;see cref="T:Microsoft.Reporting.WinForms.ReportViewerStatus"&gt; object that indicates which operations can currently be performed on the **ReportViewer** control, the status of the prompt area, and the status of the document map area.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property always returns the same instance of the <xref:Microsoft.Reporting.WinForms.ReportViewerStatus> object, even when the status of the control changes.  
@@ -301,7 +301,7 @@ End Sub
         <summary>Gets a &lt;see cref="T:Microsoft.Reporting.WinForms.DisplayMode"&gt; value that indicates the current display mode of the **ReportViewer** control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property is read-only. To programmatically change the display mode of the **ReportViewer** control, use the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetDisplayMode%2A> method.  
@@ -366,7 +366,7 @@ End Sub
       <Docs>
         <summary>Occurs when a document map node is selected.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a document map node is selected. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.DocumentMapNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.DocumentMapNavigationEventHandler> delegate, which handles the event.  
@@ -414,7 +414,7 @@ End Sub
       <Docs>
         <summary>Occurs when a drillthrough item is selected in a report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a drillthrough item is selected in a report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.DrillThroughEventArgs> object to the <xref:Microsoft.Reporting.WinForms.DrillThroughEventHandler> delegate, which handles the event.  
@@ -578,7 +578,7 @@ End Class
         <summary>Opens in the **Exporting** dialog box for a specific rendering extension.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Invoking this method is equivalent to a user selecting an export format from the **Export** drop-down list on the toolbar.  
@@ -607,7 +607,7 @@ End Class
         <summary>Opens in the export dialog box for a specific rendering extension.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Invoking this method is similar to a user selecting an export format from the **Export** drop-down list on the toolbar.  
@@ -638,7 +638,7 @@ End Class
         <summary>Opens in the **Exporting** dialog box for a specific rendering extension and specifies device information and saves the exported report to a file with the specified file name.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Invoking this method is similar to a user selecting an export format from the **Export** drop-down list on the toolbar, specifying a file name in the **Save As** dialog box, and then clicking **OK**.  
@@ -701,7 +701,7 @@ End Class
         <summary>Returns the page settings that are used to print the current report in the **ReportViewer** control or display it in print layout mode.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default, the **ReportViewer** control uses the page settings specified in the report definition when printing the current report or displaying it in print layout mode. Modifying the page settings by changing the properties of the returned <xref:System.Drawing.Printing.PageSettings> object has no effect. To modify page settings, you must use the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetPageSettings%2A> method.  
@@ -727,7 +727,7 @@ End Class
         <summary>Returns the total number of pages in the report.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  When the report is displayed in normal mode (<xref:Microsoft.Reporting.WinForms.ReportViewer.DisplayMode%2A> is <xref:Microsoft.Reporting.WinForms.DisplayMode>), this method returns the same value as <xref:Microsoft.Reporting.WinForms.Report.GetTotalPages%2A> in <xref:Microsoft.Reporting.WinForms.LocalReport> or <xref:Microsoft.Reporting.WinForms.ServerReport>, depending on the current value of <xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A>. When the report is displayed in print layout mode (<xref:Microsoft.Reporting.WinForms.ReportViewer.DisplayMode%2A> is <xref:Microsoft.Reporting.WinForms.DisplayMode.PrintLayout>?qualifyHint=False&autoUpgrade=True), this method returns the total number of pages that have been generated currently. If report pages are still being generated (the <xref:Microsoft.Reporting.WinForms.ReportViewer.RenderingComplete> event is not yet triggered), this value will update as more pages are generated.  
@@ -769,7 +769,7 @@ End Class
       <Docs>
         <summary>Occurs when a user clicks a hyperlink in a report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a user clicks a hyperlink in a report, before the hyperlink is followed. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.HyperlinkEventArgs> object to the <xref:Microsoft.Reporting.WinForms.HyperlinkEventHandler> delegate, which handles the event.  
@@ -861,7 +861,7 @@ End Class
         <summary>Gets or sets a `Boolean` value that indicates whether to keep the report server session from expiring as long as **ReportViewer** is running.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  In remote processing mode, setting this property to `true` causes the **ReportViewer** control to keep the report server session from expiring. The **ReportViewer** control pings the report server to keep the report server session from expiring. If you want to keep a report server session active for a user even when there is no activity on their part, set KeepSessionAlive to `true`. To let the session timeout and expire in your application, set KeepSessionAlive to `false`.  
@@ -893,7 +893,7 @@ End Class
         <summary>Returns the local report in the ReportViewer control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Examples  
  See <xref:Microsoft.Reporting.WinForms.LocalReport> for a code example.  
@@ -916,7 +916,7 @@ End Class
       <Docs>
         <summary>A constant that represents the maximum number of pages in a report when the current page count mode is &lt;see cref="T:Microsoft.Reporting.WinForms.PageCountMode"&gt;.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Use MaximumPageCount to specify the last page of a report even when you do not have the maximum page count.  
@@ -951,7 +951,7 @@ End Class
         <summary>Gets or sets an object that contains custom messages for use by the ReportViewer control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can implement the <xref:Microsoft.Reporting.WinForms.IReportViewerMessages> interface to provide custom localization of the ReportViewer control user interface. This implementation can be passed to the ReportViewer control by setting the Messages property of the ReportViewer control.  
@@ -1309,7 +1309,7 @@ namespace MySample
         <summary>Gets or sets a &lt;see cref="T:Microsoft.Reporting.WinForms.PageCountMode"&gt; enumeration value that indicates the default page count mode to use when rendering a report in the report area.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Set PageCountMode to control how to calculate the total number of pages when rendering a report in the report area. When PageCountMode is <xref:Microsoft.Reporting.WinForms.PageCountMode>, the **ReportViewer** control displays the actual total number of pages in the toolbar. When PageCountMode is <xref:Microsoft.Reporting.WinForms.PageCountMode>, the **ReportViewer** control may calculate either the actual total or an estimated total, depending on the report. When the calculated value is an estimated total, it is followed by a estimate indicator in the toolbar, and the displayed value may change as the user navigates through report pages.  
@@ -1334,7 +1334,7 @@ namespace MySample
       <Docs>
         <summary>Occurs when a user changes pages in a report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a user changes pages in a report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.PageNavigationEventArgs> object to the <xref:Microsoft.Reporting.WinForms.PageNavigationEventHandler> delegate, which handles the event.  
@@ -1358,7 +1358,7 @@ namespace MySample
       <Docs>
         <summary>Occurs when the margins or the page size for the current report in the **ReportViewer** control have changed.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event can occur when page settings for the current report are changed by the <xref:Microsoft.Reporting.WinForms.ReportViewer.SetPageSettings%2A> method, when the user modifies the page settings in the **Page Setup** dialog box and clicks the **OK** button, or when the report definition changes, such as when the user navigates to a drillthrough report. Information about this event is passed in a <xref:System.EventArgs> object to the <xref:System.EventHandler> delegate, which handles the event.  
@@ -1384,7 +1384,7 @@ namespace MySample
         <summary>Opens the page setup dialog box.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Invoking this method is functionally equivalent to clicking the **Page Setup** button on the control's toolbar. The current value of <xref:Microsoft.Reporting.WinForms.ReportViewer.GetPageSettings%2A> is used to initialize the dialog.  
@@ -1407,7 +1407,7 @@ namespace MySample
       <Docs>
         <summary>Navigates the report viewer control back to the parent report from a drillthrough report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This method does not raise the <xref:Microsoft.Reporting.WinForms.ReportViewer.Back> event when called.  
@@ -1429,7 +1429,7 @@ namespace MySample
       <Docs>
         <summary>Occurs when a user prints the report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when a user prints the report.  
@@ -1455,7 +1455,7 @@ namespace MySample
         <summary>Displays the **Print** dialog box.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Calling this method while the report is being rendered in the control causes an <xref:System.InvalidOperationException> to be thrown.  
@@ -1500,7 +1500,7 @@ End Sub
         <summary>Displays the **Print** dialog box.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Invoking this method is similar to the user clicking the **Print** button, except it does not trigger the <xref:Microsoft.Reporting.WinForms.ReportViewer.Print> event. If the user clicks the **Print** button in the **Print** dialog box, this method triggers the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrintingBegin> event.  
@@ -1531,7 +1531,7 @@ End Sub
         <summary>Gets or sets a &lt;xref:System.Drawing.Printing.PrinterSettings&gt; object that contains the settings for the default printer and print options that are used to initialize the **Print** dialog and the printer's **Preferences** dialog.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You should also update this property to reflect the user's changes in those dialogs. Note that the page range settings, such as the <xref:System.Drawing.Printing.PrintRange>, <xref:System.Drawing.Printing.FromPage>, and <xref:System.Drawing.Printing.ToPage> properties, are not used by the **ReportViewer** when initializing the print dialog. To set the page range settings when launching the dialog, use the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrintDialog%2A> method.  
@@ -1553,7 +1553,7 @@ End Sub
       <Docs>
         <summary>Occurs when the user clicks the **Print** button in the **Print** dialog box.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event can occur when the **Print** dialog box is launched by the <xref:Microsoft.Reporting.WinForms.ReportViewer.PrintDialog%2A> method or by the user clicking the **Print** button in the toolbar. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportPrintEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportPrintEventHandler> delegate, which handles the event.  
@@ -1625,7 +1625,7 @@ End Sub
       <Docs>
         <summary>Causes the current report in the Report Viewer to be processed and rendered.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Calling the **RefreshReport** method causes all data in the report to be reloaded and rendered. A call to **RefreshReport** is automatically added to the Form Load event handler when a ReportViewer control is added to a form.  
@@ -1665,7 +1665,7 @@ private void Form1_Load(object sender, EventArgs e)
       <Docs>
         <summary>Occurs when the report in the ReportViewer begins rendering.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the report begins rendering. Information about this event is passed in a **CancelEventArgs** object to a **CancelEventHandler** delegate, which handles the event.  
@@ -1689,7 +1689,7 @@ private void Form1_Load(object sender, EventArgs e)
       <Docs>
         <summary>Occurs when the report finishes rendering.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the report finishes rendering. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.RenderingCompleteEventArgs> object to the <xref:Microsoft.Reporting.WinForms.RenderingCompleteEventHandler> delegate, which handles the event.  
@@ -1713,7 +1713,7 @@ private void Form1_Load(object sender, EventArgs e)
       <Docs>
         <summary>Raised when an error occurs in the report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event is raised when an error occurs in the report. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportErrorEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportErrorEventHandler> delegate, which handles the event.  
@@ -1737,7 +1737,7 @@ private void Form1_Load(object sender, EventArgs e)
       <Docs>
         <summary>Occurs when the user clicks the **Export** button.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user clicks the **Export** button, before the report is actually exported. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportExportEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ExportEventHandler> delegate, which handles the event.  
@@ -1761,7 +1761,7 @@ private void Form1_Load(object sender, EventArgs e)
       <Docs>
         <summary>Occurs when the report is refreshed.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the report is refreshed.  
@@ -1786,7 +1786,7 @@ private void Form1_Load(object sender, EventArgs e)
       <Docs>
         <summary>Resets the control to its default values.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Calling the **Reset** method resets the ReportViewer control to its default state. The existing <xref:Microsoft.Reporting.WinForms.ReportViewer.LocalReport%2A> object is replaced with a new instance.  
@@ -1830,7 +1830,7 @@ End Sub
       <Docs>
         <summary>Reverts the page settings for the current report in the **ReportViewer** control to the settings in the report definition.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  If you changed the printer settings in a previous call to <xref:Microsoft.Reporting.WinForms.ReportViewer.SetPageSettings%2A> using the `PrinterSettings` property of the `pageSettings` parameter, these changes are not reverted. Also, only the changes you made to the current in the **ReportViewer** control are reverted, and calling this method does not affect its parent report or the drillthrough reports accessible from it.  
@@ -1854,7 +1854,7 @@ End Sub
       <Docs>
         <summary>This event occurs when the user clicks the **Find** or **Find Next** button, or when a search operation is invoked programmatically.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the report is refreshed. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.SearchEventArgs> object to the <xref:Microsoft.Reporting.WinForms.SearchEventHandler> delegate, which handles the event.  
@@ -1908,7 +1908,7 @@ End Sub
         <summary>Gets a server report in the Report Viewer.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Examples  
  See <xref:Microsoft.Reporting.WinForms.ServerReport> for a code example.  
@@ -1953,7 +1953,7 @@ End Sub
         <param name="pageSettings">To be added.</param>
         <summary>Sets the page settings that are used to print the current report in the **ReportViewer** control or display it in print layout mode.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  By default, the **ReportViewer** control uses the page settings specified in the report definition when printing the current report or displaying it in print layout mode. Use this method to change the page settings for the current report (not the current page), such as margins or paper size. This method validates the margin and page size values in the `pageSettings` parameter. Note that the change only affects the current report in the **ReportViewer** control, and does not affect its parent report or the drillthrough reports accessible from it.  
@@ -2033,7 +2033,7 @@ End Sub
         <summary>Indicates whether prompts for user credentials will be displayed.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property is ignored when <xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A> is set to `Local`.  
@@ -2169,7 +2169,7 @@ End Sub
         <summary>Gets or sets a value that indicates whether the **Print** button is visible.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The buttons affected by this property include print, page setup, and Print Preview.  
@@ -2323,7 +2323,7 @@ End Sub
       <Docs>
         <summary>Occurs when the user activates a sort.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user activates a sort. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.SortEventArgs> object to the <xref:Microsoft.Reporting.WinForms.SortEventHandler> delegate, which handles the event.  
@@ -2347,7 +2347,7 @@ End Sub
       <Docs>
         <summary>Occurs whenever the user interface state of the **ReportViewer** control changes.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event can occur in response to method calls as well as background operations in the **ReportViewer** control, such as rendering a report page. Information about this event is passed in a <xref:System.EventArgs> object to the <xref:System.EventHandler> delegate, which handles the event.  
@@ -2373,7 +2373,7 @@ End Sub
       <Docs>
         <summary>Occurs when the user submits new data source credentials viaby using the built-in prompt area.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user submits data source credentials. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportCredentialsEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportCredentialsEventHandler> delegate, which handles the event. This event only applies to remote processing mode.  
@@ -2399,7 +2399,7 @@ End Sub
       <Docs>
         <summary>Occurs when parameter values are submitted to the report server.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user clicks the **View Report** button, when the user navigates back to a parent report that contains report parameters from a drillthrough report, or when report parameters are automatically submitted due to dependencies between them. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ReportParametersEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ReportParametersEventHandler> delegate, which handles the event. This event only applies to remote processing mode.  
@@ -2446,7 +2446,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
       <Docs>
         <summary>Occurs when the user toggles the visibility of an item in the report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user toggles the visibility of an item in the report.  
@@ -2479,7 +2479,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
         <summary>Gets or sets the &lt;xref:System.Windows.Forms.ToolStripRenderer&gt; used to customize the look and feel of the **ReportViewer** control's toolbar as well as the context menu on the report.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property behaves in the same way as the <xref:System.Windows.Forms.ToolStrip.Renderer%2A> property in <xref:System.Windows.Forms.ToolStrip>.  
@@ -2501,7 +2501,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
       <Docs>
         <summary>Occurs when the user clicks the **View** button.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user clicks the **View** button.  
@@ -2552,7 +2552,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
         <summary>Gets the page zoom that is calculated based on the zoom mode.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  When <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomMode%2A> is set to <xref:Microsoft.Reporting.WinForms.ZoomMode> or <xref:Microsoft.Reporting.WinForms.ZoomMode>, this property returns the calculated zoom value rounded to the nearest integer. The minimum value is `1`. When <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomMode%2A> is set to <xref:Microsoft.Reporting.WinForms.ZoomMode>, this property returns the same value as <xref:Microsoft.Reporting.WinForms.ReportViewer.ZoomPercent%2A>.  
@@ -2576,7 +2576,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
       <Docs>
         <summary>Occurs when the user changes the zoom level of the ReportViewer control.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This event occurs when the user changes the zoom level of the ReportViewer control. Information about this event is passed in a <xref:Microsoft.Reporting.WinForms.ZoomChangeEventArgs> object to the <xref:Microsoft.Reporting.WinForms.ZoomChangedEventHandler> delegate, which handles the event.  
@@ -2609,7 +2609,7 @@ void reportViewer1_SubmittingParameterValues(object sender, ReportParametersEven
         <summary>Gets or sets the zoom mode of the control.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The **Zoom** drop-down list contains the following options: 500%, 200%, 150%, 100%, 75%, 50%, 25%, Page Width, and Whole Page. In Normal mode, the default option is 100%. In Print Preview mode, the default option is Whole Page.  

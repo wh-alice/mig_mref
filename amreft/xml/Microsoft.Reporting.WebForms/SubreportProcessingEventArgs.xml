@@ -12,7 +12,7 @@
   <Docs>
     <summary>Provides data for the &lt;see cref="E:Microsoft.Reporting.WebForms.LocalReport.SubreportProcessing"&gt; event.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This is passed to the <xref:Microsoft.Reporting.WebForms.SubreportProcessingEventHandler> when a <xref:Microsoft.Reporting.WebForms.LocalReport.SubreportProcessing> event occurs.  

@@ -33,7 +33,7 @@
         <summary>Gets a `Boolean` value that indicates whether the prompt area of the **ReportViewer** control is currently visible.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `false` indicates one or more of the following conditions:  
@@ -67,7 +67,7 @@
         <summary>Gets a `Boolean` value that indicates whether the **ReportViewer** control has not started processing the report or has completed processing the report, and can change the display mode without canceling a report processing operation.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property is `true` if the **ReportViewer** control is still generating pages for a processed report in <xref:Microsoft.Reporting.WinForms.DisplayMode> mode, even though changing the mode will cancel that operation. This is because generating the report pages is a rendering operation and not a processing operation.  
@@ -179,7 +179,7 @@
         <summary>Gets a `Boolean` value that indicates whether the &lt;xref:Microsoft.Reporting.WinForms.ReportViewer.CurrentPage%2A&gt; property can be changed without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property can be `true` even when the report has only one page.  
@@ -249,7 +249,7 @@
         <summary>Gets a `Boolean` value that indicates whether you can search the report and highlight the search results without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `true` indicates both of the following conditions:  
@@ -281,7 +281,7 @@
         <summary>Gets a `Boolean` value that indicates whether prompted parameters and prompted data source credentials can be submitted for the current report without canceling an existing report processing or interactive rendering operation.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `true` indicates one of the following conditions:  
@@ -315,7 +315,7 @@
         <summary>Gets a `Boolean` value that indicates whether the current report has a document map and the document map can be displayed in the current display mode.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property returns `false` when the report has not yet been processed.  
@@ -345,7 +345,7 @@
         <summary>Gets a `Boolean` value that indicates whether prompting is supported and there are prompts that can be displayed based on the visibility settings in the **ReportViewer** control. This property does not indicate whether the prompt areas are actually visible.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:Microsoft.Reporting.WinForms.ReportViewer.ShowParameterPrompts%2A> and <xref:Microsoft.Reporting.WinForms.ReportViewer.ShowCredentialPrompts%2A> properties both affect the value of HasPromptsToDisplay (see table below).  
@@ -402,7 +402,7 @@
         <summary>Gets a `Boolean` value that indicates whether the report has a document map and the document map is currently displayed.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of `true` indicates both of the following conditions:  
@@ -434,7 +434,7 @@
         <summary>Gets a `Boolean` value that indicates whether the current processing mode supports prompting for parameters and data source credentials.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This property does not indicate whether the current report has prompt areas for parameters or data source credentials prompts.  

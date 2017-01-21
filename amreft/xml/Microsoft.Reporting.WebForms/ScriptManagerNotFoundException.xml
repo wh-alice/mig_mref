@@ -12,7 +12,7 @@
   <Docs>
     <summary>The exception that is thrown if a &lt;xref:System.Web.UI.ScriptManager&gt; control is not found in the Web form.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  In [!INCLUDE[vsprvs](../../../../../../add/includes/vsprvs_md.md)] 2010, the **ReportViewer** control is an AJAX control and requires a <xref:System.Web.UI.ScriptManager> on the Web form.  

@@ -12,7 +12,7 @@
   <Docs>
     <summary>Occurs when session state is not enabled, and an object implementing &lt;see cref="T:Microsoft.Reporting.WebForms.IReportServerConnection"&gt; interface is not supplied through the Web.config file.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Please see [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for more information.  

@@ -15,7 +15,7 @@
   <Docs>
     <summary>Represents a collection of &lt;xref:System.Net.Cookie?displayProperty=fullName&gt; objects.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The ReportViewerCookieCollection class provides a simple collection object that can be used to store a set of <xref:System.Net.Cookie?displayProperty=fullName> objects.  

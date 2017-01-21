@@ -11,7 +11,7 @@
   <Docs>
     <summary>Specifies the state of a parameter.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Use the ParameterState enumeration with the <xref:Microsoft.Reporting.WinForms.ReportParameter.State> property of the <xref:Microsoft.Reporting.WinForms.ReportParameter> class.  

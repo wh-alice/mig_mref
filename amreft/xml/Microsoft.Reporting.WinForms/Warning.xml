@@ -12,7 +12,7 @@
   <Docs>
     <summary>Represents a list of errors or warnings that are returned when a report is rendered or processed.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  An array of Warning objects is returned by the **Render** and **RenderStream** methods of the <xref:Microsoft.Reporting.WinForms.LocalReport> and <xref:Microsoft.Reporting.WinForms.ServerReport> classes.  
@@ -99,7 +99,7 @@
         <summary>Gets the severity type of the error or warning. Read-only.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The possible values of the Severity property are `Error` and `Warning`.  

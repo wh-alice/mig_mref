@@ -12,7 +12,7 @@
   <Docs>
     <summary>Encapsulates a rendering extension that can be used with the ReportViewer's report.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is returned by the **ListRenderingExtensions** methods of the <xref:Microsoft.Reporting.WebForms.ServerReport> and <xref:Microsoft.Reporting.WebForms.LocalReport> classes.  

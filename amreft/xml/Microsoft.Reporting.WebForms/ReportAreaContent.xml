@@ -11,7 +11,7 @@
   <Docs>
     <summary>Specifies the type of content displayed in the report area.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is referenced by the <xref:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType%2A> property of <xref:Microsoft.Reporting.WebForms.ReportViewer>.  

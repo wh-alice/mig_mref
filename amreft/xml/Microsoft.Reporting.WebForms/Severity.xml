@@ -11,7 +11,7 @@
   <Docs>
     <summary>Specifies the severity of a warning.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This enumeration is used by the F:Microsoft.Reporting.WebForms.Severity.Warning?qualifyHint=False&autoUpgrade=True class.  

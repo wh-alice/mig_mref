@@ -23,7 +23,7 @@
   <Docs>
     <summary>Contains methods and properties that can apply to both local and server reports.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is used as a base class for the <xref:Microsoft.Reporting.WebForms.LocalReport> and <xref:Microsoft.Reporting.WebForms.ServerReport> objects. For implementation-specific information, see <xref:Microsoft.Reporting.WebForms.LocalReport> and <xref:Microsoft.Reporting.WebForms.ServerReport>.  
@@ -57,7 +57,7 @@
         <summary>Gets or sets the display name of the report.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The value of the DisplayName property will appear at the root of the document map.  
@@ -83,7 +83,7 @@
         <summary>Gets the default page settings specified in the report.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Please see <xref:Microsoft.Reporting.WebForms.LocalReport> and <xref:Microsoft.Reporting.WebForms.ServerReport> for implementation-specific information.  
@@ -141,7 +141,7 @@
         <summary>Returns the total number of soft pages in the report.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The page count mode that is used to generate the total number of pages depends on how the report is rendered by the <xref:Microsoft.Reporting.WebForms.Report> object. If the report is rendered using the <xref:Microsoft.Reporting.WebForms.PageCountMode> mode, GetTotalPages uses the <xref:Microsoft.Reporting.WebForms.PageCountMode> page count mode. If the report is rendered using the <xref:Microsoft.Reporting.WebForms.PageCountMode> mode, GetTotalPages may use either the <xref:Microsoft.Reporting.WebForms.PageCountMode> or <xref:Microsoft.Reporting.WebForms.PageCountMode> mode depending on the report. By default, the <xref:Microsoft.Reporting.WebForms.PageCountMode> mode is used to calculate the page count. For more information, see the <xref:Microsoft.Reporting.WebForms.PageCountMode> class and the <xref:Microsoft.Reporting.WebForms.Report.Render%2A> method.  
@@ -212,7 +212,7 @@
         <summary>Gets a `Boolean` value that indicates whether a report definition and all parameters have been specified, and all data sources are ready for use.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  In remote processing mode, all prompt data source credentials must be specified for this property to be `true`. In local processing mode, all required datasets must be loaded for this property to be `true`.  
@@ -292,7 +292,7 @@
       <Docs>
         <summary>Causes the report to be rendered with new data.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The Refresh method reprocesses the report and reloads the data from the report data sources.  
@@ -426,7 +426,7 @@
         <param name="parameter">To be added.</param>
         <summary>Sets report parameter properties for the report.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The parameter specified for this method must be defined in the report definition.  

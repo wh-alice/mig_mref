@@ -12,7 +12,7 @@
   <Docs>
     <summary>Represents errors that occur when the &lt;see cref="T:Microsoft.Reporting.WinForms.ReportViewer"&gt; control is rendering a processed report from report page layout (RPL) format into GDI+ format.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For errors that occur in local processing mode when processing a report or when rendering into RPL format, see <xref:Microsoft.Reporting.WinForms.LocalProcessingException>. For errors that occur in remote processing mode when processing a report or when rendering into RPL format, see <xref:Microsoft.Reporting.WinForms.ReportServerException>.  

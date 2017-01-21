@@ -20,7 +20,7 @@
     <param name="e">To be added.</param>
     <summary>Represents the method that will handle the &lt;see cref="E:Microsoft.Reporting.WinForms.ReportViewer.ZoomChange"&gt; event of a &lt;xref:Microsoft.Reporting.WinForms.ReportViewer&gt;.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  

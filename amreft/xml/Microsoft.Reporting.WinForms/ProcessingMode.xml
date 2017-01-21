@@ -11,7 +11,7 @@
   <Docs>
     <summary>Sets the processing mode of the ReportViewer control.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This enumerator is used to set the <xref:Microsoft.Reporting.WinForms.ReportViewer.ProcessingMode%2A> property of the <xref:Microsoft.Reporting.WinForms.ReportViewer> control.  
@@ -47,7 +47,7 @@
       <Docs>
         <summary>Specifies remote processing mode against a Reporting Services report server.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   

@@ -11,7 +11,7 @@
   <Docs>
     <summary>Specifies the zoom mode for the ReportViewer control.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This enumerator is used with the <xref:Microsoft.Reporting.WebForms.ReportViewer.ZoomMode%2A> property.  

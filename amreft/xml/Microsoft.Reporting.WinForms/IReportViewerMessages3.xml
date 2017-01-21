@@ -13,7 +13,7 @@
   <Docs>
     <summary>Allows applications to provide customized user interface messages.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You can implement the IReportViewerMessages3 interface to provide custom localization of the **ReportViewer** control user interface. This implementation can be passed to the **ReportViewer** control by setting the <xref:Microsoft.Reporting.WinForms.ReportViewer.Messages%2A> property of the <xref:Microsoft.Reporting.WinForms.ReportViewer> control. The IReportViewerMessages3 interface does not allow customization of local or server report processing error messages.  
@@ -124,7 +124,7 @@
         <summary>Returns the string in the default toolbar that represents the total number of pages in the current report and the &lt;see cref="T:Microsoft.Reporting.WinForms.PageCountMode"&gt; that was used to determine it.</summary>
         <returns>To be added.</returns>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  When the total number of pages is an estimated total, the returned string replaces both the page count and the default `?` symbol in the toolbar.  

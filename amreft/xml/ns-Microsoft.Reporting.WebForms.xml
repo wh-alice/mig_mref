@@ -2,7 +2,7 @@
   <Docs>
     <summary>The Microsoft.Reporting.WebForms namespace contains methods and properties for the ReportViewer Web server control.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Please see [Web.config Settings for ReportViewer](../Topic/Web.config%20Settings%20for%20ReportViewer.md) for information about using the ReportViewer Web server control in a scale-out deployment or without session state.  

@@ -12,7 +12,7 @@
   <Docs>
     <summary>Represents a data source for a report.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The ReportDataSource class is used with the <xref:Microsoft.Reporting.WinForms.LocalReport.DataSources%2A> collection of a <xref:Microsoft.Reporting.WinForms.LocalReport> object to add one or more required data sources to a local report. This is necessary when adding a report to the ReportViewer control.  
@@ -107,7 +107,7 @@
         <param name="dataSourceValue">To be added.</param>
         <summary>Constructs a named data source with a value.</summary>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  <xref:Microsoft.Reporting.WinForms.ReportDataSource.Value%2A> may be an instance of <xref:System.Data.DataTable>, a <xref:System.Collections.IEnumerable> value (for example, <xref:System.Data.DataView> or <xref:System.Array>), or a <xref:System.Windows.Forms.BindingSource>.  
@@ -201,7 +201,7 @@
         <summary>Gets or sets the instance of the report data source.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Value may be an instance of <xref:System.Data.DataTable>, a <xref:System.Collections.IEnumerable> value (for example, <xref:System.Data.DataView> or <xref:System.Array>), or a <xref:System.Windows.Forms.BindingSource>.  

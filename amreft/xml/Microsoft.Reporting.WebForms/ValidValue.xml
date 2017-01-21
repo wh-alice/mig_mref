@@ -12,7 +12,7 @@
   <Docs>
     <summary>Represents a possible valid value for a parameter.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  ValidValue is used by the <xref:Microsoft.Reporting.WebForms.ReportParameterInfo> and <xref:Microsoft.Reporting.WebForms.ParameterState> classes.  

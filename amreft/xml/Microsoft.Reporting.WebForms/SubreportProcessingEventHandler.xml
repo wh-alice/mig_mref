@@ -20,7 +20,7 @@
     <param name="e">To be added.</param>
     <summary>Represents the method that will handle the &lt;see cref="E:Microsoft.Reporting.WebForms.LocalReport.SubreportProcessing"&gt; event of a &lt;xref:Microsoft.Reporting.WebForms.ReportViewer&gt;.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  You must supply data for any data sources used in subreports. To do this, you must supply an event handler for the subreport processing event.  

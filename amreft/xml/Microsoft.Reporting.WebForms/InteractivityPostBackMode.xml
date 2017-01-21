@@ -11,7 +11,7 @@
   <Docs>
     <summary>Specifies the postback modes of the &lt;see cref="T:Microsoft.Reporting.WebForms.ReportViewer"&gt; control when the user interacts with the report viewer and the currently displayed report.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This enumeration is referenced by the <xref:Microsoft.Reporting.WebForms.ReportViewer.InteractivityPostBackMode%2A> property in <xref:Microsoft.Reporting.WebForms.ReportViewer>.  

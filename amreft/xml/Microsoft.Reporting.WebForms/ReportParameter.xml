@@ -165,7 +165,7 @@
         <summary>Determines whether the parameter can be displayed in the user interface.</summary>
         <value>To be added.</value>
         <remarks>
-          <format Type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:Microsoft.Reporting.WebForms.ReportViewer> control may only display the parameter input user interface if the control's <xref:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode%2A> property is set to <xref:Microsoft.Reporting.WebForms.ProcessingMode>.  

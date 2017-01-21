@@ -12,7 +12,7 @@
   <Docs>
     <summary>Represents the exception that occurs when no report source has been specified.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  Example  

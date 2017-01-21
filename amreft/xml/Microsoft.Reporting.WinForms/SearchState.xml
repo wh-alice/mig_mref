@@ -12,7 +12,7 @@
   <Docs>
     <summary>Contains the search text and the start page of a search operation.</summary>
     <remarks>
-      <format Type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  This class is referenced by the <xref:Microsoft.Reporting.WinForms.ReportViewer.SearchState%2A> property in <xref:Microsoft.Reporting.WinForms.ReportViewer>.  
